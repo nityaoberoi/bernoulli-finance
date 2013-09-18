@@ -1,0 +1,41 @@
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+.under-construction {
+    background-color: #dee1e2;
+}
+
+.launching-soon {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -400px;
+    margin-left: -550px;
+    width: 1100px;
+}
+
+.logo {
+    background: url('../img/logo.png') no-repeat center;
+    height: 150px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.launch > div {
+    float: left;
+}
+
+.launch-image {
+    vertical-align: middle;
+    padding: 5px;
+}
+
+.launch-text {
+    padding: 200px 20px;
+}
+
+h2 {
+    color: #740900;
+    font-weight: 500;
+}
