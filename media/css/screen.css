@@ -6,18 +6,19 @@ body {
     background-color: #dee1e2;
 }
 
-.logo {
-    background: url('../img/logo.png') no-repeat 100% 50%;
-    height: 150px;
-}
-
 .launch > div {
-    float: left;
+    display: inline-block;
 }
 
 .launch-image {
-    vertical-align: middle;
     padding: 5px;
+}
+
+.launch-text {
+    top: 50%;
+    position: absolute;
+    padding-left: 34px;
+    text-align: center;
 }
 
 h2 {
@@ -30,23 +31,33 @@ a {
 
 }
 
-@media (max-width: 480px) {
+
+
+@media (min-width: 320px) and (max-width: 480px) {
 
     .launch-image {
-        padding: 0;
+        display: none;
     }
 
     .launch-image img {
-        width: 480px;
-        height: 446px;
+        display: none;
     }
 
     .launch-text {
-        padding: 20px;
+        padding: 0;
+        position: relative;
+        margin-top: 100px;
+    }
+
+    h2 {
+        margin: 5px 0;
     }
 }
 
-@media (min-width: 500px) and (max-width: 1400px) {
+@media (min-width: 480px) and (max-width: 900px) {
+
+
+
     .launching-soon {
         position: fixed;
         top: 50%;
@@ -56,25 +67,42 @@ a {
     }
 
     .launch-image img {
-        width: 600px;
-        height: 563px;
+        width: 500px;
+        height: 469px;
     }
 
     .launch-text {
-        margin-top: 450px;
+        width: 280px;
+        right: -56%;
     }
+
+    .logo {
+        height: 123px;
+        width: 250px;
+    }
+
+    h2 {
+        margin: 5px 0;
+    }
+
 }
 
-@media (min-width: 500px) {
+@media (min-width : 900px) {
     .launching-soon {
         position: fixed;
         top: 50%;
         left: 40%;
-        margin-top: -480px;
-        margin-left: -450px;
+        margin-top: -351px;
+        margin-left: -430px;
+        width: 1200px;
     }
 
-    .launch-text {
-        margin-top: 450px;
+    .launch-image img {
+        width: 750px;
+        height: 703px;
     }
+}
+
+@media (min-width : 1824px) {
+/* Styles */
 }
