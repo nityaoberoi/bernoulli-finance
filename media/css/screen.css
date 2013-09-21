@@ -1,108 +1,121 @@
 body {
     font-family: 'Raleway', sans-serif;
+    font-size: 20px;
 }
 
 .under-construction {
-    background-color: #dee1e2;
+
+    background: #e4e4e4; /* ultimate fallback, always put this, just in case */
+
+    /* if you choose the IE filter linear gradient fallback */
+    filter: progid:DXImageTransform.Microsoft.gradient(
+                 startColorstr=#e4e4e4, endColorstr=#959595);
+
+    /* if you choose to use the image fallback */
+    /*background: url(gradient.png);*/
+
+    /* Chrome, Safari */
+    background: -webkit-radial-gradient(circle, #e4e4e4, #959595);
+
+    /* Firefox 15 and older, Firefox for Android */
+    background: -moz-radial-gradient(circle, #e4e4e4, #959595);
+
+    /* Opera 11.6 (older only supported linear), Opera 12.0, Opera Mobile 12.0 */
+    background: -o-radial-gradient(circle, #e4e4e4, #959595);
+
+    /* standard syntax, IE10, Firefox 16+, Opera 12.1+ */
+    background: radial-gradient(circle, #e4e4e4, #959595);\
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+}
+
+.launching-soon {
+    filter: alpha(opacity=50);
+    opacity: 0.9;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    width: 100%;
+    height: 100%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('../img/launching-soon-trans.png');
+
+}
+
+.logo-wrap {
+    box-sizing: border-box;
+    position: absolute;
+    width: 515px;
+    height: 435px;
+    left: 50%;
+    top: 50%;
+    margin-left: -257.5px;
+    margin-top: -217.5px;
+    padding: 50px;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 2px;
+    z-index: 1;
+    text-align: center;
+}
+
+.logo {
+    padding: 15px 35px;
 }
 
 .launch > div {
-    display: inline-block;
+    float: left;
 }
 
-.launch-image {
-    padding: 5px;
-}
-
-.launch-text {
-    top: 50%;
-    position: absolute;
-    padding-left: 34px;
-    text-align: center;
-}
-
-h2 {
+h1 {
     color: #740900;
     font-weight: 500;
     text-align: center;
+    font-size: 34px;
+    line-height: 1.2em;
+    margin: 30px 0;
 }
 
 a {
-
+    color: #740900;
+    text-decoration: none;
 }
 
+a:hover {
+    color: #666;
+    text-shadow: -1px 1px 8px #ffc, 1px -1px 8px #fff;
+    -webkit-transition: 500ms linear 0s;
+    -moz-transition: 500ms linear 0s;
+    -o-transition: 500ms linear 0s;
+    transition: 500ms linear 0s;
+    outline: 0 none;
+}
 
 
 @media (min-width: 320px) and (max-width: 480px) {
 
-    .launch-image {
-        display: none;
-    }
-
-    .launch-image img {
-        display: none;
-    }
-
-    .launch-text {
-        padding: 0;
-        position: relative;
-        margin-top: 100px;
-    }
-
-    h2 {
-        margin: 5px 0;
+    .launching-soon {
+        background-size: 450px;
     }
 }
 
 @media (min-width: 480px) and (max-width: 900px) {
 
-
-
     .launching-soon {
-        position: fixed;
-        top: 50%;
-        left: 40%;
-        margin-top: -280px;
-        margin-left: -300px;
-    }
-
-    .launch-image img {
-        width: 500px;
-        height: 469px;
-    }
-
-    .launch-text {
-        width: 280px;
-        right: -56%;
-    }
-
-    .logo {
-        height: 123px;
-        width: 250px;
-    }
-
-    h2 {
-        margin: 5px 0;
+        background-size: 700px;
     }
 
 }
 
 @media (min-width : 900px) {
+
     .launching-soon {
-        position: fixed;
-        top: 50%;
-        left: 40%;
-        margin-top: -351px;
-        margin-left: -430px;
-        width: 1200px;
+        background-size: 900px 844px;
     }
 
-    .launch-image img {
-        width: 750px;
-        height: 703px;
-    }
-}
-
-@media (min-width : 1824px) {
-/* Styles */
 }
