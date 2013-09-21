@@ -44,6 +44,9 @@ body {
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-image: url('../img/launching-soon-trans.png');
 
 }
@@ -58,11 +61,10 @@ body {
     margin-left: -257.5px;
     margin-top: -217.5px;
     padding: 50px;
-    background: #ffffff;
+    background: rgba(255, 255, 255, 0.6);
     border-radius: 2px;
     z-index: 1;
     text-align: center;
-    opacity: 0.6;
 }
 
 .logo {
