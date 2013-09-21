@@ -24,7 +24,7 @@ body {
     background: -o-radial-gradient(circle, #e4e4e4, #959595);
 
     /* standard syntax, IE10, Firefox 16+, Opera 12.1+ */
-    background: radial-gradient(circle, #e4e4e4, #959595);\
+    background: radial-gradient(circle, #e4e4e4, #959595);
 
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -37,8 +37,8 @@ body {
     filter: alpha(opacity=50);
     opacity: 0.9;
     position: fixed;
-    top: 0px;
-    right: 0px;
+    top: 0;
+    right: 0;
     width: 100%;
     height: 100%;
     background-position: 50% 50%;
@@ -58,7 +58,7 @@ body {
     margin-left: -257.5px;
     margin-top: -217.5px;
     padding: 50px;
-    background: rgba(255, 255, 255, 0.6);
+    background: #ffffff rgba(255, 255, 255, 0.6);
     border-radius: 2px;
     z-index: 1;
     text-align: center;
