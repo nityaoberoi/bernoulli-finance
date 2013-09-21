@@ -5,14 +5,14 @@ body {
 
 .under-construction {
 
-    background: #e4e4e4; /* ultimate fallback, always put this, just in case */
+    background: #dee1e2; /* ultimate fallback, always put this, just in case */
 
     /* if you choose the IE filter linear gradient fallback */
     filter: progid:DXImageTransform.Microsoft.gradient(
                  startColorstr=#e4e4e4, endColorstr=#959595);
 
     /* if you choose to use the image fallback */
-    /*background: url(gradient.png);*/
+    background: url('../img/gradient.png');
 
     /* Chrome, Safari */
     background: -webkit-radial-gradient(circle, #e4e4e4, #959595);
