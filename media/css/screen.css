@@ -99,8 +99,16 @@ a:hover {
 
 @media (min-width: 320px) and (max-width: 480px) {
 
-    .launching-soon {
-        background-size: 450px;
+    .logo-wrap {
+        width: 300px;
+        margin-left: -150px;
+        overflow: auto;
+    }
+
+    .logo {
+        width: 190px;
+        height: 73px;
+        padding: 0;
     }
 }
 
