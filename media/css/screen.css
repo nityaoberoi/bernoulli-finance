@@ -7,24 +7,22 @@ body {
 
     background: #dee1e2; /* ultimate fallback, always put this, just in case */
 
-    /* if you choose the IE filter linear gradient fallback */
-    filter: progid:DXImageTransform.Microsoft.gradient(
-                 startColorstr=#e4e4e4, endColorstr=#959595);
-
-    /* if you choose to use the image fallback */
-    background: url('../img/gradient.png');
-
-    /* Chrome, Safari */
-    background: -webkit-radial-gradient(circle, #e4e4e4, #959595);
 
     /* Firefox 15 and older, Firefox for Android */
     background: -moz-radial-gradient(circle, #e4e4e4, #959595);
 
+    /* standard syntax, IE10, Firefox 16+, Opera 12.1+ */
+    background: radial-gradient(circle, #e4e4e4, #959595);
+
+    /* if you choose to use the image fallback */
+    background: url('../img/gradient.png') no-repeat #969696;
+
     /* Opera 11.6 (older only supported linear), Opera 12.0, Opera Mobile 12.0 */
     background: -o-radial-gradient(circle, #e4e4e4, #959595);
 
-    /* standard syntax, IE10, Firefox 16+, Opera 12.1+ */
-    background: radial-gradient(circle, #e4e4e4, #959595);
+
+    /* Chrome, Safari */
+    background: -webkit-radial-gradient(circle, #e4e4e4, #959595);
 
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -126,7 +124,7 @@ a:hover {
 @media (min-width : 900px) {
 
     .launching-soon {
-        background-size: 900px 844px;
+        background-size: 960px 900px;
     }
 
 }
