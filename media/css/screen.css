@@ -58,10 +58,11 @@ body {
     margin-left: -257.5px;
     margin-top: -217.5px;
     padding: 50px;
-    background: #ffffff rgba(255, 255, 255, 0.6);
+    background: #ffffff;
     border-radius: 2px;
     z-index: 1;
     text-align: center;
+    opacity: 0.6;
 }
 
 .logo {
