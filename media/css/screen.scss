@@ -1,12 +1,87 @@
+@font-face {
+  font-family: 'Tangerine';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Tangerine'), url('http://example.com/tangerine.ttf') format('truetype');
+}
+
 body {
     font-family: 'Inder', sans-serif;
     font-size: 16px;
 }
 
+a {
+    text-decoration: none;
+}
+
+.landing-page {
+    background: url('../img/bg.jpg');
+}
+
+.simple-header {
+    background-color: #000;
+    opacity: 0.4;
+    width: 100%;
+    z-index: 100;
+
+    .header-wrapper {
+        display: table;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 40px;
+        vertical-align: middle;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+}
+
+.navigation {
+    display: table-cell;
+    width: 70%;
+    text-align: right;
+    vertical-align: middle;
+}
+
+.main-nav {
+
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        text-align: right;
+        line-height: 1em;
+    }
+
+    li {
+        text-align: right;
+        display: inline-block;
+        margin: 0 0 0 30px;
+    }
+}
+
+.nav-links {
+
+    a {
+        text-transform: uppercase;
+        color: #AAA;
+    }
+
+}
+
+.image {
+
+    &.home {
+        background: url('../img/road.jpg');
+    }
+}
+
 .under-construction {
 
     background: #dee1e2; /* ultimate fallback, always put this, just in case */
-
+    font-family: 'Inder', sans-serif;
+    font-size: 16px;
 
     /* Firefox 15 and older, Firefox for Android */
     background: -moz-radial-gradient(circle, #e4e4e4, #959595);
@@ -28,6 +103,30 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+
+    h1 {
+        font-family: 'Raleway', sans-serif;
+        color: #740900;
+        font-weight: 500;
+        text-align: center;
+        font-size: 34px;
+        line-height: 1.2em;
+        margin: 30px 0;
+    }
+
+    a {
+        color: #740900;
+    }
+
+    a:hover {
+        color: #666;
+        text-shadow: -1px 1px 8px #ffc, 1px -1px 8px #fff;
+        -webkit-transition: 500ms linear 0s;
+        -moz-transition: 500ms linear 0s;
+        -o-transition: 500ms linear 0s;
+        transition: 500ms linear 0s;
+        outline: 0 none;
+    }
 
 }
 
@@ -72,32 +171,6 @@ body {
 .launch > div {
     float: left;
 }
-
-h1 {
-    font-family: 'Raleway', sans-serif;
-    color: #740900;
-    font-weight: 500;
-    text-align: center;
-    font-size: 34px;
-    line-height: 1.2em;
-    margin: 30px 0;
-}
-
-a {
-    color: #740900;
-    text-decoration: none;
-}
-
-a:hover {
-    color: #666;
-    text-shadow: -1px 1px 8px #ffc, 1px -1px 8px #fff;
-    -webkit-transition: 500ms linear 0s;
-    -moz-transition: 500ms linear 0s;
-    -o-transition: 500ms linear 0s;
-    transition: 500ms linear 0s;
-    outline: 0 none;
-}
-
 
 @media (min-width: 320px) and (max-width: 480px) {
 

@@ -1,0 +1,146 @@
+@font-face {
+  font-family: 'Tangerine';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Tangerine"), url("http://example.com/tangerine.ttf") format("truetype"); }
+
+body {
+  font-family: 'Inder', sans-serif;
+  font-size: 16px; }
+
+a {
+  text-decoration: none; }
+
+.landing-page {
+  background: url("../img/bg.jpg"); }
+
+.simple-header {
+  background-color: #000;
+  opacity: 0.4;
+  width: 100%;
+  z-index: 100; }
+  .simple-header .header-wrapper {
+    display: table;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 40px;
+    vertical-align: middle;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+.navigation {
+  display: table-cell;
+  width: 70%;
+  text-align: right;
+  vertical-align: middle; }
+
+.main-nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: right;
+  line-height: 1em; }
+.main-nav li {
+  text-align: right;
+  display: inline-block;
+  margin: 0 0 0 30px; }
+
+.nav-links a {
+  text-transform: uppercase;
+  color: #AAA; }
+
+.image.home {
+  background: url("../img/road.jpg"); }
+
+.under-construction {
+  background: #dee1e2;
+  /* ultimate fallback, always put this, just in case */
+  font-family: 'Inder', sans-serif;
+  font-size: 16px;
+  /* Firefox 15 and older, Firefox for Android */
+  background: -moz-radial-gradient(circle, #e4e4e4, #959595);
+  /* standard syntax, IE10, Firefox 16+, Opera 12.1+ */
+  background: radial-gradient(circle, #e4e4e4, #959595);
+  /* if you choose to use the image fallback */
+  background: url("../img/gradient.png") no-repeat #969696;
+  /* Opera 11.6 (older only supported linear), Opera 12.0, Opera Mobile 12.0 */
+  background: -o-radial-gradient(circle, #e4e4e4, #959595);
+  /* Chrome, Safari */
+  background: -webkit-radial-gradient(circle, #e4e4e4, #959595);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  .under-construction h1 {
+    font-family: 'Raleway', sans-serif;
+    color: #740900;
+    font-weight: 500;
+    text-align: center;
+    font-size: 34px;
+    line-height: 1.2em;
+    margin: 30px 0; }
+  .under-construction a {
+    color: #740900; }
+  .under-construction a:hover {
+    color: #666;
+    text-shadow: -1px 1px 8px #ffc, 1px -1px 8px #fff;
+    -webkit-transition: 500ms linear 0s;
+    -moz-transition: 500ms linear 0s;
+    -o-transition: 500ms linear 0s;
+    transition: 500ms linear 0s;
+    outline: 0 none; }
+
+.launching-soon {
+  filter: alpha(opacity=50);
+  opacity: 0.6;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-image: url("../img/launching-soon-trans.png"); }
+
+.logo-wrap {
+  box-sizing: border-box;
+  position: absolute;
+  width: 515px;
+  height: 435px;
+  left: 50%;
+  top: 50%;
+  margin-left: -257.5px;
+  margin-top: -217.5px;
+  padding: 50px;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 2px;
+  z-index: 1;
+  text-align: center; }
+
+.logo {
+  padding: 15px 35px; }
+
+.launch > div {
+  float: left; }
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .logo-wrap {
+    width: 300px;
+    margin-left: -150px;
+    overflow: auto; }
+
+  .logo {
+    width: 190px;
+    height: 73px;
+    padding: 0; } }
+@media (min-width: 480px) and (max-width: 900px) {
+  .launching-soon {
+    background-size: 700px; } }
+@media (min-width: 900px) {
+  .launching-soon {
+    background-size: 960px 900px; } }
