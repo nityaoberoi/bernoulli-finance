@@ -1,0 +1,213 @@
+@font-face {
+  font-family: 'Tangerine';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Tangerine"), url("http://example.com/tangerine.ttf") format("truetype");
+}
+
+/* line 8, ../../scss/pages/main.scss */
+body {
+  font-family: 'Varela', sans-serif;
+  font-size: 16px;
+  line-height: 1.9em;
+  -webkit-font-smoothing: antialiased;
+  background: #f0f0f0;
+}
+
+/* line 16, ../../scss/pages/main.scss */
+a {
+  text-decoration: none;
+  -o-transition: .5s;
+  -ms-transition: .5s;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+/* line 24, ../../scss/pages/main.scss */
+a:hover {
+  text-decoration: none;
+}
+
+/* line 29, ../../scss/pages/main.scss */
+h1, h2, h3, h4, h5, h6 {
+  line-height: 2em;
+}
+
+/* line 33, ../../scss/pages/main.scss */
+h1 {
+  font-size: 34px;
+}
+
+/* line 37, ../../scss/pages/main.scss */
+.clear {
+  zoom: 1;
+}
+/* line 40, ../../scss/pages/main.scss */
+.clear:before, .clear:after {
+  content: "";
+  display: table;
+}
+/* line 45, ../../scss/pages/main.scss */
+.clear:after {
+  content: ".";
+  height: 0;
+  visibility: hidden;
+  display: block;
+  clear: both;
+}
+
+/* line 54, ../../scss/pages/main.scss */
+.row {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1144px;
+}
+
+/* line 60, ../../scss/pages/main.scss */
+.nav-header {
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  right: 0;
+  top: 0;
+  background: transparent;
+  padding: 40px 50px 0;
+  -webkit-transition: background .2s linear;
+  -moz-transition: background .2s linear;
+  -o-transition: background .2s linear;
+  -ms-transition: background .2s linear;
+  transition: background .2s linear;
+}
+/* line 74, ../../scss/pages/main.scss */
+.nav-header.sticky {
+  background: #fe4444;
+  -webkit-transition: background .2s linear;
+  -moz-transition: background .2s linear;
+  -o-transition: background .2s linear;
+  -ms-transition: background .2s linear;
+  transition: background .2s linear;
+}
+
+/* line 84, ../../scss/pages/main.scss */
+.main-nav {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 5em;
+}
+/* line 89, ../../scss/pages/main.scss */
+.main-nav ul {
+  overflow: hidden;
+  float: right;
+}
+/* line 94, ../../scss/pages/main.scss */
+.main-nav li {
+  display: inline-block;
+  margin: 0 18px;
+}
+/* line 98, ../../scss/pages/main.scss */
+.main-nav li a {
+  color: #f0f0f0;
+}
+/* line 101, ../../scss/pages/main.scss */
+.main-nav li a:hover {
+  color: #aaa;
+}
+
+/* line 108, ../../scss/pages/main.scss */
+.site-title {
+  float: left;
+  width: 80px;
+  height: 63px;
+  display: block;
+}
+
+/* line 115, ../../scss/pages/main.scss */
+.header-image {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 765px;
+  background: white url("../img/finance-img-placeholder.jpg");
+  background-size: cover;
+}
+
+/* line 125, ../../scss/pages/main.scss */
+.tint {
+  background-color: rgba(116, 10, 2, 0.7);
+  height: 100%;
+  z-index: 4;
+}
+
+/* line 132, ../../scss/pages/main.scss */
+.header-text {
+  margin: 400px auto;
+  width: 960px;
+  padding: 100px 0;
+}
+/* line 137, ../../scss/pages/main.scss */
+.header-text h1 {
+  font-size: 45px;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 500;
+}
+
+/* line 149, ../../scss/pages/main.scss */
+.content {
+  position: relative;
+  top: 765px;
+  height: 100%;
+  padding: 60px 0;
+  z-index: 30;
+  background: #f0f0f0 no-repeat;
+  /* url('../img/mask.png') */
+  -webkit-animation: intro-content 2s forwards;
+  -moz-animation: intro-content 2s forwards;
+  -o-animation: intro-content 2s forwards;
+  -ms-animation: intro-content 2s forwards;
+  animation: intro-content 2s forwards;
+}
+
+/* line 163, ../../scss/pages/main.scss */
+.services {
+  padding: 40px 0;
+  margin-bottom: 60px;
+}
+/* line 167, ../../scss/pages/main.scss */
+.services h2 {
+  font-size: 42px;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+/* line 177, ../../scss/pages/main.scss */
+.service-icon.icon-left {
+  float: left;
+  margin-right: 20px;
+}
+/* line 182, ../../scss/pages/main.scss */
+.service-icon.icon-right {
+  float: right;
+  margin-left: 20px;
+}
+
+/* line 200, ../../scss/pages/main.scss */
+footer {
+  background: #47525e;
+  color: #fff;
+  padding: 0 20px;
+  line-height: 5em;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+/* line 212, ../../scss/pages/main.scss */
+footer .social-icons li {
+  display: inline-block;
+  margin-right: 10px;
+  text-indent: -500px;
+}

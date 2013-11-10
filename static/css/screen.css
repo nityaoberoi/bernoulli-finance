@@ -1,157 +1,218 @@
-/* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline; }
-
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block; }
-
-body {
-  line-height: 1; }
-
-ol, ul {
-  list-style: none; }
-
-blockquote, q {
-  quotes: none; }
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none; }
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0; }
-
 @font-face {
   font-family: 'Tangerine';
   font-style: normal;
   font-weight: normal;
-  src: local("Tangerine"), url("http://example.com/tangerine.ttf") format("truetype"); }
+  src: local("Tangerine"), url("http://example.com/tangerine.ttf") format("truetype");
+}
 
+/* line 8, ../scss/pages/main.scss */
 body {
   font-family: 'Varela', sans-serif;
   font-size: 16px;
   line-height: 1.9em;
-  background: url("../img/mochaGrunge.png"); }
+  -webkit-font-smoothing: antialiased;
+  background: #f0f0f0;
+}
 
+/* line 16, ../scss/pages/main.scss */
 a {
-  text-decoration: none; }
-  a:hover {
-    text-decoration: none; }
+  text-decoration: none;
+  -o-transition: .5s;
+  -ms-transition: .5s;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+/* line 24, ../scss/pages/main.scss */
+a:hover {
+  text-decoration: none;
+}
 
+/* line 29, ../scss/pages/main.scss */
 h1, h2, h3, h4, h5, h6 {
-  line-height: 2em; }
+  line-height: 2em;
+}
 
+/* line 33, ../scss/pages/main.scss */
 h1 {
-  font-size: 34px; }
+  font-size: 34px;
+}
 
+/* line 37, ../scss/pages/main.scss */
 .clear {
-  zoom: 1; }
-  .clear:before, .clear:after {
-    content: "";
-    display: table; }
-  .clear:after {
-    content: ".";
-    height: 0;
-    visibility: hidden;
-    display: block;
-    clear: both; }
+  zoom: 1;
+}
+/* line 40, ../scss/pages/main.scss */
+.clear:before, .clear:after {
+  content: "";
+  display: table;
+}
+/* line 45, ../scss/pages/main.scss */
+.clear:after {
+  content: ".";
+  height: 0;
+  visibility: hidden;
+  display: block;
+  clear: both;
+}
 
-.header-wrapper {
-  position: relative;
-  height: 700px; }
+/* line 54, ../scss/pages/main.scss */
+.row {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1144px;
+}
 
-.header-image {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: -1;
-  overflow: hidden; }
-
-.header-nav {
+/* line 60, ../scss/pages/main.scss */
+.nav-header {
   position: fixed;
-  z-index: 12;
+  z-index: 100;
   left: 0;
-  right: 0; }
+  right: 0;
+  top: 0;
+  background: transparent;
+  padding: 40px 50px 0;
+  -webkit-transition: background .2s linear;
+  -moz-transition: background .2s linear;
+  -o-transition: background .2s linear;
+  -ms-transition: background .2s linear;
+  transition: background .2s linear;
+}
+/* line 74, ../scss/pages/main.scss */
+.nav-header.sticky {
+  background: #fe4444;
+  -webkit-transition: background .2s linear;
+  -moz-transition: background .2s linear;
+  -o-transition: background .2s linear;
+  -ms-transition: background .2s linear;
+  transition: background .2s linear;
+}
 
-.header-text {
-  margin: 400px auto;
-  width: 960px;
-  padding: 100px 0; }
-  .header-text h1 {
-    font-size: 45px;
-    font-family: 'Montserrat', sans-serif;
-    text-transform: uppercase;
-    color: #fff;
-    font-weight: 500; }
-
+/* line 84, ../scss/pages/main.scss */
 .main-nav {
   text-transform: uppercase;
   letter-spacing: 2px;
   line-height: 5em;
-  padding: 0 50px;
-  background-color: rgba(255, 255, 255, 0.6);
-  overflow: auto; }
-  .main-nav.black-nav {
-    background-color: rgba(0, 0, 0, 0.6); }
-  .main-nav ul {
-    float: right; }
-  .main-nav li {
-    display: inline-block;
-    margin: 0 18px; }
-    .main-nav li a {
-      color: #000; }
+}
+/* line 89, ../scss/pages/main.scss */
+.main-nav ul {
+  overflow: hidden;
+  float: right;
+}
+/* line 94, ../scss/pages/main.scss */
+.main-nav li {
+  display: inline-block;
+  margin: 0 18px;
+}
+/* line 98, ../scss/pages/main.scss */
+.main-nav li a {
+  color: #f0f0f0;
+}
+/* line 101, ../scss/pages/main.scss */
+.main-nav li a:hover {
+  color: #aaa;
+}
 
-.content {
-  padding: 60px 0; }
-
-.content-wrapper {
-  max-width: 960px;
-  margin: 0 auto;
-  margin-top: -140px;
-  padding: 40px;
-  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
-  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
-  background: url("../img/mask.png") white no-repeat; }
-
+/* line 108, ../scss/pages/main.scss */
 .site-title {
-  position: absolute;
-  top: 4px; }
+  float: left;
+  width: 80px;
+  height: 63px;
+  display: block;
+}
 
+/* line 115, ../scss/pages/main.scss */
+.header-image {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 765px;
+  background: white url("../img/finance-img-placeholder.jpg");
+  background-size: cover;
+}
+
+/* line 125, ../scss/pages/main.scss */
+.tint {
+  background-color: rgba(116, 10, 2, 0.7);
+  height: 100%;
+  z-index: 4;
+}
+
+/* line 132, ../scss/pages/main.scss */
+.header-text {
+  margin: 400px auto;
+  width: 960px;
+  padding: 100px 0;
+}
+/* line 137, ../scss/pages/main.scss */
+.header-text h1 {
+  font-size: 45px;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 500;
+}
+
+/* line 149, ../scss/pages/main.scss */
+.content {
+  position: relative;
+  top: 765px;
+  height: 100%;
+  padding: 60px 0;
+  z-index: 30;
+  background: #f0f0f0 no-repeat;
+  /* url('../img/mask.png') */
+  -webkit-animation: intro-content 2s forwards;
+  -moz-animation: intro-content 2s forwards;
+  -o-animation: intro-content 2s forwards;
+  -ms-animation: intro-content 2s forwards;
+  animation: intro-content 2s forwards;
+}
+
+/* line 163, ../scss/pages/main.scss */
+.services {
+  padding: 40px 0;
+  margin-bottom: 60px;
+}
+/* line 167, ../scss/pages/main.scss */
+.services h2 {
+  font-size: 42px;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+/* line 177, ../scss/pages/main.scss */
+.service-icon.icon-left {
+  float: left;
+  margin-right: 20px;
+}
+/* line 182, ../scss/pages/main.scss */
+.service-icon.icon-right {
+  float: right;
+  margin-left: 20px;
+}
+
+/* line 200, ../scss/pages/main.scss */
 footer {
-  background: url("../img/bg.jpg");
+  background: #47525e;
   color: #fff;
   padding: 0 20px;
-  line-height: 5em; }
-  footer .social-icons li {
-    display: inline-block; }
+  line-height: 5em;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+/* line 212, ../scss/pages/main.scss */
+footer .social-icons li {
+  display: inline-block;
+  margin-right: 10px;
+  text-indent: -500px;
+}
 
+/* line 1, ../scss/pages/under_construction.scss */
 .under-construction {
   background: #dee1e2;
   /* ultimate fallback, always put this, just in case */
@@ -170,70 +231,155 @@ footer {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover; }
-  .under-construction h1 {
-    font-family: 'Raleway', sans-serif;
-    color: #740900;
-    font-weight: 500;
-    text-align: center;
-    font-size: 34px;
-    line-height: 1.2em;
-    margin: 30px 0; }
-  .under-construction a {
-    color: #740900; }
-  .under-construction a:hover {
-    color: #666;
-    text-shadow: -1px 1px 8px #ffc, 1px -1px 8px #fff;
-    -webkit-transition: 500ms linear 0s;
-    -moz-transition: 500ms linear 0s;
-    -o-transition: 500ms linear 0s;
-    transition: 500ms linear 0s;
-    outline: 0 none; }
-  .under-construction .launching-soon {
-    filter: alpha(opacity=50);
-    opacity: 0.6;
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-image: url("../img/launching-soon-trans.png"); }
+  background-size: cover;
+}
+/* line 28, ../scss/pages/under_construction.scss */
+.under-construction h1 {
+  font-family: 'Raleway', sans-serif;
+  color: #740900;
+  font-weight: 500;
+  text-align: center;
+  font-size: 34px;
+  line-height: 1.2em;
+  margin: 30px 0;
+}
+/* line 38, ../scss/pages/under_construction.scss */
+.under-construction a {
+  color: #740900;
+}
+/* line 42, ../scss/pages/under_construction.scss */
+.under-construction a:hover {
+  color: #666;
+  text-shadow: -1px 1px 8px #ffc, 1px -1px 8px #fff;
+  -webkit-transition: 500ms linear 0s;
+  -moz-transition: 500ms linear 0s;
+  -o-transition: 500ms linear 0s;
+  transition: 500ms linear 0s;
+  outline: 0 none;
+}
+/* line 52, ../scss/pages/under_construction.scss */
+.under-construction .launching-soon {
+  filter: alpha(opacity=50);
+  opacity: 0.6;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-image: url("../img/launching-soon-trans.png");
+}
+/* line 70, ../scss/pages/under_construction.scss */
+.under-construction .logo-wrap {
+  box-sizing: border-box;
+  position: absolute;
+  width: 515px;
+  height: 435px;
+  left: 50%;
+  top: 50%;
+  margin-left: -257.5px;
+  margin-top: -217.5px;
+  padding: 50px;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 2px;
+  z-index: 1;
+  text-align: center;
+}
+/* line 87, ../scss/pages/under_construction.scss */
+.under-construction .launch > div {
+  float: left;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  /* line 93, ../scss/pages/under_construction.scss */
   .under-construction .logo-wrap {
-    box-sizing: border-box;
-    position: absolute;
-    width: 515px;
-    height: 435px;
-    left: 50%;
-    top: 50%;
-    margin-left: -257.5px;
-    margin-top: -217.5px;
-    padding: 50px;
-    background: rgba(255, 255, 255, 0.7);
-    border-radius: 2px;
-    z-index: 1;
-    text-align: center; }
-  .under-construction .launch > div {
-    float: left; }
-  @media (min-width: 320px) and (max-width: 480px) {
-    .under-construction .logo-wrap {
-      width: 300px;
-      margin-left: -150px;
-      overflow: auto; }
-    .under-construction .logo {
-      width: 190px;
-      height: 73px;
-      padding: 0; } }
-  @media (min-width: 480px) and (max-width: 900px) {
-    .under-construction .launching-soon {
-      background-size: 700px; } }
-  @media (min-width: 900px) {
-    .under-construction .launching-soon {
-      background-size: 960px 900px; } }
+    width: 300px;
+    margin-left: -150px;
+    overflow: auto;
+  }
+  /* line 99, ../scss/pages/under_construction.scss */
   .under-construction .logo {
-    padding: 15px 35px; }
+    width: 190px;
+    height: 73px;
+    padding: 0;
+  }
+}
+@media (min-width: 480px) and (max-width: 900px) {
+  /* line 108, ../scss/pages/under_construction.scss */
+  .under-construction .launching-soon {
+    background-size: 700px;
+  }
+}
+@media (min-width: 900px) {
+  /* line 116, ../scss/pages/under_construction.scss */
+  .under-construction .launching-soon {
+    background-size: 960px 900px;
+  }
+}
+/* line 122, ../scss/pages/under_construction.scss */
+.under-construction .logo {
+  padding: 15px 35px;
+}
+
+/* line 66, icons/services/*.png */
+.services-sprite, .services-analysis-70, .service-icon.operations, .service-icon.analysis, .services-analysis, .services-strategy-70, .service-icon.strategy, .services-strategy {
+  background: url('../img/icons/services-sdc2f8dcad6.png') no-repeat;
+}
+
+/* line 60, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.services-analysis-70, .service-icon.operations, .service-icon.analysis {
+  background-position: 0 -597px;
+  height: 70px;
+  width: 70px;
+}
+
+/* line 60, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.services-analysis {
+  background-position: 0 0;
+  height: 256px;
+  width: 256px;
+}
+
+/* line 60, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.services-strategy-70, .service-icon.strategy {
+  background-position: 0 -522px;
+  height: 70px;
+  width: 70px;
+}
+
+/* line 60, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.services-strategy {
+  background-position: 0 -261px;
+  height: 256px;
+  width: 256px;
+}
+
+/* line 58, icons/social/*.png */
+.social-sprite, .social-facebook, footer .social-icons li.facebook, .social-linkedin, footer .social-icons li.linkedin, .social-twitter, footer .social-icons li.twitter {
+  background: url('../img/icons/social-sd1b85560aa.png') no-repeat;
+}
+
+/* line 60, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.social-facebook, footer .social-icons li.facebook {
+  background-position: 0 -266px;
+  height: 128px;
+  width: 128px;
+}
+
+/* line 60, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.social-linkedin, footer .social-icons li.linkedin {
+  background-position: 0 -133px;
+  height: 128px;
+  width: 128px;
+}
+
+/* line 60, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.social-twitter, footer .social-icons li.twitter {
+  background-position: 0 0;
+  height: 128px;
+  width: 128px;
+}

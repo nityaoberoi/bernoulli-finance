@@ -1,0 +1,167 @@
+@font-face {
+  font-family: 'Tangerine';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Tangerine"), url("http://example.com/tangerine.ttf") format("truetype");
+}
+
+/* line 8, ../../scss/pages/main-old.scss */
+body {
+  font-family: 'Varela', sans-serif;
+  font-size: 16px;
+  line-height: 1.9em;
+  background: url("../img/mochaGrunge.png");
+}
+
+/* line 15, ../../scss/pages/main-old.scss */
+a {
+  text-decoration: none;
+  -o-transition: .5s;
+  -ms-transition: .5s;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+/* line 23, ../../scss/pages/main-old.scss */
+a:hover {
+  text-decoration: none;
+}
+
+/* line 28, ../../scss/pages/main-old.scss */
+h1, h2, h3, h4, h5, h6 {
+  line-height: 2em;
+}
+
+/* line 32, ../../scss/pages/main-old.scss */
+h1 {
+  font-size: 34px;
+}
+
+/* line 36, ../../scss/pages/main-old.scss */
+.clear {
+  zoom: 1;
+}
+/* line 39, ../../scss/pages/main-old.scss */
+.clear:before, .clear:after {
+  content: "";
+  display: table;
+}
+/* line 44, ../../scss/pages/main-old.scss */
+.clear:after {
+  content: ".";
+  height: 0;
+  visibility: hidden;
+  display: block;
+  clear: both;
+}
+
+/* line 53, ../../scss/pages/main-old.scss */
+.header-wrapper {
+  position: relative;
+  height: 700px;
+}
+
+/* line 58, ../../scss/pages/main-old.scss */
+.header-image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  overflow: hidden;
+}
+
+/* line 68, ../../scss/pages/main-old.scss */
+.header-nav {
+  position: fixed;
+  z-index: 12;
+  left: 0;
+  right: 0;
+}
+
+/* line 75, ../../scss/pages/main-old.scss */
+.header-text {
+  margin: 400px auto;
+  width: 960px;
+  padding: 100px 0;
+}
+/* line 80, ../../scss/pages/main-old.scss */
+.header-text h1 {
+  font-size: 45px;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 500;
+}
+
+/* line 92, ../../scss/pages/main-old.scss */
+.main-nav {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 5em;
+  padding: 0 50px;
+  background-color: rgba(255, 255, 255, 0.6);
+  overflow: auto;
+}
+/* line 100, ../../scss/pages/main-old.scss */
+.main-nav.black-nav {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+/* line 104, ../../scss/pages/main-old.scss */
+.main-nav ul {
+  float: right;
+}
+/* line 108, ../../scss/pages/main-old.scss */
+.main-nav li {
+  display: inline-block;
+  margin: 0 18px;
+}
+/* line 112, ../../scss/pages/main-old.scss */
+.main-nav li a {
+  color: #000;
+}
+/* line 115, ../../scss/pages/main-old.scss */
+.main-nav li a:hover {
+  color: #999;
+}
+
+/* line 122, ../../scss/pages/main-old.scss */
+.content {
+  padding: 60px 0;
+}
+
+/* line 126, ../../scss/pages/main-old.scss */
+.content-wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+  margin-top: -140px;
+  padding: 40px;
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
+  background: url("../img/mask.png") white no-repeat;
+}
+
+/* line 137, ../../scss/pages/main-old.scss */
+.site-title {
+  position: absolute;
+  top: 4px;
+}
+
+/* line 142, ../../scss/pages/main-old.scss */
+footer {
+  background: url("../img/bg.jpg");
+  color: #fff;
+  padding: 0 20px;
+  line-height: 5em;
+}
+/* line 150, ../../scss/pages/main-old.scss */
+footer .social-icons li {
+  display: inline-block;
+  margin-right: 10px;
+}
+/* line 155, ../../scss/pages/main-old.scss */
+footer .social-icons .facebook {
+  background-image: url('../../img/icons/facebook.png');
+}

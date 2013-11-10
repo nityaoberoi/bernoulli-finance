@@ -1,4 +1,10 @@
-@import 'reset';
+// @import 'reset';
+
+@import 'compass';
+// @import "compass/reset";
 
 @import 'pages/main';
 @import 'pages/under_construction';
+
+@import 'sprites/services';
+@import 'sprites/social';
