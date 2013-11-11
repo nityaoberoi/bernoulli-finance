@@ -7766,7 +7766,7 @@ h1 {
   right: 0;
   top: 0;
   background: transparent;
-  padding: 40px 50px 0;
+  padding: 20px 50px 0;
   -webkit-transition: background .2s linear;
   -moz-transition: background .2s linear;
   -o-transition: background .2s linear;
@@ -7934,7 +7934,7 @@ h1 {
 
 /* line 232, ../scss/pages/main.scss */
 footer {
-  background: #373d43;
+  background: #373d43 url("../img/bg.jpg");
   color: #fff;
   line-height: 1em;
   position: absolute;
@@ -8128,76 +8128,184 @@ footer .social-icons li {
   width: 256px;
 }
 
-/* line 66, icons/social/*.png */
-.social-sprite, .social-facebook, footer .social-icons li.facebook, .social-linkedin, footer .social-icons li.linkedin, .social-mail, footer .social-icons li.email, .social-twitter, footer .social-icons li.twitter {
-  background: url('../img/icons/social-s0261007c67.png') no-repeat;
+/* line 130, icons/social/*.png */
+.social-sprite, .social-facebook-48, footer .social-icons li.facebook, .social-facebook, .social-linkedin-48, footer .social-icons li.linkedin, .social-linkedin, .social-mail-48, footer .social-icons li.email, .social-mail, .social-twitter-48, footer .social-icons li.twitter, .social-twitter {
+  background: url('../img/icons/social-s64408f448a.png') no-repeat;
 }
 
 /* line 60, ../../../../../../usr/local/Cellar/ruby/1.9.3-p125/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
-.social-facebook, footer .social-icons li.facebook {
-  background-position: 0 -195px;
-  height: 60px;
-  width: 60px;
+.social-facebook-48, footer .social-icons li.facebook {
+  background-position: 0 -1415px;
+  height: 48px;
+  width: 48px;
 }
 
 /* line 60, ../../../../../../usr/local/Cellar/ruby/1.9.3-p125/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
-.social-linkedin, footer .social-icons li.linkedin {
-  background-position: 0 -130px;
-  height: 60px;
-  width: 60px;
-}
-
-/* line 60, ../../../../../../usr/local/Cellar/ruby/1.9.3-p125/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
-.social-mail, footer .social-icons li.email {
+.social-facebook {
   background-position: 0 0;
-  height: 60px;
-  width: 60px;
+  height: 256px;
+  width: 256px;
 }
 
 /* line 60, ../../../../../../usr/local/Cellar/ruby/1.9.3-p125/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
-.social-twitter, footer .social-icons li.twitter {
-  background-position: 0 -65px;
-  height: 60px;
-  width: 60px;
+.social-linkedin-48, footer .social-icons li.linkedin {
+  background-position: 0 -1362px;
+  height: 48px;
+  width: 48px;
+}
+
+/* line 60, ../../../../../../usr/local/Cellar/ruby/1.9.3-p125/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.social-linkedin {
+  background-position: 0 -783px;
+  height: 256px;
+  width: 256px;
+}
+
+/* line 60, ../../../../../../usr/local/Cellar/ruby/1.9.3-p125/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.social-mail-48, footer .social-icons li.email {
+  background-position: 0 -1309px;
+  height: 48px;
+  width: 48px;
+}
+
+/* line 60, ../../../../../../usr/local/Cellar/ruby/1.9.3-p125/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.social-mail {
+  background-position: 0 -261px;
+  height: 256px;
+  width: 256px;
+}
+
+/* line 60, ../../../../../../usr/local/Cellar/ruby/1.9.3-p125/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.social-twitter-48, footer .social-icons li.twitter {
+  background-position: 0 -1256px;
+  height: 48px;
+  width: 48px;
+}
+
+/* line 60, ../../../../../../usr/local/Cellar/ruby/1.9.3-p125/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.social-twitter {
+  background-position: 0 -522px;
+  height: 256px;
+  width: 256px;
 }
 
 /* line 19, ../scss/_mixins.scss */
-.small-icons .social-facebook, .small-icons footer .social-icons li.facebook, footer .social-icons .small-icons li.facebook {
-  -webkit-background-size: 36px 153px;
-  -moz-background-size: 36px 153px;
-  -o-background-size: 36px 153px;
-  background-size: 36px 153px;
-  width: 36px;
-  height: 36px;
-  background-position: 0 -117px;
+.small-icons .social-facebook-48, .small-icons footer .social-icons li.facebook, footer .social-icons .small-icons li.facebook {
+  -webkit-background-size: 154px 878px;
+  -moz-background-size: 154px 878px;
+  -o-background-size: 154px 878px;
+  background-size: 154px 878px;
+  width: 29px;
+  height: 29px;
+  background-position: 0 -849px;
 }
 /* line 19, ../scss/_mixins.scss */
-.small-icons .social-linkedin, .small-icons footer .social-icons li.linkedin, footer .social-icons .small-icons li.linkedin {
-  -webkit-background-size: 36px 153px;
-  -moz-background-size: 36px 153px;
-  -o-background-size: 36px 153px;
-  background-size: 36px 153px;
-  width: 36px;
-  height: 36px;
-  background-position: 0 -78px;
+.small-icons .social-facebook-hover, .small-icons footer .social-icons li.facebook:hover, footer .social-icons .small-icons li.facebook:hover {
+  -webkit-background-size: 154px 878px;
+  -moz-background-size: 154px 878px;
+  -o-background-size: 154px 878px;
+  background-size: 154px 878px;
+  width: 29px;
+  height: 29px;
+  background-position: 0 -722px;
 }
 /* line 19, ../scss/_mixins.scss */
-.small-icons .social-mail, .small-icons footer .social-icons li.email, footer .social-icons .small-icons li.email {
-  -webkit-background-size: 36px 153px;
-  -moz-background-size: 36px 153px;
-  -o-background-size: 36px 153px;
-  background-size: 36px 153px;
-  width: 36px;
-  height: 36px;
+.small-icons .social-facebook {
+  -webkit-background-size: 154px 878px;
+  -moz-background-size: 154px 878px;
+  -o-background-size: 154px 878px;
+  background-size: 154px 878px;
+  width: 154px;
+  height: 154px;
   background-position: 0 0;
 }
 /* line 19, ../scss/_mixins.scss */
-.small-icons .social-twitter, .small-icons footer .social-icons li.twitter, footer .social-icons .small-icons li.twitter {
-  -webkit-background-size: 36px 153px;
-  -moz-background-size: 36px 153px;
-  -o-background-size: 36px 153px;
-  background-size: 36px 153px;
-  width: 36px;
-  height: 36px;
-  background-position: 0 -39px;
+.small-icons .social-linkedin-48, .small-icons footer .social-icons li.linkedin, footer .social-icons .small-icons li.linkedin {
+  -webkit-background-size: 154px 878px;
+  -moz-background-size: 154px 878px;
+  -o-background-size: 154px 878px;
+  background-size: 154px 878px;
+  width: 29px;
+  height: 29px;
+  background-position: 0 -818px;
+}
+/* line 19, ../scss/_mixins.scss */
+.small-icons .social-linkedin-hover, .small-icons footer .social-icons li.linkedin:hover, footer .social-icons .small-icons li.linkedin:hover {
+  -webkit-background-size: 154px 878px;
+  -moz-background-size: 154px 878px;
+  -o-background-size: 154px 878px;
+  background-size: 154px 878px;
+  width: 29px;
+  height: 29px;
+  background-position: 0 -659px;
+}
+/* line 19, ../scss/_mixins.scss */
+.small-icons .social-linkedin {
+  -webkit-background-size: 154px 878px;
+  -moz-background-size: 154px 878px;
+  -o-background-size: 154px 878px;
+  background-size: 154px 878px;
+  width: 154px;
+  height: 154px;
+  background-position: 0 -470px;
+}
+/* line 19, ../scss/_mixins.scss */
+.small-icons .social-mail-48, .small-icons footer .social-icons li.email, footer .social-icons .small-icons li.email {
+  -webkit-background-size: 154px 878px;
+  -moz-background-size: 154px 878px;
+  -o-background-size: 154px 878px;
+  background-size: 154px 878px;
+  width: 29px;
+  height: 29px;
+  background-position: 0 -786px;
+}
+/* line 19, ../scss/_mixins.scss */
+.small-icons .social-mail-hover, .small-icons footer .social-icons li.email:hover, footer .social-icons .small-icons li.email:hover {
+  -webkit-background-size: 154px 878px;
+  -moz-background-size: 154px 878px;
+  -o-background-size: 154px 878px;
+  background-size: 154px 878px;
+  width: 29px;
+  height: 29px;
+  background-position: 0 -690px;
+}
+/* line 19, ../scss/_mixins.scss */
+.small-icons .social-mail {
+  -webkit-background-size: 154px 878px;
+  -moz-background-size: 154px 878px;
+  -o-background-size: 154px 878px;
+  background-size: 154px 878px;
+  width: 154px;
+  height: 154px;
+  background-position: 0 -157px;
+}
+/* line 19, ../scss/_mixins.scss */
+.small-icons .social-twitter-48, .small-icons footer .social-icons li.twitter, footer .social-icons .small-icons li.twitter {
+  -webkit-background-size: 154px 878px;
+  -moz-background-size: 154px 878px;
+  -o-background-size: 154px 878px;
+  background-size: 154px 878px;
+  width: 29px;
+  height: 29px;
+  background-position: 0 -754px;
+}
+/* line 19, ../scss/_mixins.scss */
+.small-icons .social-twitter-hover, .small-icons footer .social-icons li.twitter:hover, footer .social-icons .small-icons li.twitter:hover {
+  -webkit-background-size: 154px 878px;
+  -moz-background-size: 154px 878px;
+  -o-background-size: 154px 878px;
+  background-size: 154px 878px;
+  width: 29px;
+  height: 29px;
+  background-position: 0 -627px;
+}
+/* line 19, ../scss/_mixins.scss */
+.small-icons .social-twitter {
+  -webkit-background-size: 154px 878px;
+  -moz-background-size: 154px 878px;
+  -o-background-size: 154px 878px;
+  background-size: 154px 878px;
+  width: 154px;
+  height: 154px;
+  background-position: 0 -314px;
 }

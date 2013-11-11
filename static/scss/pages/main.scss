@@ -64,7 +64,7 @@ h1 {
     right: 0;
     top: 0;
     background: transparent;
-    padding: 40px 50px 0;
+    padding: 20px 50px 0;
     -webkit-transition: background .2s linear;
     -moz-transition: background .2s linear;
     -o-transition: background .2s linear;
@@ -230,7 +230,7 @@ h1 {
 }
 
 footer {
-    background: #373d43;
+    background: #373d43 url('../img/bg.jpg');
     color: #fff;
     line-height: 1em;
     position: absolute;
@@ -252,19 +252,35 @@ footer {
 
 
             &.facebook {
-                @extend .social-facebook;
+                @extend .social-facebook-48;
+
+                &:hover {
+                    @extend .social-facebook-hover;
+                }
             }
 
             &.twitter {
-                @extend .social-twitter;
+                @extend .social-twitter-48;
+
+                &:hover {
+                    @extend .social-twitter-hover;
+                }
             }
 
             &.linkedin {
-                @extend .social-linkedin;
+                @extend .social-linkedin-48;
+
+                &:hover {
+                    @extend .social-linkedin-hover;
+                }
             }
 
             &.email {
-                @extend .social-mail;
+                @extend .social-mail-48;
+
+                &:hover {
+                    @extend .social-mail-hover;
+                }
             }
         }
     }

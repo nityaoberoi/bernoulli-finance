@@ -1,98 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bernoulli Finance</title>
-    <link rel="stylesheet" href="/static/css/screen.css">
-    <!-- fonts -->
-    <link rel="stylesheet" href='http://fonts.googleapis.com/css?family=Raleway:400,200'>
-    <link rel="stylesheet" href='http://fonts.googleapis.com/css?family=Varela'>
-    <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Montserrat:400,700'>
-    <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Lobster&subset=all'>
-</head>
-<body class="landing-page">
-    <header class="nav-header">
-        <nav class="main-nav">
-            <span class="site-title">
-                <a class="logo" href="/">
-                    <img src="/static/img/logo-white-small.png" class="logo-image" width="163px" height="61px" />
-                </a>
-            </span>
-            <ul class="nav-links clear">
-                <li><a href="/"><span>Home</span></a></li>
-                <li><a href="/about/">About</a></li>
-                <li><a href="/services/">Services</a></li>
-                <li><a href="/clients/">Clients</a></li>
-            </ul>
-        </nav>
-    </header>
-    <header class="header-image">
-        <div class="tint"></div>
-    </header>
-    <div class="header-text">
-        <div class="row">
-            <h1>Strategy.</h1>
-            <h1>Operations.</h1>
-            <h1>Analysis.</h1>
+{% extends "base.html" %}
+
+{% block body %}
+<section class="services container">
+    <div class="row">
+        <h2 class="content-header">We help <strong>ecologically responsible fast growing ventures</strong> solve real-life problems of quality and accessibility.</h2>
+    </div>
+    <div class="row content-detail">
+        <div id="mission" class="col-md-6">
+            We are a financial services consultancy.... We do this by providing financial strategy, operations, and analysis services that keep our clients strategically focused, organized, and consistently moving forward.
+        </div>
+        <div id="service-blurbs" class="col-md-6">
+            <div class="strategy">
+                <div class="service-icon icon-left strategy"></div><h6 class="service-title title-left">Strategy</h6>
+                We create and support business planning processes for ventures so they know what to plan for in the near future and how to plan for the longer-term.
+            </div>
+            <div class="operations">
+                <div class="service-icon icon-right operations"></div><h6 class="service-title title-right">Operations</h6>
+                 We develop easy-to-use, informative tracking tools that give companies the information they need to manage cash flow and improve operations in real time.
+            </div>
+            <div class="analysis">
+                <div class="service-icon icon-left analysis"></div><h6 class="service-title title-left">Analysis</h6>
+                We run the analytical engine to help validate the decisions that drive business operations. From pricing optimization to determining the right channels for growth, making the best use of cash resources to valuation for future investment, creating equity and compensation structures to developing hiring strategy – we have it all covered!
+            </div>
         </div>
     </div>
-
-    <div class="content">
-        <section class="services container">
-            <div class="row">
-                <h2 class="content-header">We help <strong>ecologically responsible fast growing ventures</strong> solve real-life problems of quality and accessibility.</h2>
-            </div>
-            <div class="row content-detail">
-                <div id="mission" class="col-md-6">
-                    We are a financial services consultancy.... We do this by providing financial strategy, operations, and analysis services that keep our clients strategically focused, organized, and consistently moving forward.
-                </div>
-                <div id="service-blurbs" class="col-md-6">
-                    <div class="strategy">
-                        <div class="service-icon icon-left strategy"></div><h6 class="service-title title-left">Strategy</h6>
-                        We create and support business planning processes for ventures so they know what to plan for in the near future and how to plan for the longer-term.
-                    </div>
-                    <div class="operations">
-                        <div class="service-icon icon-right operations"></div><h6 class="service-title title-right">Operations</h6>
-                         We develop easy-to-use, informative tracking tools that give companies the information they need to manage cash flow and improve operations in real time.
-                    </div>
-                    <div class="analysis">
-                        <div class="service-icon icon-left analysis"></div><h6 class="service-title title-left">Analysis</h6>
-                        We run the analytical engine to help validate the decisions that drive business operations. From pricing optimization to determining the right channels for growth, making the best use of cash resources to valuation for future investment, creating equity and compensation structures to developing hiring strategy – we have it all covered!
-                    </div>
-                </div>
-            </div>
-        </section>
-        <footer>
-            <div class="copyright pull-left">
-                <span>&copy; Bernoulli Finance 2013</span>
-            </div>
-            <div class="contact pull-right">
-                <ul class="social-icons small-icons">
-                    <li class="facebook">Facebook</li>
-                    <li class="twitter">Twitter</li>
-                    <li class="linkedin">LinkedIn</li>
-                    <li class="email">Email</li>
-                </ul>
-            </div>
-        </footer>
-    </div>
-
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-<script src="/static/js/waypoints.min.js"></script>
-<script>
-    jQuery(function($){
-        var nav = $('.nav-header'),
-            headerImage = $('.header-image');
-
-        $('.content').waypoint(function(){
-            nav.toggleClass('sticky');
-        }, { offset: function() {
-            return nav.height();
-        }});
-
-    });
-</script>
-
-</body>
-</html>
+</section>
+{% endblock %}
