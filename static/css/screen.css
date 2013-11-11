@@ -7693,6 +7693,130 @@ td.visible-print {
     display: none !important;
   }
 }
+/* line 1, ../scss/components/_header.scss */
+.nav-header {
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  right: 0;
+  top: 0;
+  background: transparent;
+  padding: 20px 50px 0;
+  -webkit-transition: background .2s linear;
+  -moz-transition: background .2s linear;
+  -o-transition: background .2s linear;
+  -ms-transition: background .2s linear;
+  transition: background .2s linear;
+}
+/* line 15, ../scss/components/_header.scss */
+.nav-header.sticky {
+  padding: 0 50px;
+  background: #740901;
+  /*#fe4444; */
+}
+
+/* line 21, ../scss/components/_header.scss */
+.main-nav {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 5em;
+}
+/* line 26, ../scss/components/_header.scss */
+.main-nav ul {
+  overflow: hidden;
+  float: right;
+}
+/* line 31, ../scss/components/_header.scss */
+.main-nav li {
+  display: inline-block;
+  margin: 0 18px;
+}
+/* line 35, ../scss/components/_header.scss */
+.main-nav li a {
+  color: #f0f0f0;
+}
+/* line 38, ../scss/components/_header.scss */
+.main-nav li a:hover {
+  color: #333;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #333;
+}
+
+/* line 47, ../scss/components/_header.scss */
+.site-title {
+  float: left;
+  width: 80px;
+  height: 63px;
+  display: block;
+}
+
+/* line 54, ../scss/components/_header.scss */
+.header-image {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 785px;
+  background: white url("../img/finance-img-placeholder.jpg");
+  background-size: cover;
+}
+
+/* line 64, ../scss/components/_header.scss */
+.tint {
+  background-color: rgba(116, 10, 2, 0.7);
+  height: 100%;
+  z-index: 4;
+}
+
+/* line 71, ../scss/components/_header.scss */
+.header-text {
+  background: transparent;
+  height: 820px;
+  position: fixed;
+  top: 335px;
+  z-index: 32;
+  width: 100%;
+}
+/* line 79, ../scss/components/_header.scss */
+.header-text h1 {
+  font-size: 75px;
+  font-family: 'Novecento', sans-serif;
+  font-weight: 400;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #ccc;
+  z-index: 1001;
+  letter-spacing: 2;
+}
+
+/* line 1, ../scss/components/_footer.scss */
+footer {
+  background: #373d43 url("../img/bg.jpg");
+  color: #fff;
+  line-height: 1em;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px 40px;
+}
+/* line 11, ../scss/components/_footer.scss */
+footer .copyright {
+  padding: 25px 0 0;
+}
+/* line 17, ../scss/components/_footer.scss */
+footer .social-icons li {
+  display: inline-block;
+  margin-right: 10px;
+}
+/* line 22, ../scss/components/_footer.scss */
+footer .social-icons a {
+  -webkit-transition: 0;
+  transition: 0;
+  text-indent: -9999px;
+  display: block;
+}
+
 @font-face {
   font-family: 'Novecento';
   font-style: normal;
@@ -7759,100 +7883,6 @@ h1 {
 }
 
 /* line 60, ../scss/pages/main.scss */
-.nav-header {
-  position: fixed;
-  z-index: 100;
-  left: 0;
-  right: 0;
-  top: 0;
-  background: transparent;
-  padding: 20px 50px 0;
-  -webkit-transition: background .2s linear;
-  -moz-transition: background .2s linear;
-  -o-transition: background .2s linear;
-  -ms-transition: background .2s linear;
-  transition: background .2s linear;
-}
-/* line 74, ../scss/pages/main.scss */
-.nav-header.sticky {
-  padding: 0 50px;
-  background: #740901;
-  /*#fe4444; */
-}
-
-/* line 80, ../scss/pages/main.scss */
-.main-nav {
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  line-height: 5em;
-}
-/* line 85, ../scss/pages/main.scss */
-.main-nav ul {
-  overflow: hidden;
-  float: right;
-}
-/* line 90, ../scss/pages/main.scss */
-.main-nav li {
-  display: inline-block;
-  margin: 0 18px;
-}
-/* line 94, ../scss/pages/main.scss */
-.main-nav li a {
-  color: #f0f0f0;
-}
-/* line 97, ../scss/pages/main.scss */
-.main-nav li a:hover {
-  color: #47525e;
-}
-
-/* line 104, ../scss/pages/main.scss */
-.site-title {
-  float: left;
-  width: 80px;
-  height: 63px;
-  display: block;
-}
-
-/* line 111, ../scss/pages/main.scss */
-.header-image {
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  height: 785px;
-  background: white url("../img/finance-img-placeholder.jpg");
-  background-size: cover;
-}
-
-/* line 121, ../scss/pages/main.scss */
-.tint {
-  background-color: rgba(116, 10, 2, 0.7);
-  height: 100%;
-  z-index: 4;
-}
-
-/* line 128, ../scss/pages/main.scss */
-.header-text {
-  background: transparent;
-  height: 820px;
-  position: fixed;
-  top: 335px;
-  z-index: 32;
-  width: 100%;
-}
-/* line 136, ../scss/pages/main.scss */
-.header-text h1 {
-  font-size: 75px;
-  font-family: 'Novecento', sans-serif;
-  font-weight: 400;
-  line-height: 1;
-  text-transform: uppercase;
-  color: #ccc;
-  z-index: 1001;
-  letter-spacing: 2;
-}
-
-/* line 148, ../scss/pages/main.scss */
 .content {
   position: relative;
   top: 785px;
@@ -7867,12 +7897,12 @@ h1 {
   animation: intro-content 2s forwards;
 }
 
-/* line 162, ../scss/pages/main.scss */
+/* line 74, ../scss/pages/main.scss */
 .services {
   padding: 40px 0;
   margin-bottom: 60px;
 }
-/* line 166, ../scss/pages/main.scss */
+/* line 78, ../scss/pages/main.scss */
 .services h2 {
   font-size: 42px;
   font-weight: 300;
@@ -7880,13 +7910,13 @@ h1 {
   margin-bottom: 60px;
 }
 
-/* line 174, ../scss/pages/main.scss */
+/* line 86, ../scss/pages/main.scss */
 #service-blurbs > div {
   margin-bottom: 30px;
   position: relative;
 }
 
-/* line 179, ../scss/pages/main.scss */
+/* line 91, ../scss/pages/main.scss */
 .service-icon {
   -webkit-transition: all 0.25s ease-out;
   -moz-transition: all 0.25s ease-out;
@@ -7894,23 +7924,23 @@ h1 {
   -ms-transition: all 0.25s ease-out;
   transition: all 0.25s ease-out;
 }
-/* line 188, ../scss/pages/main.scss */
+/* line 100, ../scss/pages/main.scss */
 .service-icon.icon-left {
   float: left;
   margin-right: 20px;
 }
-/* line 193, ../scss/pages/main.scss */
+/* line 105, ../scss/pages/main.scss */
 .service-icon.icon-right {
   float: right;
   margin-left: 20px;
 }
-/* line 210, ../scss/pages/main.scss */
+/* line 122, ../scss/pages/main.scss */
 .service-icon:hover {
   -webkit-filter: blur(2px);
   opacity: 0.3;
 }
 
-/* line 216, ../scss/pages/main.scss */
+/* line 128, ../scss/pages/main.scss */
 .service-title {
   display: none;
   font-size: 16px;
@@ -7918,45 +7948,17 @@ h1 {
   position: absolute;
   top: 10px;
 }
-/* line 223, ../scss/pages/main.scss */
+/* line 135, ../scss/pages/main.scss */
 .service-title.title-left {
   left: 9px;
 }
-/* line 224, ../scss/pages/main.scss */
+/* line 136, ../scss/pages/main.scss */
 .service-title.title-right {
   right: 1px;
 }
 
-/* line 228, ../scss/pages/main.scss */
+/* line 140, ../scss/pages/main.scss */
 .service-icon:hover + .service-title {
-  display: block;
-}
-
-/* line 232, ../scss/pages/main.scss */
-footer {
-  background: #373d43 url("../img/bg.jpg");
-  color: #fff;
-  line-height: 1em;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding: 20px 40px;
-}
-/* line 242, ../scss/pages/main.scss */
-footer .copyright {
-  padding: 25px 0 0;
-}
-/* line 248, ../scss/pages/main.scss */
-footer .social-icons li {
-  display: inline-block;
-  margin-right: 10px;
-}
-/* line 253, ../scss/pages/main.scss */
-footer .social-icons a {
-  -webkit-transition: 0;
-  transition: 0;
-  text-indent: -9999px;
   display: block;
 }
 

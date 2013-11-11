@@ -1,0 +1,89 @@
+.nav-header {
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    right: 0;
+    top: 0;
+    background: transparent;
+    padding: 20px 50px 0;
+    -webkit-transition: background .2s linear;
+    -moz-transition: background .2s linear;
+    -o-transition: background .2s linear;
+    -ms-transition: background .2s linear;
+    transition: background .2s linear;
+
+    &.sticky {
+        padding: 0 50px;
+        background: #740901; /*#fe4444; */
+    }
+}
+
+.main-nav {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 5em;
+
+    ul {
+        overflow: hidden;
+        float: right;
+    }
+
+    li {
+        display: inline-block;
+        margin: 0 18px;
+
+        a {
+            color: #f0f0f0;
+
+            &:hover {
+                color: #333;
+                padding-bottom: 5px;
+                border-bottom: 2px solid #333;
+            }
+        }
+    }
+}
+
+.site-title {
+    float: left;
+    width: 80px;
+    height: 63px;
+    display: block;
+}
+
+.header-image {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 785px;
+    background: #fff url('../img/finance-img-placeholder.jpg');
+    background-size: cover;
+}
+
+.tint {
+    background-color: rgba(116, 10, 2, 0.7);
+    height: 100%;
+    z-index: 4;
+}
+
+
+.header-text {
+    background: transparent;
+    height: 820px;
+    position: fixed;
+    top: 335px;
+    z-index: 32;
+    width: 100%;
+
+    h1 {
+        font-size: 75px;
+        font-family: 'Novecento', sans-serif;
+        font-weight: 400;
+        line-height: 1;
+        text-transform: uppercase;
+        color: #ccc;
+        z-index: 1001;
+        letter-spacing: 2;
+    }
+}
