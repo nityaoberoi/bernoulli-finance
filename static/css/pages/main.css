@@ -1,260 +1,101 @@
-@font-face {
-  font-family: 'Novecento';
-  font-style: normal;
-  font-weight: normal;
-  src: local("Novecento"), url("../fonts/novecento.ttf") format("truetype");
-}
+/*
+Syntax error: Undefined mixin 'transition'.
+        on line 254 of /Users/noberoi/Developer/bernoulli-finance/static/scss/pages/main.scss, in `transition'
+        from line 254 of /Users/noberoi/Developer/bernoulli-finance/static/scss/pages/main.scss
 
-/* line 8, ../../scss/pages/main.scss */
-body {
-  font-family: 'Varela', sans-serif;
-  font-size: 16px;
-  line-height: 1.9em;
-  -webkit-font-smoothing: antialiased;
-  background: #f0f0f0;
-}
-
-/* line 16, ../../scss/pages/main.scss */
-a {
-  text-decoration: none;
-  -o-transition: .5s;
-  -ms-transition: .5s;
-  -moz-transition: .5s;
-  -webkit-transition: .5s;
-  transition: .5s;
-}
-/* line 24, ../../scss/pages/main.scss */
-a:hover {
-  text-decoration: none;
-}
-
-/* line 29, ../../scss/pages/main.scss */
-h1, h2, h3, h4, h5, h6 {
-  line-height: 2em;
-}
-
-/* line 33, ../../scss/pages/main.scss */
-h1 {
-  font-size: 34px;
-}
-
-/* line 37, ../../scss/pages/main.scss */
-.clear {
-  zoom: 1;
-}
-/* line 40, ../../scss/pages/main.scss */
-.clear:before, .clear:after {
-  content: "";
-  display: table;
-}
-/* line 45, ../../scss/pages/main.scss */
-.clear:after {
-  content: ".";
-  height: 0;
-  visibility: hidden;
-  display: block;
-  clear: both;
-}
-
-/* line 54, ../../scss/pages/main.scss */
-.row {
-  width: 100%;
-  margin: 0 auto;
-  max-width: 1144px;
-}
-
-/* line 60, ../../scss/pages/main.scss */
-.nav-header {
-  position: fixed;
-  z-index: 100;
-  left: 0;
-  right: 0;
-  top: 0;
-  background: transparent;
-  padding: 20px 50px 0;
-  -webkit-transition: background .2s linear;
-  -moz-transition: background .2s linear;
-  -o-transition: background .2s linear;
-  -ms-transition: background .2s linear;
-  transition: background .2s linear;
-}
-/* line 74, ../../scss/pages/main.scss */
-.nav-header.sticky {
-  padding: 0 50px;
-  background: #740901;
-  /*#fe4444; */
-}
-
-/* line 80, ../../scss/pages/main.scss */
-.main-nav {
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  line-height: 5em;
-}
-/* line 85, ../../scss/pages/main.scss */
-.main-nav ul {
-  overflow: hidden;
-  float: right;
-}
-/* line 90, ../../scss/pages/main.scss */
-.main-nav li {
-  display: inline-block;
-  margin: 0 18px;
-}
-/* line 94, ../../scss/pages/main.scss */
-.main-nav li a {
-  color: #f0f0f0;
-}
-/* line 97, ../../scss/pages/main.scss */
-.main-nav li a:hover {
-  color: #47525e;
-}
-
-/* line 104, ../../scss/pages/main.scss */
-.site-title {
-  float: left;
-  width: 80px;
-  height: 63px;
-  display: block;
-}
-
-/* line 111, ../../scss/pages/main.scss */
-.header-image {
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  height: 785px;
-  background: white url("../img/finance-img-placeholder.jpg");
-  background-size: cover;
-}
-
-/* line 121, ../../scss/pages/main.scss */
-.tint {
-  background-color: rgba(116, 10, 2, 0.7);
-  height: 100%;
-  z-index: 4;
-}
-
-/* line 128, ../../scss/pages/main.scss */
-.header-text {
-  background: transparent;
-  height: 820px;
-  position: fixed;
-  top: 335px;
-  z-index: 32;
-  width: 100%;
-}
-/* line 136, ../../scss/pages/main.scss */
-.header-text h1 {
-  font-size: 75px;
-  font-family: 'Novecento', sans-serif;
-  font-weight: 400;
-  line-height: 1;
-  text-transform: uppercase;
-  color: #ccc;
-  z-index: 1001;
-  letter-spacing: 2;
-}
-
-/* line 148, ../../scss/pages/main.scss */
-.content {
-  position: relative;
-  top: 785px;
-  height: 100%;
-  padding: 60px 0;
-  z-index: 50;
-  background: url("../img/whitey.png") #f0f0f0;
-  -webkit-animation: intro-content 2s forwards;
-  -moz-animation: intro-content 2s forwards;
-  -o-animation: intro-content 2s forwards;
-  -ms-animation: intro-content 2s forwards;
-  animation: intro-content 2s forwards;
-}
-
-/* line 162, ../../scss/pages/main.scss */
-.services {
-  padding: 40px 0;
-  margin-bottom: 60px;
-}
-/* line 166, ../../scss/pages/main.scss */
-.services h2 {
-  font-size: 42px;
-  font-weight: 300;
-  text-align: center;
-  margin-bottom: 60px;
-}
-
-/* line 174, ../../scss/pages/main.scss */
-#service-blurbs > div {
-  margin-bottom: 30px;
-  position: relative;
-}
-
-/* line 179, ../../scss/pages/main.scss */
-.service-icon {
-  -webkit-transition: all 0.25s ease-out;
-  -moz-transition: all 0.25s ease-out;
-  -o-transition: all 0.25s ease-out;
-  -ms-transition: all 0.25s ease-out;
-  transition: all 0.25s ease-out;
-}
-/* line 188, ../../scss/pages/main.scss */
-.service-icon.icon-left {
-  float: left;
-  margin-right: 20px;
-}
-/* line 193, ../../scss/pages/main.scss */
-.service-icon.icon-right {
-  float: right;
-  margin-left: 20px;
-}
-/* line 210, ../../scss/pages/main.scss */
-.service-icon:hover {
-  -webkit-filter: blur(2px);
-  opacity: 0.3;
-}
-
-/* line 216, ../../scss/pages/main.scss */
-.service-title {
-  display: none;
-  font-size: 16px;
-  font-family: 'Lobster', cursive;
-  position: absolute;
-  top: 10px;
-}
-/* line 223, ../../scss/pages/main.scss */
-.service-title.title-left {
-  left: 9px;
-}
-/* line 224, ../../scss/pages/main.scss */
-.service-title.title-right {
-  right: 1px;
-}
-
-/* line 228, ../../scss/pages/main.scss */
-.service-icon:hover + .service-title {
-  display: block;
-}
-
-/* line 232, ../../scss/pages/main.scss */
-footer {
-  background: #373d43 url("../img/bg.jpg");
-  color: #fff;
-  line-height: 1em;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding: 20px 40px;
-}
-/* line 242, ../../scss/pages/main.scss */
-footer .copyright {
-  padding: 25px 0 0;
-}
-/* line 248, ../../scss/pages/main.scss */
-footer .social-icons li {
-  display: inline-block;
-  margin-right: 10px;
-  text-indent: -9999px;
-}
+Backtrace:
+/Users/noberoi/Developer/bernoulli-finance/static/scss/pages/main.scss:254:in `transition'
+/Users/noberoi/Developer/bernoulli-finance/static/scss/pages/main.scss:254
+/usr/local/Cellar/ruby/1.9.3-p125/lib/ruby/gems/1.9.1/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:253:in `visit_mixin'
+/usr/local/Cellar/ruby/1.9.3-p125/lib/ruby/gems/1.9.1/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:37:in `visit'
+/usr/local/Cellar/ruby/1.9.3-p125/lib/ruby/gems/1.9.1/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/usr/local/Cellar/ruby/1.9.3-p125/lib/ruby/gems/1.9.1/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/usr/local/Cellar/ruby/1.9.3-p125/lib/ruby/gems/1.9.1/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:53:in `map'
+/usr/local/Cellar/ruby/1.9.3-p125/lib/ruby/gems/1.9.1/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/usr/local/Cellar/ruby/1.9.3-p125/lib/ruby/gems/1.9.1/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
+/usr/local/Cellar/ruby/1.9.3-p125/lib/ruby/gems/1.9.1/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
+/usr/local/Cellar/ruby/1.9.3-p125/lib/ruby/gems/1.9.1/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
+/usr/local/Cellar/ruby/1.9.3-p125/lib/ruby/gems/1.9.1/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/usr/local/Cellar/ruby/1.9.3-p125/lib/ruby/gems/1.9.1/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:320:in `visit_rule'
+/usr/local/Cellar/ruby/1.9.3-p125/lib/ruby/gems/1.9.1/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:37:in `visit'
+/usr/local/Cellar/ruby/1.9.3-p125/lib/ruby/gems/1.9.1/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/usr/local/Cellar/ruby/1.9.3-p125/lib/ruby/gems/1.9.1/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/usr/local/Cellar/ruby/1.9.3-p125/lib/ruby/gems/1.9.1/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:53:in `map'
+/usr/local/Cellar/ruby/1.9.3-p125/lib/ruby/gems/1.9.1/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/usr/local/Cellar/ruby/1.9.3-p125/lib/ruby/gems/1.9.1/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
+/usr/local/Cellar/ruby/1.9.3-p125/lib/ruby/gems/1.9.1/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
+/usr/local/Cellar/ruby/1.9.3-p125/lib/ruby/gems/1.9.1/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
+/usr/local/Cellar/ruby/1.9.3-p125/lib/ruby/gems/1.9.1/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/usr/local/Cellar/ruby/1.9.3-p125/lib/ruby/gems/1.9.1/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:320:in `visit_rule'
+/usr/local/Cellar/ruby/1.9.3-p125/lib/ruby/gems/1.9.1/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:37:in `visit'
+/usr/local/Cellar/ruby/1.9.3-p125/lib/ruby/gems/1.9.1/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/usr/local/Cellar/ruby/1.9.3-p125/lib/ruby/gems/1.9.1/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/usr/local/Cellar/ruby/1.9.3-p125/lib/ruby/gems/1.9.1/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:53:in `map'
+/usr/local/Cellar/ruby/1.9.3-p125/lib/ruby/gems/1.9.1/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/usr/local/Cellar/ruby/1.9.3-p125/lib/ruby/gems/1.9.1/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
+/usr/local/Cellar/ruby/1.9.3-p125/lib/ruby/gems/1.9.1/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
+/usr/local/Cellar/ruby/1.9.3-p125/lib/ruby/gems/1.9.1/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
+/usr/local/Cellar/ruby/1.9.3-p125/lib/ruby/gems/1.9.1/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/usr/local/Cellar/ruby/1.9.3-p125/lib/ruby/gems/1.9.1/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:320:in `visit_rule'
+/usr/local/Cellar/ruby/1.9.3-p125/lib/ruby/gems/1.9.1/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:37:in `visit'
+/usr/local/Cellar/ruby/1.9.3-p125/lib/ruby/gems/1.9.1/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/usr/local/Cellar/ruby/1.9.3-p125/lib/ruby/gems/1.9.1/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/usr/local/Cellar/ruby/1.9.3-p125/lib/ruby/gems/1.9.1/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:53:in `map'
+/usr/local/Cellar/ruby/1.9.3-p125/lib/ruby/gems/1.9.1/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/usr/local/Cellar/ruby/1.9.3-p125/lib/ruby/gems/1.9.1/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
+/usr/local/Cellar/ruby/1.9.3-p125/lib/ruby/gems/1.9.1/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
+/usr/local/Cellar/ruby/1.9.3-p125/lib/ruby/gems/1.9.1/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
+/usr/local/Cellar/ruby/1.9.3-p125/lib/ruby/gems/1.9.1/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/usr/local/Cellar/ruby/1.9.3-p125/lib/ruby/gems/1.9.1/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:128:in `visit_root'
+/usr/local/Cellar/ruby/1.9.3-p125/lib/ruby/gems/1.9.1/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:37:in `visit'
+/usr/local/Cellar/ruby/1.9.3-p125/lib/ruby/gems/1.9.1/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/usr/local/Cellar/ruby/1.9.3-p125/lib/ruby/gems/1.9.1/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:7:in `visit'
+/usr/local/Cellar/ruby/1.9.3-p125/lib/ruby/gems/1.9.1/gems/sass-3.2.12/lib/sass/tree/root_node.rb:20:in `render'
+/usr/local/Cellar/ruby/1.9.3-p125/lib/ruby/gems/1.9.1/gems/sass-3.2.12/lib/sass/engine.rb:315:in `_render'
+/usr/local/Cellar/ruby/1.9.3-p125/lib/ruby/gems/1.9.1/gems/sass-3.2.12/lib/sass/engine.rb:262:in `render'
+/usr/local/Cellar/ruby/1.9.3-p125/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:140:in `block (2 levels) in compile'
+/usr/local/Cellar/ruby/1.9.3-p125/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:126:in `timed'
+/usr/local/Cellar/ruby/1.9.3-p125/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:139:in `block in compile'
+/usr/local/Cellar/ruby/1.9.3-p125/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/logger.rb:45:in `red'
+/usr/local/Cellar/ruby/1.9.3-p125/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:138:in `compile'
+/usr/local/Cellar/ruby/1.9.3-p125/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:118:in `compile_if_required'
+/usr/local/Cellar/ruby/1.9.3-p125/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:103:in `block (2 levels) in run'
+/usr/local/Cellar/ruby/1.9.3-p125/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:101:in `each'
+/usr/local/Cellar/ruby/1.9.3-p125/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:101:in `block in run'
+/usr/local/Cellar/ruby/1.9.3-p125/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:126:in `timed'
+/usr/local/Cellar/ruby/1.9.3-p125/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:100:in `run'
+/usr/local/Cellar/ruby/1.9.3-p125/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/commands/watch_project.rb:147:in `recompile'
+/usr/local/Cellar/ruby/1.9.3-p125/lib/ruby/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/path.rb:73:in `call'
+/usr/local/Cellar/ruby/1.9.3-p125/lib/ruby/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/path.rb:73:in `run_callback'
+/usr/local/Cellar/ruby/1.9.3-p125/lib/ruby/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/path.rb:55:in `callback_action'
+/usr/local/Cellar/ruby/1.9.3-p125/lib/ruby/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/path.rb:35:in `update'
+/usr/local/Cellar/ruby/1.9.3-p125/lib/ruby/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/state/directory.rb:39:in `block in modified'
+/usr/local/Cellar/ruby/1.9.3-p125/lib/ruby/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/state/directory.rb:37:in `each'
+/usr/local/Cellar/ruby/1.9.3-p125/lib/ruby/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/state/directory.rb:37:in `modified'
+/usr/local/Cellar/ruby/1.9.3-p125/lib/ruby/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/state/directory.rb:18:in `refresh'
+/usr/local/Cellar/ruby/1.9.3-p125/lib/ruby/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/backends/rbfsevent.rb:30:in `block in temporary_multipath_handler'
+/usr/local/Cellar/ruby/1.9.3-p125/lib/ruby/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/backends/rbfsevent.rb:27:in `each'
+/usr/local/Cellar/ruby/1.9.3-p125/lib/ruby/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/backends/rbfsevent.rb:27:in `temporary_multipath_handler'
+/usr/local/Cellar/ruby/1.9.3-p125/lib/ruby/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/backends/rbfsevent.rb:17:in `block (2 levels) in run'
+/usr/local/Cellar/ruby/1.9.3-p125/lib/ruby/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/backends/rbfsevent.rb:16:in `each'
+/usr/local/Cellar/ruby/1.9.3-p125/lib/ruby/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/backends/rbfsevent.rb:16:in `block in run'
+/usr/local/Cellar/ruby/1.9.3-p125/lib/ruby/gems/1.9.1/gems/rb-fsevent-0.9.3/lib/rb-fsevent/fsevent.rb:43:in `call'
+/usr/local/Cellar/ruby/1.9.3-p125/lib/ruby/gems/1.9.1/gems/rb-fsevent-0.9.3/lib/rb-fsevent/fsevent.rb:43:in `run'
+/usr/local/Cellar/ruby/1.9.3-p125/lib/ruby/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/backends/rbfsevent.rb:20:in `run'
+/usr/local/Cellar/ruby/1.9.3-p125/lib/ruby/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/monitor.rb:26:in `run'
+/usr/local/Cellar/ruby/1.9.3-p125/lib/ruby/gems/1.9.1/gems/fssm-0.2.9/lib/fssm.rb:70:in `monitor'
+/usr/local/Cellar/ruby/1.9.3-p125/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/commands/watch_project.rb:87:in `perform'
+/usr/local/Cellar/ruby/1.9.3-p125/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/commands/base.rb:18:in `execute'
+/usr/local/Cellar/ruby/1.9.3-p125/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/commands/project_base.rb:19:in `execute'
+/usr/local/Cellar/ruby/1.9.3-p125/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
+/usr/local/Cellar/ruby/1.9.3-p125/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/exec/sub_command_ui.rb:15:in `run!'
+/usr/local/Cellar/ruby/1.9.3-p125/lib/ruby/gems/1.9.1/gems/compass-0.12.2/bin/compass:30:in `block in <top (required)>'
+/usr/local/Cellar/ruby/1.9.3-p125/lib/ruby/gems/1.9.1/gems/compass-0.12.2/bin/compass:44:in `call'
+/usr/local/Cellar/ruby/1.9.3-p125/lib/ruby/gems/1.9.1/gems/compass-0.12.2/bin/compass:44:in `<top (required)>'
+/usr/local/bin/compass:19:in `load'
+/usr/local/bin/compass:19:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Undefined mixin 'transition'.\A         on line 254 of /Users/noberoi/Developer/bernoulli-finance/static/scss/pages/main.scss, in `transition'\A         from line 254 of /Users/noberoi/Developer/bernoulli-finance/static/scss/pages/main.scss"; }

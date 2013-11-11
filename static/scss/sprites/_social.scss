@@ -5,12 +5,6 @@ $social-spacing: 5px;
 
 @import "icons/social/*.png";
 
-$social-sprite-dimensions: true;
-
 // http://compass-style.org/help/tutorials/spriting/
 // this generates a sprite containing the icon images, with theyre dimensions
 @include all-social-sprites(true);
-
-.small-icons { // overriding all sprites
-  @include resize-sprite-set($social-sprites, 60); // 40% sized
-}
