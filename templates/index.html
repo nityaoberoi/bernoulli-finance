@@ -4,19 +4,19 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bernoulli Finance</title>
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="/static/css/screen.css">
     <!-- fonts -->
     <link rel="stylesheet" href='http://fonts.googleapis.com/css?family=Raleway:400,200'>
     <link rel="stylesheet" href='http://fonts.googleapis.com/css?family=Varela'>
     <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Montserrat:400,700'>
+    <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Lobster&subset=all'>
 </head>
 <body class="landing-page">
     <header class="nav-header">
         <nav class="main-nav">
             <span class="site-title">
                 <a class="logo" href="/">
-                    <img src="/static/img/logo-icon.png" class="logo-image" width="80px" height="63px" />
+                    <img src="/static/img/logo-white-small.png" class="logo-image" width="163px" height="61px" />
                 </a>
             </span>
             <ul class="nav-links clear">
@@ -30,6 +30,13 @@
     <header class="header-image">
         <div class="tint"></div>
     </header>
+    <div class="header-text">
+        <div class="row">
+            <h1>Strategy.</h1>
+            <h1>Operations.</h1>
+            <h1>Analysis.</h1>
+        </div>
+    </div>
 
     <div class="content">
         <section class="services container">
@@ -42,26 +49,26 @@
                 </div>
                 <div id="service-blurbs" class="col-md-6">
                     <div class="strategy">
-                        <div class="service-icon icon-left strategy"></div>
-                        <h3> Strategy </h3>
+                        <div class="service-icon icon-left strategy"></div><h6 class="service-title title-left">Strategy</h6>
                         We create and support business planning processes for ventures so they know what to plan for in the near future and how to plan for the longer-term.
                     </div>
                     <div class="operations">
-                        <div class="service-icon icon-right operations"></div>
-                        <h3> Operations </h3>
+                        <div class="service-icon icon-right operations"></div><h6 class="service-title title-right">Operations</h6>
                          We develop easy-to-use, informative tracking tools that give companies the information they need to manage cash flow and improve operations in real time.
                     </div>
                     <div class="analysis">
-                        <div class="service-icon icon-left analysis"></div>
-                        <h3> Analysis </h3>
+                        <div class="service-icon icon-left analysis"></div><h6 class="service-title title-left">Analysis</h6>
                         We run the analytical engine to help validate the decisions that drive business operations. From pricing optimization to determining the right channels for growth, making the best use of cash resources to valuation for future investment, creating equity and compensation structures to developing hiring strategy – we have it all covered!
                     </div>
                 </div>
             </div>
         </section>
         <footer>
-            <div class="contact">
-                <ul class="social-icons">
+            <div class="copyright pull-left">
+                <span>&copy; Bernoulli Finance 2013</span>
+            </div>
+            <div class="contact pull-right">
+                <ul class="social-icons small-icons">
                     <li class="facebook">Facebook</li>
                     <li class="twitter">Twitter</li>
                     <li class="linkedin">LinkedIn</li>
@@ -81,7 +88,7 @@
         $('.content').waypoint(function(){
             nav.toggleClass('sticky');
         }, { offset: function() {
-            return nav.height() - 10;
+            return nav.height();
         }});
 
     });

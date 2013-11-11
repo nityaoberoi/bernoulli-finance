@@ -1,8 +1,8 @@
 @font-face {
-  font-family: 'Tangerine';
+  font-family: 'Novecento';
   font-style: normal;
   font-weight: normal;
-  src: local('Tangerine'), url('http://example.com/tangerine.ttf') format('truetype');
+  src: local('Novecento'), url('../fonts/novecento.ttf') format('truetype');
 }
 
 body {
@@ -72,12 +72,8 @@ h1 {
     transition: background .2s linear;
 
     &.sticky {
-        background: #fe4444;
-        -webkit-transition: background .2s linear;
-        -moz-transition: background .2s linear;
-        -o-transition: background .2s linear;
-        -ms-transition: background .2s linear;
-        transition: background .2s linear;
+        padding: 0 50px;
+        background: #740901; /*#fe4444; */
     }
 }
 
@@ -99,7 +95,7 @@ h1 {
             color: #f0f0f0;
 
             &:hover {
-                color: #aaa;
+                color: #47525e;
             }
         }
     }
@@ -117,7 +113,7 @@ h1 {
     top: 0;
     right: 0;
     left: 0;
-    height: 765px;
+    height: 785px;
     background: #fff url('../img/finance-img-placeholder.jpg');
     background-size: cover;
 }
@@ -130,29 +126,32 @@ h1 {
 
 
 .header-text {
-    margin: 400px auto;
-    width: 960px;
-    padding: 100px 0;
+    background: transparent;
+    height: 820px;
+    position: fixed;
+    top: 335px;
+    z-index: 32;
+    width: 100%;
 
     h1 {
-        font-size: 45px;
-        font-family: 'Montserrat', sans-serif;
+        font-size: 75px;
+        font-family: 'Novecento', sans-serif;
+        font-weight: 400;
+        line-height: 1;
         text-transform: uppercase;
-        color: #fff;
-        font-weight: 500;
+        color: #ccc;
+        z-index: 1001;
+        letter-spacing: 2;
     }
-}
-
-@media(min-width: 768px) {
 }
 
 .content {
     position: relative;
-    top: 765px;
+    top: 785px;
     height: 100%;
     padding: 60px 0;
-    z-index: 30;
-    background: #f0f0f0 no-repeat; /* url('../img/mask.png') */
+    z-index: 50;
+    background: url('../img/whitey.png') #f0f0f0;
     -webkit-animation: intro-content 2s forwards;
     -moz-animation: intro-content 2s forwards;
     -o-animation: intro-content 2s forwards;
@@ -172,7 +171,19 @@ h1 {
     }
 }
 
+#service-blurbs > div {
+    margin-bottom: 30px;
+    position: relative;
+}
+
 .service-icon {
+
+    -webkit-transition: all 0.25s ease-out;
+    -moz-transition: all 0.25s ease-out;
+    -o-transition: all 0.25s ease-out;
+    -ms-transition: all 0.25s ease-out;
+    transition: all 0.25s ease-out;
+
 
     &.icon-left {
         float: left;
@@ -189,30 +200,56 @@ h1 {
     }
 
     &.operations {
-        @extend .services-analysis-70;
+        @extend .services-operations1-70;
     }
 
     &.analysis {
         @extend .services-analysis-70;
     }
+
+    &:hover {
+        -webkit-filter: blur(2px);
+        opacity: 0.3;
+    }
+}
+
+.service-title {
+    display: none;
+    font-size: 16px;
+    font-family: 'Lobster', cursive;
+    position: absolute;
+    top: 10px;
+
+    &.title-left {left: 9px;}
+    &.title-right {right: 1px;}
+
+}
+
+.service-icon:hover + .service-title {
+    display: block;
 }
 
 footer {
-    background: #47525e;
+    background: #373d43;
     color: #fff;
-    padding: 0 20px;
-    line-height: 5em;
+    line-height: 1em;
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
+    padding: 20px 40px;
+
+    .copyright {
+        padding: 25px 0 0;
+    }
 
     .social-icons {
 
         li {
             display: inline-block;
             margin-right: 10px;
-            text-indent: -500px;
+            text-indent: -9999px;
+
 
             &.facebook {
                 @extend .social-facebook;
@@ -224,6 +261,10 @@ footer {
 
             &.linkedin {
                 @extend .social-linkedin;
+            }
+
+            &.email {
+                @extend .social-mail;
             }
         }
     }
