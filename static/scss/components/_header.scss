@@ -14,7 +14,7 @@
 
     &.sticky {
         padding: 0 50px;
-        background: #740901; /*#fe4444; */
+        background: $dark-red;
     }
 }
 
@@ -26,6 +26,7 @@
     ul {
         overflow: hidden;
         float: right;
+        margin-bottom: 0;
     }
 
     li {
@@ -33,12 +34,12 @@
         margin: 0 18px;
 
         a {
-            color: #f0f0f0;
+            color: $gray-lighter;
 
             &:hover {
-                color: #333;
+                color: $gray-light;
                 padding-bottom: 5px;
-                border-bottom: 2px solid #333;
+                border-bottom: 2px solid $gray-light;
             }
         }
     }
@@ -53,11 +54,11 @@
 
 .header-image {
     position: fixed;
-    top: 0;
+    top: -50px;
     right: 0;
     left: 0;
     height: 800px;
-    background: #fff url('../img/finance-img-placeholder.jpg');
+    background-color: #fff;
     background-size: cover;
 }
 
@@ -67,12 +68,11 @@
     z-index: 4;
 }
 
-
 .header-text {
     background: transparent;
     height: 820px;
     position: fixed;
-    top: 335px;
+    top: 305px;
     left: 50px;
     z-index: 32;
     width: 100%;
@@ -83,7 +83,7 @@
         font-weight: 400;
         line-height: 1;
         text-transform: uppercase;
-        color: #ccc;
+        color: $gray-lighter;
         z-index: 1001;
         letter-spacing: 2;
     }

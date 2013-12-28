@@ -1,0 +1,133 @@
+.landing-page {
+
+    .header-image {
+        background-image: url('../img/businessman_trend.jpg');
+    }
+
+
+}
+
+section {
+    padding: 40px 0;
+
+    h3 {
+        color: $dark-red;
+    }
+
+    &.services {
+        background-image: url('../img/bg_gray_sand.png');
+        background-color: $gray-dark;
+        color: $gray-lighter;
+
+        .col-sm-4 {
+            text-align: center;
+            padding: 20px 0;
+
+            h3 {
+                margin-top: 0;
+                color: $gray-lighter;
+            }
+
+            a {
+                color: $gray-light;
+
+                &:hover {
+                    color: $dark-red;
+
+                    .arrow {
+                        padding-left: 7px;
+                    }
+                }
+            }
+        }
+
+        .service {
+            display: inline-block;
+        }
+
+        .strategy {
+            @extend .services-strategy-64;
+        }
+
+        .operations {
+            @extend .services-operations-64;
+        }
+
+        .analytics {
+            @extend .services-analytics-64;
+        }
+    }
+
+    &.you {
+        // color: $dark-red;
+        // text-align: center;
+        // font-style: italic;
+        background-color: #fff;
+        background-image: url('../img/bg_debut_light.png');
+        margin-bottom: 60px;
+    }
+
+}
+
+
+
+#service-blurbs > div {
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.service-icon {
+
+    -webkit-transition: all 0.25s ease-out;
+    -moz-transition: all 0.25s ease-out;
+    -o-transition: all 0.25s ease-out;
+    -ms-transition: all 0.25s ease-out;
+    transition: all 0.25s ease-out;
+
+
+    &.icon-left {
+        float: left;
+        margin-right: 20px;
+    }
+
+    &.icon-right {
+        float: right;
+        margin-left: 20px;
+    }
+
+    &.strategy {
+        @extend .services-strategy-70;
+    }
+
+    &.operations {
+        @extend .services-operations1-70;
+    }
+
+    &.analytics {
+        @extend .services-analysis-70;
+    }
+
+    &:hover {
+        -webkit-filter: blur(2px);
+        opacity: 0.3;
+    }
+}
+
+.service-title {
+    display: none;
+    font-size: 16px;
+    font-family: 'Lobster', cursive;
+    position: absolute;
+    top: 10px;
+
+    &.title-left {left: 9px;}
+    &.title-right {right: 1px;}
+
+}
+
+.service-icon:hover + .service-title {
+    display: block;
+}
+
+
+

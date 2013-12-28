@@ -1,7 +1,5 @@
-// @import 'reset';
-
 @import "compass";
-@import "compass/reset";
+// @import "compass/reset";
 @import "compass/css3/transition";
 
 @import "variables";
@@ -10,6 +8,7 @@
 @import "components/header";
 @import "components/footer";
 
+@import "pages/base";
 @import "pages/main";
 @import "pages/under_construction";
 

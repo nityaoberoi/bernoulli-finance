@@ -11,12 +11,12 @@
     <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Montserrat:400,700'>
     <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Lobster&subset=all'>
 </head>
-<body class="landing-page">
+<body class="{% block body_classes %}landing-page{% endblock %}">
     <header class="nav-header">
         <nav class="main-nav">
             <span class="site-title">
                 <a class="logo" href="/">
-                    <img src="/static/img/logo-icon-white.png" class="logo-image" width="100px" height="75px" />
+                    <img src="/static/img/logo-icon-white.png" class="logo-image" width="66px" height="50px" />
                 </a>
             </span>
             <ul class="nav-links clear">
@@ -32,9 +32,7 @@
     </header>
     <div class="header-text">
         <div class="row">
-            <h1>Strategy.</h1>
-            <h1>Operations.</h1>
-            <h1>Analysis.</h1>
+            {% block header_text %}{% endblock %}
         </div>
     </div>
 
@@ -56,6 +54,7 @@
         </footer>
     </div>
 
+
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 <script src="/static/js/waypoints.min.js"></script>
 <script>
@@ -71,6 +70,7 @@
 
     });
 </script>
+{% block extra_js %}{% endblock %}
 
 </body>
 </html>

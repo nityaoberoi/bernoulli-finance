@@ -1,28 +1,85 @@
 {% extends "base.html" %}
 
+{% block header_text %}
+    <h1>Operations.</h1>
+    <h1>Strategy.</h1>
+    <h1>Analytics.</h1>
+{% endblock %}
+
 {% block body %}
-<section class="services container">
+<section class="we">
+<div class="container">
     <div class="row">
-        <h2 class="content-header">We help <strong>ecologically responsible fast growing ventures</strong> solve real-life problems of quality and accessibility.</h2>
-    </div>
-    <div class="row content-detail">
-        <div id="mission" class="col-md-6">
-            We are a financial services consultancy.... We do this by providing financial strategy, operations, and analysis services that keep our clients strategically focused, organized, and consistently moving forward.
+        <div class="col-md-6">
+            <h3>Who we are</h3>
+            <p>
+                We are a financial services consultancy, <strong>passionate</strong> about helping <strong>ecologically-minded ventures</strong> achieve <strong>success</strong>.
+            </p>
+            <h3>How we do this</h3>
+            <p>
+                We will start with a base financial review of your company, using this data to solve immediate day-to-day issues and to create tools to help increase revenue, decrease costs, and manage overhead.
+            </p>
+            <p>
+                We then start tracking your ongoing performance and develop a personalized financial roadmap that streamlines daily operations, makes the best use of available resources, and sets strategic goals that will help you arrive at your envisioned destination.
+            </p>
         </div>
-        <div id="service-blurbs" class="col-md-6">
-            <div class="strategy">
-                <div class="service-icon icon-left strategy"></div><h6 class="service-title title-left">Strategy</h6>
-                We create and support business planning processes for ventures so they know what to plan for in the near future and how to plan for the longer-term.
-            </div>
-            <div class="operations">
-                <div class="service-icon icon-right operations"></div><h6 class="service-title title-right">Operations</h6>
-                 We develop easy-to-use, informative tracking tools that give companies the information they need to manage cash flow and improve operations in real time.
-            </div>
-            <div class="analysis">
-                <div class="service-icon icon-left analysis"></div><h6 class="service-title title-left">Analysis</h6>
-                We run the analytical engine to help validate the decisions that drive business operations. From pricing optimization to determining the right channels for growth, making the best use of cash resources to valuation for future investment, creating equity and compensation structures to developing hiring strategy – we have it all covered!
-            </div>
+        <div class="col-md-6">
+            <img src="static/img/ecotree.png" width="600" height="552" />
         </div>
     </div>
+</div>
+</section>
+<section class="services">
+<div class="container">
+    <div class="row">
+        <div class="col-sm-4">
+            <span class="service operations"></span>
+            <h3>Operations</h3>
+            <p>
+                We offer assistance with bookkeeping and accounting and help build and manage your internal financial operations.
+
+            </p>
+            <a href="/services/">Learn more <span class="arrow">&#x2192;</span></a>
+        </div>
+        <div class="col-sm-4">
+            <span class="service analytics"></span>
+            <h3>Analytics</h3>
+            <p>
+                Once we’ve gathered accurate data and created tracking methods for your company, we analyze that information to help you make optimal business decisions for immediate implementation.
+                <!-- We analyze your data and create tracking methods to provide reporting services such as margin analysis, pricing optimization and company valuation. -->
+            </p>
+            <a href="/services/">Learn more <span class="arrow">&#x2192;</span></a>
+        </div>
+        <div class="col-sm-4">
+            <span class="service strategy"></span>
+            <h3>Strategy</h3>
+            <p>
+                So that you are prepared for what the future will bring, we work with you to chart your long-term course of action.
+            </p>
+            <a href="/services/">Learn more <span class="arrow">&#x2192;</span></a>
+        </div>
+    </div>
+</div>
+</section>
+<section class="you">
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <img src="static/img/sample-clients.png" width="380" height="253" style="padding-top:20px;" />
+        </div>
+        <div class="col-md-6">
+            <h3>Our clients</h3>
+            <p>
+                You, our clients, are creating solutions to problems that affect communities and the environments they inhabit. You are growing fast, but perhaps not fast enough.
+            </p>
+            <p>
+                You’ve been meaning to get your finances in order for a while and want to take your venture to the next level – achieving higher profitability by improving efficiency, expanding operations, and bringing in investment.
+            </p>
+            <p>
+                 You are not ready for an in-house finance team but recognize the need for financial support that keeps you organized, focused, and continually moving forward.
+            </p>
+        </div>
+    </div>
+</div>
 </section>
 {% endblock %}
