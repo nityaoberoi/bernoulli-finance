@@ -2,28 +2,60 @@
 
 {% block body_classes %}services{% endblock %}
 
+{% block header_text %}
+    <h3>Our range of services can meet you where you are.</h3>
+{% endblock %}
+
 {% block body %}
-<section class="services container">
-    <div class="row">
-        <h2>Operations</h2>
-        <div>
-            We offer assistance with bookkeeping and accounting, building and managing your internal financial operations so bills get paid and revenue gets collected. To give you the information you need to manage your cash flow and improve your operations in real time, we develop easy-to-use, informative tracking tools. Whether your ultimate goal is accounting self-sufficiency or continued external support, we can help.
+<section class="medium">
+    <div class="container">
+        <div class="col-sm-8">
+            <h2>Operations</h2>
+            <p>
+                We offer assistance with bookkeeping and accounting, building and managing your internal financial operations so bills get paid and revenue gets collected. To give you the information you need to manage your cash flow and improve your operations in real time, we develop easy-to-use, informative tracking tools. Whether your ultimate goal is accounting self-sufficiency or continued external support, we can help.
+            </p>
+        </div>
+        <div class="col-sm-4">
+            <span class="operations"></span>
         </div>
     </div>
-    <div class="row">
-        <h2>Analytics</h2>
-        <div>
-            Once we’ve gathered accurate data and created tracking methods for your company, we analyze that information to help you make optimal business decisions for immediate implementation. To that end, we provide a full suite of analysis and reporting services:
-
+</section>
+<section class="dark">
+    <div class="container">
+        <div class="col-sm-4">
+            <span class="analytics"></span>
+        </div>
+        <div class="col-sm-8">
+            <h2>Analytics</h2>
+            <p>
+                Once we’ve gathered accurate data and created tracking methods for your company, we analyze that information to help you make optimal business decisions for immediate implementation. To that end, we provide a full suite of analysis and reporting services including:
+                <div class="cols">
+                    <ul>
+                        <li>Trends and Margin Analyses</li>
+                        <li>Cost-Benefit Analyses</li>
+                        <li>Company Valuation</li>
+                        <li>Pricing and Channel Optimization</li>
+                        <li>Equity &amp; Compensation Structuring</li>
+                        <li>Operational Planning</li>
+                        <li>Inventory Management</li>
+                        <li>Costs Streamlining</li>
+                    </ul>
+                </div>
+            </p>
         </div>
     </div>
-    <div class="row">
-        <h2>Strategy</h2>
-        <div>
-            We create and support your business planning process so you know what the near future may bring and how to chart your long-term course of action. We develop financial roadmaps – budgets & forecasts, detailed financial plans, investment strategies – to minimize operational surprises and help you build a scalable and viable enterprise.
+</section>
+<section class="light">
+    <div class="container">
+        <div class="col-sm-8">
+            <h2>Strategy</h2>
+            <p>
+                So that you are prepared for what the future will bring, we work with you to chart your long-term course of action. We translate your business goals into a financial roadmap, developing annual budgets &amp; forecasts, detailed multi-year financial projections, and ongoing investment strategies. Our tools enable you to minimize operational surprises, support sustained growth, and build a viable and lasting enterprise.
+            </p>
+        </div>
+        <div class="col-sm-4">
+            <span class="strategy"></span>
         </div>
     </div>
-
-
 </section>
 {% endblock %}

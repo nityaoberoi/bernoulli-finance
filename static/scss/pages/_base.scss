@@ -1,10 +1,9 @@
 body {
-    // font-family: 'Varela', sans-serif;
     font-family: $font-family-base;
     font-size: $font-size-base;
     line-height: 1.5em;
     -webkit-font-smoothing: antialiased;
-    background: #f0f0f0;
+    background: $gray-lighter;
 }
 
 a {
@@ -22,17 +21,16 @@ a {
 
 h1, h2, h3, h4, h5, h6 {
     line-height: 2em;
-    font-weight: 300;
+}
+
+h1, h2, h3 {
+    font-family: $font-family-serif;
 }
 
 p {
     line-height: 1.6;
     margin-bottom: 18px;
 }
-
-// h1 {
-//     font-size: 34px;
-// }
 
 .clear {
     zoom: 1;
@@ -61,12 +59,45 @@ p {
     position: relative;
     top: 800px;
     height: 100%;
-    padding: 40px 0;
+    padding: 0 0 20px 0;
     z-index: 50;
-    background: url('../img/whitey.png') #f0f0f0;
-    -webkit-animation: intro-content 2s forwards;
-    -moz-animation: intro-content 2s forwards;
-    -o-animation: intro-content 2s forwards;
-    -ms-animation: intro-content 2s forwards;
-    animation: intro-content 2s forwards;
+    background: transparent;
+}
+
+section {
+
+    padding: 40px 0;
+
+    &.light {
+        background-color: #fff;
+        background-image: url('../img/bg-groovepaper.png');
+
+        h1, h2 {
+            color: $dark-red;
+        }
+    }
+
+    &.medium {
+        background-color: $gray-lighter;
+        background-image: url('../img/whitey.png');
+
+        h1, h2 {
+            color: $dark-red;
+        }
+    }
+
+    &.dark {
+        background-color: $gray-dark;
+        background-image: url('../img/bg-gray-sand.png');
+        color: $gray-lighter;
+    }
+
+    &:nth-last-child(2) {
+        margin-bottom: 80px;
+    }
+}
+
+.quote {
+    font-family: $font-quote;
+    font-size: 32px;
 }

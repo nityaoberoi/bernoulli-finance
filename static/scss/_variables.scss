@@ -10,9 +10,17 @@
   src: local('Novecento'), url('../fonts/novecento.ttf') format('truetype');
 }
 
+@font-face {
+  font-family: 'Prociono';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Prociono'), url('../fonts/prociono.ttf') format('truetype');
+}
+
 // Global values
 // --------------------------------------------------
 $dark-red:              #740901;
+$bright-red:            #cc0e00;
 
 // Grays
 // -------------------------
@@ -21,7 +29,7 @@ $dark-red:              #740901;
 $gray-dark:              lighten(#000, 20%);   // #333
 //$gray:                   lighten(#000, 33.5%); // #555
 $gray-light:             #b0a6a6;   // #999
-$gray-lighter:           #f0f0f0;
+$gray-lighter:           #eeeeee;
 
 
 // Brand colors
@@ -48,10 +56,12 @@ $gray-lighter:           #f0f0f0;
 // Typography
 // -------------------------
 
-$font-family-sans-serif:  "Gill Sans W04 Book","Helvetica Neue",Helvetica,Arial,sans-serif;
-$font-family-serif:       Georgia, "Times New Roman", Times, serif;
+// $font-family-sans-serif:  "Gill Sans W04 Book","Helvetica Neue",Helvetica,Arial,sans-serif;
+$font-family-sans-serif:  'Source Sans Pro', 'Helvetica Neue', Helvetica, Helvetica, Arial, sans-serif;
+$font-family-serif:       'Prociono',Georgia,Cambria,"Times New Roman",Times,serif;
 //$font-family-monospace:   Monaco, Menlo, Consolas, "Courier New", monospace;
 $font-family-base:        $font-family-sans-serif;
+$font-quote:              $font-family-serif;
 
 $font-size-base:          18px;
 //$font-size-large:         ceil($font-size-base * 1.25); // ~18px

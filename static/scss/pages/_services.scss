@@ -1,0 +1,63 @@
+.services {
+
+    .header-text {
+        top: 25%;
+        right: 34%;
+
+        h3 {
+            // background-color: rgba(116, 10, 2, 0.4);
+            background-color: rgba(34, 34, 34, 0.7);
+            border-radius: 250px;
+            padding: 60px;
+            text-align: center;
+            width: 350px;
+            height: 350px;
+        }
+    }
+
+    .header-image {
+        background-image: url('../img/sample-services.jpg');
+    }
+
+    .tint {
+        // background-color: rgba(34, 34, 34, 0.7);
+        background-color: rgba(116, 10, 2, 0.7);
+    }
+
+    h2 {
+        margin-top: 0;
+    }
+
+    .operations {
+        display: block;
+        margin: auto;
+        @extend .services-operations-256;
+    }
+
+    .analytics {
+        display: block;
+        margin: auto;
+        @extend .services-analytics-256;
+    }
+
+    .strategy {
+        display: block;
+        margin: auto;
+        @extend .services-strategy-256;
+    }
+
+    .cols {
+        -moz-column-count: 2;
+        -moz-column-gap: 20px;
+        -webkit-column-count: 2;
+        -webkit-column-gap: 20px;
+        column-count: 2;
+        column-gap: 20px;
+
+        ul {
+            -webkit-padding-start: 20px;
+        }
+    }
+
+
+}

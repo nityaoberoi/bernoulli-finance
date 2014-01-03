@@ -5,7 +5,7 @@
     right: 0;
     top: 0;
     background: transparent;
-    padding: 20px 50px 0;
+    padding: 10px 50px 0;
     -webkit-transition: background .2s linear;
     -moz-transition: background .2s linear;
     -o-transition: background .2s linear;
@@ -21,12 +21,13 @@
 .main-nav {
     text-transform: uppercase;
     letter-spacing: 2px;
-    line-height: 5em;
+    line-height: 4em;
 
     ul {
         overflow: hidden;
         float: right;
         margin-bottom: 0;
+        padding-top: 10px;
     }
 
     li {
@@ -47,44 +48,54 @@
 
 .site-title {
     float: left;
-    width: 80px;
-    height: 63px;
     display: block;
+
+    .logo {
+        display: block;
+        padding-bottom: 9px;
+    }
 }
 
 .header-image {
     position: fixed;
-    top: -50px;
     right: 0;
     left: 0;
     height: 800px;
     background-color: #fff;
     background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
 }
 
 .tint {
-    background-color: rgba(116, 10, 2, 0.7);
     height: 100%;
     z-index: 4;
 }
 
 .header-text {
     background: transparent;
-    height: 820px;
     position: fixed;
+    text-align: right;
     top: 305px;
-    left: 50px;
+    right: 60px;
     z-index: 32;
     width: 100%;
 
     h1 {
-        font-size: 75px;
+        color: $gray-lighter;
         font-family: 'Novecento', sans-serif;
+        font-size: 65px;
         font-weight: 400;
         line-height: 1;
         text-transform: uppercase;
-        color: $gray-lighter;
         z-index: 1001;
-        letter-spacing: 2;
+        display: inline-block;
+        margin: 13px 0;
+        text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.65);
+    }
+
+    h3 {
+        color: $gray-lighter;
+        display: inline-block;
     }
 }
