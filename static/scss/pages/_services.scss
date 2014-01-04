@@ -1,49 +1,55 @@
 .services {
 
+    a {
+        color: inherit;
+    }
+
     .header-text {
         top: 25%;
-        right: 34%;
+        right: 39%;
 
         h3 {
-            // background-color: rgba(116, 10, 2, 0.4);
             background-color: rgba(34, 34, 34, 0.7);
             border-radius: 250px;
-            padding: 60px;
+            padding: 60px 40px;
             text-align: center;
-            width: 350px;
-            height: 350px;
+            width: 375px;
+            height: 375px;
         }
     }
 
     .header-image {
-        background-image: url('../img/sample-services.jpg');
+        background-image: url('../img/header/spice-market.jpg');
     }
 
     .tint {
-        // background-color: rgba(34, 34, 34, 0.7);
         background-color: rgba(116, 10, 2, 0.7);
     }
 
     h2 {
         margin-top: 0;
+        text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.65);
     }
 
-    .operations {
-        display: block;
-        margin: auto;
-        @extend .services-operations-256;
+    .analytics .icon-section {
+        margin-top: 35px;
     }
 
-    .analytics {
+    .icon {
         display: block;
         margin: auto;
-        @extend .services-analytics-256;
-    }
 
-    .strategy {
-        display: block;
-        margin: auto;
-        @extend .services-strategy-256;
+        &.icon-operations {
+            @extend .services-operations-256;
+        }
+
+        &.icon-analytics {
+            @extend .services-analytics-256;
+        }
+
+        &.icon-strategy {
+            @extend .services-strategy-256;
+        }
     }
 
     .cols {

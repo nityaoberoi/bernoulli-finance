@@ -24,12 +24,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1, h2, h3 {
-    font-family: $font-family-serif;
+    // font-family: $font-family-serif;
 }
 
 p {
-    line-height: 1.6;
-    margin-bottom: 18px;
+    line-height: 1.8;
+    margin: 20px 0;
 }
 
 .clear {
@@ -66,7 +66,7 @@ p {
 
 section {
 
-    padding: 40px 0;
+    padding: 50px 0;
 
     &.light {
         background-color: #fff;
