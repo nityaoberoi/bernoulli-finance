@@ -1,0 +1,25 @@
+.about {
+
+    .header-image {
+        // background-image: url('../img/profile.jpg');
+    }
+
+    .tint {
+        background-color: rgba(116, 10, 2, 0.7);
+    }
+
+    .profile {
+        height: 800px;
+        background-image: url('../img/profile.jpg');
+        background-position: 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+    }
+
+    .about-image {
+        float: left;
+        padding: 50px 10px;
+    }
+}

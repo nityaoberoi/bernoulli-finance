@@ -7754,26 +7754,35 @@ td.visible-print {
   position: fixed;
   right: 0;
   left: 0;
-  height: 800px;
-  background-color: #fff;
-  background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
+  height: 900px;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
 }
 
-/* line 70, ../scss/components/_header.scss */
+@media (min-width: 1200px) {
+  /* line 73, ../scss/components/_header.scss */
+  .header-image {
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+  }
+}
+/* line 80, ../scss/components/_header.scss */
 .tint {
   height: 100%;
   z-index: 4;
 }
 
-/* line 75, ../scss/components/_header.scss */
+/* line 85, ../scss/components/_header.scss */
 .header-text {
   background: transparent;
   position: fixed;
   z-index: 32;
 }
-/* line 80, ../scss/components/_header.scss */
+/* line 90, ../scss/components/_header.scss */
 .header-text h1 {
   color: #eeeeee;
   font-family: 'Novecento', sans-serif;
@@ -7786,7 +7795,7 @@ td.visible-print {
   margin: 13px 0;
   text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.65);
 }
-/* line 93, ../scss/components/_header.scss */
+/* line 103, ../scss/components/_header.scss */
 .header-text h3 {
   color: #eeeeee;
   display: inline-block;
@@ -7930,8 +7939,8 @@ section:nth-last-child(2) {
 
 /* line 3, ../scss/pages/_main.scss */
 .landing-page .header-image {
-  background-image: url("../img/header/sample-businessman-field.jpg");
-  top: -100px;
+  background-image: url("../img/header/businessman-grass.jpg");
+  top: -50px;
 }
 /* line 11, ../scss/pages/_main.scss */
 .landing-page .header-text {
@@ -8005,6 +8014,26 @@ section:nth-last-child(2) {
   text-align: center;
 }
 
+/* line 7, ../scss/pages/_about.scss */
+.about .tint {
+  background-color: rgba(116, 10, 2, 0.7);
+}
+/* line 11, ../scss/pages/_about.scss */
+.about .profile {
+  height: 800px;
+  background-image: url("../img/profile.jpg");
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+}
+/* line 21, ../scss/pages/_about.scss */
+.about .about-image {
+  float: left;
+  padding: 50px 10px;
+}
+
 /* line 3, ../scss/pages/_services.scss */
 .services a {
   color: inherit;
@@ -8012,40 +8041,41 @@ section:nth-last-child(2) {
 /* line 7, ../scss/pages/_services.scss */
 .services .header-text {
   top: 25%;
-  right: 39%;
+  right: 37%;
 }
 /* line 11, ../scss/pages/_services.scss */
 .services .header-text h3 {
   background-color: rgba(34, 34, 34, 0.7);
   border-radius: 250px;
-  padding: 60px 40px;
+  padding: 60px 30px;
   text-align: center;
-  width: 375px;
-  height: 375px;
+  width: 350px;
+  height: 350px;
 }
 /* line 21, ../scss/pages/_services.scss */
 .services .header-image {
   background-image: url("../img/header/spice-market.jpg");
+  top: -50px;
 }
-/* line 25, ../scss/pages/_services.scss */
+/* line 26, ../scss/pages/_services.scss */
 .services .tint {
   background-color: rgba(116, 10, 2, 0.7);
 }
-/* line 29, ../scss/pages/_services.scss */
+/* line 30, ../scss/pages/_services.scss */
 .services h2 {
   margin-top: 0;
   text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.65);
 }
-/* line 34, ../scss/pages/_services.scss */
+/* line 35, ../scss/pages/_services.scss */
 .services .analytics .icon-section {
   margin-top: 35px;
 }
-/* line 38, ../scss/pages/_services.scss */
+/* line 39, ../scss/pages/_services.scss */
 .services .icon {
   display: block;
   margin: auto;
 }
-/* line 55, ../scss/pages/_services.scss */
+/* line 56, ../scss/pages/_services.scss */
 .services .cols {
   -moz-column-count: 2;
   -moz-column-gap: 20px;
@@ -8054,14 +8084,14 @@ section:nth-last-child(2) {
   column-count: 2;
   column-gap: 20px;
 }
-/* line 63, ../scss/pages/_services.scss */
+/* line 64, ../scss/pages/_services.scss */
 .services .cols ul {
   -webkit-padding-start: 20px;
 }
 
 /* line 3, ../scss/pages/_clients.scss */
 .clients .header-text {
-  top: 36%;
+  top: 30%;
   right: 43%;
 }
 /* line 7, ../scss/pages/_clients.scss */
@@ -8075,37 +8105,142 @@ section:nth-last-child(2) {
 }
 /* line 18, ../scss/pages/_clients.scss */
 .clients .header-image {
-  background-image: url("../img/header/sample-peanut-butter.jpg");
+  background-image: url("../img/header/pbjelly.jpg");
+  top: -100px;
 }
-/* line 22, ../scss/pages/_clients.scss */
+/* line 23, ../scss/pages/_clients.scss */
 .clients .tint {
   background-color: rgba(20, 20, 20, 0.7);
 }
-/* line 28, ../scss/pages/_clients.scss */
+/* line 29, ../scss/pages/_clients.scss */
 .clients .text-section .image-col {
   padding-top: 45px;
 }
-/* line 35, ../scss/pages/_clients.scss */
-.clients .our-clients h3 {
+/* line 36, ../scss/pages/_clients.scss */
+.clients .client-section h3 {
   word-spacing: 5px;
   margin-top: 0;
   color: #eeeeee;
   text-align: center;
   text-shadow: 0px 3px 2px rgba(0, 0, 0, 0.65);
 }
-/* line 43, ../scss/pages/_clients.scss */
-.clients .our-clients li {
-  background-image: url("../img/clients-bg.png");
-  background-repeat: no-repeat;
+/* line 44, ../scss/pages/_clients.scss */
+.clients .client-section .clients-list {
+  margin: 20px 0 0 0;
+  padding: 0;
+  list-style: none;
+  display: block;
+  text-align: center;
+  width: 100%;
+}
+/* line 53, ../scss/pages/_clients.scss */
+.clients .client-section .clients-list:after, .clients .client-section .clients-list .client-logo:before {
+  content: '';
+  display: table;
+}
+/* line 58, ../scss/pages/_clients.scss */
+.clients .client-section .clients-list:after {
+  clear: both;
+}
+/* line 62, ../scss/pages/_clients.scss */
+.clients .client-section .clients-list li {
+  background-image: url("../img/pattern.png");
   width: 180px;
   height: 180px;
-  text-indent: -9999px;
-  float: left;
+  display: inline-block;
+  margin: 20px;
   overflow: hidden;
+  border-radius: 50%;
+  background-color: #333;
 }
-/* line 52, ../scss/pages/_clients.scss */
-.clients .our-clients li:not(:last-child) {
-  margin-right: 40px;
+/* line 73, ../scss/pages/_clients.scss */
+.clients .client-section .clients-list .client-logo {
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+  -webkit-transition: all, 0.4s, ease-in-out;
+  transition: all, 0.4s, ease-in-out;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  cursor: default;
+  box-shadow: inset 0 0 0 16px rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.1);
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+/* line 90, ../scss/pages/_clients.scss */
+.clients .client-section .clients-list .client-logo:hover {
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1), 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+/* line 95, ../scss/pages/_clients.scss */
+.clients .client-section .clients-list .client-logo:hover .client-info p {
+  opacity: 1;
+}
+/* line 100, ../scss/pages/_clients.scss */
+.clients .client-section .clients-list .client-logo.coco-delice {
+  background-image: url("../img/client-logos/coco-delice.png");
+  background-position: 30% 40%;
+}
+/* line 105, ../scss/pages/_clients.scss */
+.clients .client-section .clients-list .client-logo.the-sili-co {
+  background-image: url("../img/client-logos/coco-delice.png");
+  background-position: 30% 40%;
+}
+/* line 110, ../scss/pages/_clients.scss */
+.clients .client-section .clients-list .client-logo.whisk-sf {
+  background-image: url("../img/client-logos/whisksf.png");
+  background-position: 30% 40%;
+}
+/* line 115, ../scss/pages/_clients.scss */
+.clients .client-section .clients-list .client-logo.starter-bakery {
+  background-image: url("../img/client-logos/starterbakery.png");
+  background-position: 30% 40%;
+}
+/* line 121, ../scss/pages/_clients.scss */
+.clients .client-section .clients-list .client-info {
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+  transform: scale(0);
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transition: all, 0.4s, ease-in-out;
+  transition: all, 0.4s, ease-in-out;
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  border-radius: 50%;
+  overflow: hidden;
+  opacity: 0;
+}
+/* line 132, ../scss/pages/_clients.scss */
+.clients .client-section .clients-list .client-info h3 {
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 22px;
+  margin: 0 30px;
+  padding: 45px 0 0 0;
+  height: 140px;
+  text-shadow: 0 0 1px white, 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+/* line 145, ../scss/pages/_clients.scss */
+.clients .client-section .clients-list .client-info p {
+  color: #fff;
+  padding: 10px 5px;
+  font-style: italic;
+  margin: 0 30px;
+  font-size: 12px;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  opacity: 0;
+  transition: all 1s ease-in-out 0.4s;
 }
 
 /* line 1, ../scss/pages/under_construction.scss */

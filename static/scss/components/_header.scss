@@ -60,11 +60,21 @@
     position: fixed;
     right: 0;
     left: 0;
-    height: 800px;
-    background-color: #fff;
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
+    height: 900px;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+}
+
+@media (min-width: $screen-lg-min) {
+
+    .header-image {
+        background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+    }
 }
 
 .tint {

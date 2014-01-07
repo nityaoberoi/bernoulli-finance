@@ -6,20 +6,21 @@
 
     .header-text {
         top: 25%;
-        right: 39%;
+        right: 37%;
 
         h3 {
             background-color: rgba(34, 34, 34, 0.7);
             border-radius: 250px;
-            padding: 60px 40px;
+            padding: 60px 30px;
             text-align: center;
-            width: 375px;
-            height: 375px;
+            width: 350px;
+            height: 350px;
         }
     }
 
     .header-image {
         background-image: url('../img/header/spice-market.jpg');
+        top: -50px;
     }
 
     .tint {
