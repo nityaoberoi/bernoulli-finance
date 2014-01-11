@@ -8329,7 +8329,7 @@ section:nth-last-child(2) {
   text-align: center;
 }
 /* line 21, ../scss/pages/_contact.scss */
-.contact .header-text p {
+.contact .header-text p, .contact .header-text .text a {
   color: #222222;
 }
 
