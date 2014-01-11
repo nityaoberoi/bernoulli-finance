@@ -1,35 +1,21 @@
 .landing-page {
 
     .header-image {
-        // background-image: url('../img/header/businessman_trend.jpg');
-        // height: 1000px;
-        // top: -150px;
-        background-image: url('../img/header/businessman-grass.jpg');
+        background-image: url('../img/header/businessman-grass.png');
         top: -50px;
     }
 
     .header-text {
-        // text-align: right;
-        // right: 60px;
         bottom: 10%;
         text-align: left;
         left: 60px;
     }
 
     .tint {
-        // background-color: rgba(116, 10, 2, 0.7);
-        background-color: rgba(20, 20, 20, 0.7);
+        background-color: rgba(10, 10, 10, 0.8);
     }
 
     section {
-
-        a {
-            color: $dark-red;
-
-            &:hover {
-                color: $bright-red;
-            }
-        }
 
         .img-responsive {
             margin: auto;
@@ -78,8 +64,8 @@
 
             .col-sm-4 {
                 text-align: center;
-                padding-top: 20px;
-                padding-bottom: 20px;
+                padding-top: 10px;
+                padding-bottom: 10px;
             }
 
             .service {
@@ -107,6 +93,10 @@
             }
         }
 
+    }
+
+    .quote-author {
+        text-align: right;
     }
 }
 

@@ -1,17 +1,12 @@
 .clients {
 
     .header-text {
-        top: 30%;
+        top: 43%;
         right: 43%;
 
         h3 {
-            // background-color: rgba(34, 34, 34, 0.7);
-            background-color: rgba(116, 10, 2, 0.4);
-            border-radius: 250px;
-            padding-top: 60px;
             text-align: center;
             width: 275px;
-            height: 275px;
         }
     }
 
@@ -22,10 +17,10 @@
 
     .tint {
         background-color: rgba(20, 20, 20, 0.7);
-        // background-color: rgba(116, 10, 2, 0.7);
     }
 
     .text-section {
+
         .image-col {
             padding-top: 45px;
         }
@@ -42,7 +37,6 @@
         }
 
         .clients-list {
-
             margin: 20px 0 0 0;
             padding: 0;
             list-style: none;
@@ -64,104 +58,209 @@
                 width: 180px;
                 height: 180px;
                 display: inline-block;
-                margin: 20px;
+                margin: 20px 40px;
                 overflow: hidden;
                 border-radius: 50%;
                 background-color: #333;
             }
+        }
 
-            .client-logo {
-                @include background-size(contain);
-                @include transition(all, 0.4s, ease-in-out);
+            // .client-logo {
+            //     @include background-size(contain);
+            //     @include transition(all, 0.4s, ease-in-out);
+            //     width: 100%;
+            //     height: 100%;
+            //     border-radius: 50%;
+            //     overflow: hidden;
+            //     position: relative;
+            //     cursor: default;
+            //     box-shadow:
+            //         inset 0 0 0 16px rgba(255,255,255,0.2),
+            //         0 1px 2px rgba(0,0,0,0.1);
+            //     // box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+            //     // transition: all 0.4s ease-in-out;
+            //     background-repeat: no-repeat;
+            //     background-position: 50%;
+
+            //     &:hover {
+            //         box-shadow:
+            //             inset 0 0 0 1px rgba(255,255,255,0.1),
+            //             0 1px 2px rgba(0,0,0,0.1);
+
+            //         .client-info p {
+            //             opacity: 1;
+            //         }
+            //     }
+
+            //     &.coco-delice {
+            //         background-image: url('../img/client-logos/coco-delice.png');
+            //         background-position: 30% 40%;
+            //     }
+
+
+            //     &.starter-bakery {
+            //         background-image: url('../img/client-logos/starterbakery.png');
+            //         background-position: 30% 40%;
+            //     }
+            // }
+
+            // .client-info {
+            //     @include transform(scale(0));
+            //     @include transform-style(preserve-3d);
+            //     @include transition(all, 0.4s, ease-in-out);
+            //     position: absolute;
+            //     width: inherit;
+            //     height: inherit;
+            //     border-radius: 50%;
+            //     overflow: hidden;
+            //     opacity: 0;
+
+            //     h3 {
+            //         color: #fff;
+            //         text-transform: uppercase;
+            //         letter-spacing: 2px;
+            //         font-size: 22px;
+            //         margin: 0 30px;
+            //         padding: 45px 0 0 0;
+            //         height: 140px;
+            //         text-shadow:
+            //             0 0 1px #fff,
+            //             0 1px 2px rgba(0,0,0,0.3);
+            //     }
+
+            //     p {
+            //         color: #fff;
+            //         padding: 10px 5px;
+            //         font-style: italic;
+            //         margin: 0 30px;
+            //         font-size: 12px;
+            //         border-top: 1px solid rgba(255,255,255,0.5);
+            //         opacity: 0;
+            //         transition: all 1s ease-in-out 0.4s;
+            //     }
+            // }
+
+        // }
+
+        .client-logo {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            position: relative;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+            cursor: default;
+
+            &:hover {
+
+                .client-info-wrap {
+                    box-shadow:
+                        0 0 0 0 rgba(255,255,255,0.8),
+                        inset 0 0 3px rgba(20,20, 20, 0.8);
+                }
+
+                .client-info {
+                    @include transform(rotate3d(0,1,0,-180deg));
+                }
+            }
+        }
+
+        .client-info-wrap {
+            @include transition(all, 0.4s, ease-in-out);
+            position: absolute;
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+
+            -webkit-perspective: 800px;
+            -moz-perspective: 800px;
+            -o-perspective: 800px;
+            -ms-perspective: 800px;
+            perspective: 800px;
+
+            background: #333 url(../img/pattern.png);
+            box-shadow:
+                0 0 0 20px rgba(255,255,255,0.2),
+                inset 0 0 3px rgba(40,40,40, 0.8);
+        }
+
+        .client-info {
+            @include transform-style(preserve-3d);
+            @include transition(all, 0.4s, ease-in-out);
+            position: absolute;
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+
+            > div {
+                display: block;
+                position: absolute;
                 width: 100%;
                 height: 100%;
                 border-radius: 50%;
-                overflow: hidden;
-                position: relative;
-                cursor: default;
-                box-shadow:
-                    inset 0 0 0 16px rgba(255,255,255,0.2),
-                    0 1px 2px rgba(0,0,0,0.1);
-                // box-shadow: 0 1px 2px rgba(0,0,0,0.1);
-                // transition: all 0.4s ease-in-out;
+                background-position: center center;
+
+                -webkit-backface-visibility: hidden;
+                -moz-backface-visibility: hidden;
+                -o-backface-visibility: hidden;
+                -ms-backface-visibility: hidden;
+                backface-visibility: hidden;
+            }
+
+            .client-info-front {
+                @include background-size(contain);
                 background-repeat: no-repeat;
-                background-position: 50%;
-
-                &:hover {
-                    box-shadow:
-                        inset 0 0 0 1px rgba(255,255,255,0.1),
-                        0 1px 2px rgba(0,0,0,0.1);
-
-                    .client-info p {
-                        opacity: 1;
-                    }
-                }
+                background-position: 30% 40%;
 
                 &.coco-delice {
                     background-image: url('../img/client-logos/coco-delice.png');
-                    background-position: 30% 40%;
-                }
-
-                &.the-sili-co {
-                    background-image: url('../img/client-logos/coco-delice.png');
-                    background-position: 30% 40%;
                 }
 
                 &.whisk-sf {
                     background-image: url('../img/client-logos/whisksf.png');
-                    background-position: 30% 40%;
                 }
 
-                &.starter-bakery {
-                    background-image: url('../img/client-logos/starterbakery.png');
-                    background-position: 30% 40%;
-                }
-            }
+                &.the-sili-co {
+                    background-image: url('../img/client-logos/the-sili-company.png');
 
-            .client-info {
-                @include transform(scale(0));
-                @include transform-style(preserve-3d);
-                @include transition(all, 0.4s, ease-in-out);
-                position: absolute;
-                width: inherit;
-                height: inherit;
-                border-radius: 50%;
-                overflow: hidden;
-                opacity: 0;
-
-                h3 {
-                    color: #fff;
-                    text-transform: uppercase;
-                    letter-spacing: 2px;
-                    font-size: 22px;
-                    margin: 0 30px;
-                    padding: 45px 0 0 0;
-                    height: 140px;
-                    text-shadow:
-                        0 0 1px #fff,
-                        0 1px 2px rgba(0,0,0,0.3);
-                }
-
-                p {
-                    color: #fff;
-                    padding: 10px 5px;
-                    font-style: italic;
-                    margin: 0 30px;
-                    font-size: 12px;
-                    border-top: 1px solid rgba(255,255,255,0.5);
-                    opacity: 0;
-                    transition: all 1s ease-in-out 0.4s;
                 }
             }
 
+            .client-info-back {
+                -webkit-transform: rotate3d(0,1,0,180deg);
+                -moz-transform: rotate3d(0,1,0,180deg);
+                -o-transform: rotate3d(0,1,0,180deg);
+                -ms-transform: rotate3d(0,1,0,180deg);
+                transform: rotate3d(0,1,0,180deg);
+
+                background: #000;
+            }
+
+            h3 {
+                color: #fff;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                font-size: 14px;
+                margin: 0 15px;
+                padding: 40px 0 0 0;
+                height: 90px;
+                font-family: 'Open Sans', Arial, sans-serif;
+                text-shadow:
+                    0 0 1px #fff,
+                    0 1px 2px rgba(0,0,0,0.3);
+            }
+
+            p {
+                color: #fff;
+                padding: 10px 5px;
+                font-style: italic;
+                margin: 0 30px;
+                font-size: 12px;
+                border-top: 1px solid rgba(255,255,255,0.5);
+            }
         }
 
-            // .fare-resources {
-            //     background-image: url("../img/logo.png");
-            //     display: block;
-            //     width: 100%;
-            //     height: 100%;
-            // }
+
+
     }
 
 

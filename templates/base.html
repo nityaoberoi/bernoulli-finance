@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bernoulli Finance</title>
     <link rel="stylesheet" href="/static/css/screen.css">
+    <link rel="icon"  type="image/png" href="/static/img/favicon.png">
     <!-- fonts -->
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Bitter:400,400italic' rel='stylesheet' type='text/css'>
@@ -18,10 +19,10 @@
                 </a>
             </span>
             <ul class="nav-links clear">
-                <li><a href="/">Home</a></li>
-                <li><a href="/about/">About</a></li>
-                <li><a href="/services/">Services</a></li>
-                <li><a href="/clients/">Clients</a></li>
+                <li {% block about_class %}{% endblock %}><a href="/about/">About</a></li>
+                <li {% block services_class %}{% endblock %}><a href="/services/">Services</a></li>
+                <li {% block clients_class %}{% endblock %}><a href="/clients/">Clients</a></li>
+                <li {% block contact_class %}{% endblock %}><a href="/contact/">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -39,13 +40,13 @@
         {% endblock %}
         <footer>
             <div class="copyright pull-left">
-                <span>&copy; Bernoulli Finance 2013</span>
+                <em>&copy; 2014 Bernoulli Finance</em>
             </div>
             <div class="contact pull-right">
                 <ul class="social-icons">
-                    <li><a class="email" href="mailto:anjali@bernoullifinance.com?subject=Hello" target="_blank">Email</a></li>
+                    <li><a class="email" href="mailto:info@bernoullifinance.com?subject=Hello" target="_blank">Email</a></li>
                     <li><a class="linkedin" href="http://www.linkedin.com/in/anjalioberoi" target="_blank">LinkedIn</a></li>
-                    <li><a class="facebook" href="https://www.facebook.com/anjali.oberoi" target="_blank">Facebook</a></li>
+                   <!--  <li><a class="facebook" href="https://www.facebook.com/anjali.oberoi" target="_blank">Facebook</a></li> -->
                     <li><a class="twitter" href="https://twitter.com/catechin27" target="_blank">Twitter</a></li>
                 </ul>
             </div>
@@ -69,6 +70,5 @@
     });
 </script>
 {% block extra_js %}{% endblock %}
-
 </body>
 </html>

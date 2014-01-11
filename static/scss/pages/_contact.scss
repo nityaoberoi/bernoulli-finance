@@ -1,0 +1,23 @@
+.contact {
+
+    .header-image {
+        background-image: url('../img/header/bubble-long.png');
+        top: -100px;
+    }
+
+    .tint {
+        background-color: rgba(20, 20, 20, 0.7);
+    }
+
+    .header-text {
+        top: 30%;
+        right: 44%;
+
+        h2 {
+            color: $gray-dark;
+        }
+
+    }
+
+
+}

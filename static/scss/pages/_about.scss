@@ -1,25 +1,35 @@
 .about {
 
     .header-image {
-        // background-image: url('../img/profile.jpg');
+        background-image: url('../img/header/carbon-footprint.jpg');
+        top: -100px;
     }
 
     .tint {
-        background-color: rgba(116, 10, 2, 0.7);
+        background-color: rgba(30, 30, 30, 0.5);
     }
 
-    .profile {
-        height: 800px;
-        background-image: url('../img/profile.jpg');
-        background-position: 50%;
-        background-repeat: no-repeat;
-        background-size: cover;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
+    .propellor-plane {
+        margin-top: 200px;
     }
 
-    .about-image {
-        float: left;
-        padding: 50px 10px;
+    .profile-image img {
+        margin-top: 160px;
+
+        &:after {
+            background: -webkit-gradient(radial, 50% 50%, 40, 50% 50%, 80, from(rgba(0,0,0,0)), to(rgba(0,0,0,1)));
+            background: -moz-radial-gradient(50% 50%, circle, rgba(0,0,0,0) 40px, rgba(0,0,0,1) 80px);
+        }
+    }
+
+    .profile-text {
+        h2 {
+            margin-bottom: 0;
+            line-height: 1.5em;
+         }
+        h4 {
+            margin-top: 0;
+            line-height: 1.5em;
+        }
     }
 }

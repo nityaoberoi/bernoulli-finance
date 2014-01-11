@@ -7,15 +7,13 @@ body {
 }
 
 a {
+    @include transition(.5s);
     text-decoration: none;
-    -o-transition:.5s;
-    -ms-transition:.5s;
-    -moz-transition:.5s;
-    -webkit-transition:.5s;
-    transition:.5s;
+    color: $dark-red;
 
     &:hover {
         text-decoration: none;
+        color: $bright-red;
     }
 }
 
@@ -93,7 +91,7 @@ section {
     }
 
     &:nth-last-child(2) {
-        margin-bottom: 80px;
+        margin-bottom: 30px;
     }
 }
 
