@@ -97,5 +97,11 @@ section {
 
 .quote {
     font-family: $font-quote;
-    font-size: 32px;
+    color: $dark-red;
+    // font-size: 32px;
+}
+
+.quote-author {
+    font-size: $font-size-small;
+    color: $gray-dark;
 }

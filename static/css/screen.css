@@ -7935,7 +7935,13 @@ section:nth-last-child(2) {
 /* line 98, ../scss/pages/_base.scss */
 .quote {
   font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
-  font-size: 32px;
+  color: #740901;
+}
+
+/* line 104, ../scss/pages/_base.scss */
+.quote-author {
+  font-size: 17px;
+  color: #333333;
 }
 
 /* line 3, ../scss/pages/_main.scss */
@@ -8076,18 +8082,17 @@ section:nth-last-child(2) {
 /* line 32, ../scss/pages/_services.scss */
 .services h2 {
   margin-top: 0;
-  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.65);
 }
-/* line 37, ../scss/pages/_services.scss */
+/* line 36, ../scss/pages/_services.scss */
 .services .analytics .icon-section {
   margin-top: 35px;
 }
-/* line 41, ../scss/pages/_services.scss */
+/* line 40, ../scss/pages/_services.scss */
 .services .icon {
   display: block;
   margin: auto;
 }
-/* line 58, ../scss/pages/_services.scss */
+/* line 57, ../scss/pages/_services.scss */
 .services .cols {
   -moz-column-count: 2;
   -moz-column-gap: 20px;
@@ -8096,7 +8101,7 @@ section:nth-last-child(2) {
   column-count: 2;
   column-gap: 20px;
 }
-/* line 66, ../scss/pages/_services.scss */
+/* line 65, ../scss/pages/_services.scss */
 .services .cols ul {
   -webkit-padding-start: 20px;
 }
@@ -8130,7 +8135,6 @@ section:nth-last-child(2) {
   margin-top: 0;
   color: #eeeeee;
   text-align: center;
-  text-shadow: 0px 3px 2px rgba(0, 0, 0, 0.65);
 }
 /* line 39, ../scss/pages/_clients.scss */
 .clients .client-section .clients-list {
@@ -8159,22 +8163,21 @@ section:nth-last-child(2) {
   margin: 20px 40px;
   overflow: hidden;
   border-radius: 50%;
-  background-color: #333;
 }
-/* line 145, ../scss/pages/_clients.scss */
+/* line 140, ../scss/pages/_clients.scss */
 .clients .client-section .client-logo {
   width: 100%;
   height: 100%;
   border-radius: 50%;
   position: relative;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-  cursor: default;
+  cursor: pointer;
 }
-/* line 155, ../scss/pages/_clients.scss */
+/* line 150, ../scss/pages/_clients.scss */
 .clients .client-section .client-logo:hover .client-info-wrap {
   box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.8), inset 0 0 3px rgba(20, 20, 20, 0.8);
 }
-/* line 161, ../scss/pages/_clients.scss */
+/* line 156, ../scss/pages/_clients.scss */
 .clients .client-section .client-logo:hover .client-info {
   -webkit-transform: rotate3d(0, 1, 0, -180deg);
   -moz-transform: rotate3d(0, 1, 0, -180deg);
@@ -8182,7 +8185,7 @@ section:nth-last-child(2) {
   -o-transform: rotate3d(0, 1, 0, -180deg);
   transform: rotate3d(0, 1, 0, -180deg);
 }
-/* line 167, ../scss/pages/_clients.scss */
+/* line 162, ../scss/pages/_clients.scss */
 .clients .client-section .client-info-wrap {
   -webkit-transition: all, 0.4s, ease-in-out;
   transition: all, 0.4s, ease-in-out;
@@ -8195,10 +8198,19 @@ section:nth-last-child(2) {
   -o-perspective: 800px;
   -ms-perspective: 800px;
   perspective: 800px;
-  background: #333333 url(../img/pattern.png);
+  background-image: url(../img/pattern.png);
+  background-color: #333;
   box-shadow: 0 0 0 20px rgba(255, 255, 255, 0.2), inset 0 0 3px rgba(40, 40, 40, 0.8);
 }
-/* line 186, ../scss/pages/_clients.scss */
+/* line 181, ../scss/pages/_clients.scss */
+.clients .client-section .client-info-wrap.dark {
+  background-color: #333;
+}
+/* line 185, ../scss/pages/_clients.scss */
+.clients .client-section .client-info-wrap.light {
+  background-color: #999;
+}
+/* line 190, ../scss/pages/_clients.scss */
 .clients .client-section .client-info {
   -webkit-transform-style: preserve-3d;
   -moz-transform-style: preserve-3d;
@@ -8212,64 +8224,82 @@ section:nth-last-child(2) {
   height: 180px;
   border-radius: 50%;
 }
-/* line 194, ../scss/pages/_clients.scss */
+/* line 198, ../scss/pages/_clients.scss */
 .clients .client-section .client-info > div {
   display: block;
   position: absolute;
-  width: 100%;
+  width: 80%;
   height: 100%;
   border-radius: 50%;
   background-position: center center;
+  left: 10%;
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;
   -o-backface-visibility: hidden;
   -ms-backface-visibility: hidden;
   backface-visibility: hidden;
 }
-/* line 209, ../scss/pages/_clients.scss */
+/* line 214, ../scss/pages/_clients.scss */
 .clients .client-section .client-info .client-info-front {
   -webkit-background-size: contain;
   -moz-background-size: contain;
   -o-background-size: contain;
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: 30% 40%;
 }
-/* line 214, ../scss/pages/_clients.scss */
+/* line 219, ../scss/pages/_clients.scss */
 .clients .client-section .client-info .client-info-front.coco-delice {
   background-image: url("../img/client-logos/coco-delice.png");
 }
-/* line 218, ../scss/pages/_clients.scss */
+/* line 223, ../scss/pages/_clients.scss */
 .clients .client-section .client-info .client-info-front.whisk-sf {
   background-image: url("../img/client-logos/whisksf.png");
-  background-position: 30% 40%;
 }
-/* line 223, ../scss/pages/_clients.scss */
+/* line 227, ../scss/pages/_clients.scss */
 .clients .client-section .client-info .client-info-front.the-sili-co {
   background-image: url("../img/client-logos/the-sili-company.png");
 }
-/* line 229, ../scss/pages/_clients.scss */
+/* line 231, ../scss/pages/_clients.scss */
+.clients .client-section .client-info .client-info-front.sweet-lorens {
+  background-image: url("../img/client-logos/sweetlorens.jpg");
+}
+/* line 235, ../scss/pages/_clients.scss */
+.clients .client-section .client-info .client-info-front.nuttyness {
+  background-image: url("../img/client-logos/nuttyness.png");
+}
+/* line 239, ../scss/pages/_clients.scss */
+.clients .client-section .client-info .client-info-front.biz-twister {
+  background-image: url("../img/client-logos/biztwister.png");
+}
+/* line 243, ../scss/pages/_clients.scss */
+.clients .client-section .client-info .client-info-front.starter-bakery {
+  background-image: url("../img/client-logos/starterbakery.png");
+}
+/* line 247, ../scss/pages/_clients.scss */
+.clients .client-section .client-info .client-info-front.bee-raw {
+  background-image: url("../img/client-logos/beeraw.gif");
+}
+/* line 252, ../scss/pages/_clients.scss */
 .clients .client-section .client-info .client-info-back {
   -webkit-transform: rotate3d(0, 1, 0, 180deg);
   -moz-transform: rotate3d(0, 1, 0, 180deg);
-  -o-transform: rotate3d(0, 1, 0, 180deg);
   -ms-transform: rotate3d(0, 1, 0, 180deg);
+  -o-transform: rotate3d(0, 1, 0, 180deg);
   transform: rotate3d(0, 1, 0, 180deg);
-  background: #000;
+  background-color: #333;
+  background-image: url("../img/pattern.png");
 }
-/* line 239, ../scss/pages/_clients.scss */
+/* line 258, ../scss/pages/_clients.scss */
 .clients .client-section .client-info h3 {
-  color: #fff;
+  color: #eeeeee;
   text-transform: uppercase;
   letter-spacing: 2px;
-  font-size: 14px;
+  font-size: 17px;
   margin: 0 15px;
-  padding: 40px 0 0 0;
-  height: 90px;
+  padding: 60px 0 0 0;
   font-family: 'Open Sans', Arial, sans-serif;
-  text-shadow: 0 0 1px white, 0 1px 2px rgba(0, 0, 0, 0.3);
 }
-/* line 253, ../scss/pages/_clients.scss */
+/* line 271, ../scss/pages/_clients.scss */
 .clients .client-section .client-info p {
   color: #fff;
   padding: 10px 5px;
@@ -8290,12 +8320,17 @@ section:nth-last-child(2) {
 }
 /* line 12, ../scss/pages/_contact.scss */
 .contact .header-text {
-  top: 30%;
-  right: 44%;
+  top: 20%;
+  right: 36%;
 }
 /* line 16, ../scss/pages/_contact.scss */
 .contact .header-text h2 {
-  color: #333333;
+  color: #222222;
+  text-align: center;
+}
+/* line 21, ../scss/pages/_contact.scss */
+.contact .header-text p {
+  color: #222222;
 }
 
 /* line 1, ../scss/pages/under_construction.scss */
