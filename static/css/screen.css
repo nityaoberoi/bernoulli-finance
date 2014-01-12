@@ -7826,7 +7826,6 @@ td.visible-print {
     background-size: 767px auto;
     -webkit-background-size: 767px auto;
     -moz-background-size: 767px auto;
-    height: 500px;
   }
 }
 /* line 1, ../scss/components/_footer.scss */
@@ -8367,7 +8366,18 @@ section:nth-last-child(2) {
 @media (max-width: 480px) {
   /* line 33, ../scss/pages/_contact.scss */
   .contact .header-text {
+    top: 33%;
     right: 20%;
+  }
+  /* line 37, ../scss/pages/_contact.scss */
+  .contact .header-text h2 {
+    font-size: 20px;
+  }
+  /* line 41, ../scss/pages/_contact.scss */
+  .contact .header-text p {
+    font-size: 12px;
+    line-height: 15px;
+    margin: 0;
   }
 }
 /* line 1, ../scss/pages/under_construction.scss */
