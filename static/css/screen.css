@@ -7798,6 +7798,29 @@ td.visible-print {
   display: inline-block;
 }
 
+/* line 114, ../scss/components/_header.scss */
+.navbar-toggle {
+  border-color: #ffffff;
+}
+/* line 117, ../scss/components/_header.scss */
+.navbar-toggle:hover, .navbar-toggle:focus {
+  background-color: #e9eef1;
+}
+/* line 120, ../scss/components/_header.scss */
+.navbar-toggle:hover .icon-bar, .navbar-toggle:focus .icon-bar {
+  background-color: #740901;
+}
+/* line 125, ../scss/components/_header.scss */
+.navbar-toggle .icon-bar {
+  background-color: white;
+}
+
+@media (max-width: 767px) {
+  /* line 133, ../scss/components/_header.scss */
+  .header-text h1 {
+    font-size: 40px;
+  }
+}
 /* line 1, ../scss/components/_footer.scss */
 footer {
   background: #373d43 url("../img/bg-footer.jpg");

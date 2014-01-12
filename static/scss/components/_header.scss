@@ -110,3 +110,28 @@
         display: inline-block;
     }
 }
+
+.navbar-toggle {
+        border-color: #ffffff;
+
+    &:hover, &:focus {
+        background-color: rgb(233, 238, 241);
+
+        .icon-bar {
+            background-color: $dark-red;
+        }
+    }
+
+    .icon-bar {
+        background-color: white;
+    }
+}
+
+@media (max-width: $screen-xs-max) {
+
+    .header-text {
+        h1 {
+            font-size: 40px;
+        }
+    }
+}

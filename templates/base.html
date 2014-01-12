@@ -15,15 +15,25 @@
         <nav class="main-nav">
             <span class="site-title">
                 <a class="logo" href="/">
-                    <img src="/static/img/logo-white-text.png" class="logo-image" width="214px" height="70px" />
+                    <img src="/static/img/logo-white-text.png" class="logo-image img-responsive" width="214px" height="70px" />
                 </a>
             </span>
-            <ul class="nav-links clear">
-                <li {% block about_class %}{% endblock %}><a href="/about/">About</a></li>
-                <li {% block services_class %}{% endblock %}><a href="/services/">Services</a></li>
-                <li {% block clients_class %}{% endblock %}><a href="/clients/">Clients</a></li>
-                <li {% block contact_class %}{% endblock %}><a href="/contact/">Contact</a></li>
-            </ul>
+            <div class="navbar-header">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#top-navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                </div>
+            <div class="navbar-collapse collapse navbar-right" id="top-navbar">
+                <ul class="nav-links clear">
+                    <li {% block about_class %}{% endblock %}><a href="/about/">About</a></li>
+                    <li {% block services_class %}{% endblock %}><a href="/services/">Services</a></li>
+                    <li {% block clients_class %}{% endblock %}><a href="/clients/">Clients</a></li>
+                    <li {% block contact_class %}{% endblock %}><a href="/contact/">Contact</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
     {% block header_image %}
@@ -56,6 +66,7 @@
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 <script src="/static/js/waypoints.min.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
 <script>
     jQuery(function($){
         var nav = $('.nav-header'),
