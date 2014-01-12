@@ -7816,12 +7816,17 @@ td.visible-print {
 }
 
 @media (max-width: 767px) {
-  /* line 133, ../scss/components/_header.scss */
+  /* line 132, ../scss/components/_header.scss */
+  .nav-header {
+    background-color: #740901;
+  }
+
+  /* line 137, ../scss/components/_header.scss */
   .header-text h1 {
     font-size: 40px;
   }
 
-  /* line 138, ../scss/components/_header.scss */
+  /* line 142, ../scss/components/_header.scss */
   .header-image {
     background-size: 767px auto;
     -webkit-background-size: 767px auto;
