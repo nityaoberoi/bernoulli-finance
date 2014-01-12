@@ -7826,6 +7826,7 @@ td.visible-print {
     background-size: 767px auto;
     -webkit-background-size: 767px auto;
     -moz-background-size: 767px auto;
+    height: 500px;
   }
 }
 /* line 1, ../scss/components/_footer.scss */
@@ -8363,6 +8364,12 @@ section:nth-last-child(2) {
   color: #222222;
 }
 
+@media (max-width: 480px) {
+  /* line 33, ../scss/pages/_contact.scss */
+  .contact .header-text {
+    right: 20%;
+  }
+}
 /* line 1, ../scss/pages/under_construction.scss */
 .under-construction {
   background: #dee1e2;
