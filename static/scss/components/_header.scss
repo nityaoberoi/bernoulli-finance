@@ -134,4 +134,12 @@
             font-size: 40px;
         }
     }
+
+    .header-image {
+        background-size: $screen-xs-max auto;
+        -webkit-background-size: $screen-xs-max auto;
+        -moz-background-size: $screen-xs-max auto;
+    }
+
+
 }

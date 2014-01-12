@@ -7820,6 +7820,13 @@ td.visible-print {
   .header-text h1 {
     font-size: 40px;
   }
+
+  /* line 138, ../scss/components/_header.scss */
+  .header-image {
+    background-size: 767px auto;
+    -webkit-background-size: 767px auto;
+    -moz-background-size: 767px auto;
+  }
 }
 /* line 1, ../scss/components/_footer.scss */
 footer {
