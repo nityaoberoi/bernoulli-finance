@@ -1,7 +1,8 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
-
+import os
+import subprocess
 from flask import Flask, render_template
 
 app = Flask(__name__)
@@ -29,4 +30,18 @@ def contact():
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    p = None
+    try:
+        if not os.getenv('COMPASSB', False):
+            # TODO: In Python 3.0 use "with"
+            p = subprocess.Popen(['compass', 'watch', 'static'])
+            os.environ['COMPASSB'] = 'Running'
+    except OSError:
+        os.environ['COMPASSB'] = 'Failed'
+    finally:
+        try:
+        	app.run(debug=True)
+        except:
+            if p:
+                p.kill()
+            raise
