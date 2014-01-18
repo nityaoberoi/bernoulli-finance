@@ -100,3 +100,25 @@
     }
 }
 
+@media (max-width: $screen-xs-min) {
+
+    .landing-page {
+        .header-image {
+            height: 530px;
+            background-image: url('../img/header/businessman-grass.png');
+            top: -50px !important;
+            display: block !important;
+        }
+
+        .header-text {
+            display: block !important;
+            top: 40%;
+            text-align: left;
+            left: 60px;
+        }
+    }
+
+    .content {
+        top: 460px !important;
+    }
+}

@@ -8146,6 +8146,27 @@ section:nth-last-child(2) {
   text-align: right;
 }
 
+@media (max-width: 480px) {
+  /* line 106, ../scss/pages/_main.scss */
+  .landing-page .header-image {
+    height: 530px;
+    background-image: url("../img/header/businessman-grass.png");
+    top: -50px !important;
+    display: block !important;
+  }
+  /* line 113, ../scss/pages/_main.scss */
+  .landing-page .header-text {
+    display: block !important;
+    top: 40%;
+    text-align: left;
+    left: 60px;
+  }
+
+  /* line 121, ../scss/pages/_main.scss */
+  .content {
+    top: 460px !important;
+  }
+}
 /* line 3, ../scss/pages/_about.scss */
 .about .header-image {
   background-image: url("../img/header/carbon-footprint.jpg");
@@ -8466,7 +8487,7 @@ section:nth-last-child(2) {
   /* line 33, ../scss/pages/_contact.scss */
   .contact .header-text {
     display: block !important;
-    margin-top: 30px;
+    margin-top: 10px;
     right: 20%;
   }
   /* line 38, ../scss/pages/_contact.scss */
