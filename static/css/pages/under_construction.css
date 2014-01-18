@@ -36,7 +36,7 @@
 /* line 42, ../../scss/pages/under_construction.scss */
 .under-construction a:hover {
   color: #666;
-  text-shadow: -1px 1px 8px #ffc, 1px -1px 8px #fff;
+  text-shadow: -1px 1px 8px #ffffcc, 1px -1px 8px white;
   -webkit-transition: 500ms linear 0s;
   -moz-transition: 500ms linear 0s;
   -o-transition: 500ms linear 0s;

@@ -15,6 +15,8 @@
     &.sticky {
         padding: 0 50px;
         background: $dark-red;
+        background: rgb(140, 10, 1);
+
     }
 }
 
@@ -130,20 +132,53 @@
 @media (max-width: $screen-xs-max) {
 
     .nav-header {
-        background-color: $dark-red;
+        background-color: rgb(140, 10, 1);
+
+    }
+
+    .logo {
+        img {
+            width: 141px;
+        }
+    }
+
+    .main-nav {
+        ul {
+            float: none;
+            text-align: center;
+            padding-left: 0;
+        }
+
+        li {
+            height: 60px;
+            margin: 0;
+            display: block;
+
+            &:last-child {
+                height: 100px;
+            }
+        }
+
+        a {
+            font-size: 16px;
+        }
     }
 
     .header-text {
+        display: none !important;
         h1 {
-            font-size: 40px;
+            font-size: 20px;
         }
     }
 
     .header-image {
+        display: none !important;
         background-size: $screen-xs-max auto;
         -webkit-background-size: $screen-xs-max auto;
         -moz-background-size: $screen-xs-max auto;
         // height: 500px;
+
+        top: -130px !important;
     }
 
 }

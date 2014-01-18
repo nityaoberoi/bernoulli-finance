@@ -31,11 +31,13 @@
     .contact {
 
         .header-text {
-            top: 33%;
+            display: block !important;
+            margin-top: 30px;
             right: 20%;
 
             h2 {
-                font-size: 20px;
+                font-size: 34px;
+                margin-top: 0;
             }
 
             p {
@@ -47,9 +49,8 @@
 
         }
 
+        .content {
+            position: static;
+        }
     }
-
-
-
-
-    }
+}
