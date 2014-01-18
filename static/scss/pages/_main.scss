@@ -121,5 +121,35 @@
         .content {
             top: 460px !important;
         }
+
+        section.services {
+            a {
+                display: block;
+
+                div {
+                    display: block;
+                    padding-top: 30px !important;
+                    border: none;
+                    border-bottom: 1px solid rgba(159, 160, 172, 0.5);
+                    box-shadow: 0 1px 0 rgb(76, 77, 78);
+                    display: block;
+                }
+
+                &:first-child {
+                    padding-top: 0;
+
+                    div {
+                        padding-top: 0px !important;
+                    }
+                }
+
+                &:last-child {
+                    div {
+                        border-bottom: none;
+                        box-shadow: none;
+                    }
+                }
+            }
+        }
     }
 }

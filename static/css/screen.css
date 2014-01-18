@@ -8166,6 +8166,32 @@ section:nth-last-child(2) {
   .landing-page .content {
     top: 460px !important;
   }
+  /* line 126, ../scss/pages/_main.scss */
+  .landing-page section.services a {
+    display: block;
+  }
+  /* line 129, ../scss/pages/_main.scss */
+  .landing-page section.services a div {
+    display: block;
+    padding-top: 30px !important;
+    border: none;
+    border-bottom: 1px solid rgba(159, 160, 172, 0.5);
+    box-shadow: 0 1px 0 #4c4d4e;
+    display: block;
+  }
+  /* line 138, ../scss/pages/_main.scss */
+  .landing-page section.services a:first-child {
+    padding-top: 0;
+  }
+  /* line 141, ../scss/pages/_main.scss */
+  .landing-page section.services a:first-child div {
+    padding-top: 0px !important;
+  }
+  /* line 147, ../scss/pages/_main.scss */
+  .landing-page section.services a:last-child div {
+    border-bottom: none;
+    box-shadow: none;
+  }
 }
 /* line 3, ../scss/pages/_about.scss */
 .about .header-image {
