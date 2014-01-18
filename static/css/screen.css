@@ -8285,9 +8285,12 @@ section:nth-last-child(2) {
 /* line 3, ../scss/pages/_clients.scss */
 .clients .header-text {
   top: 52%;
-  right: 45% h3;
-  right-text-align: center;
-  right-width: 275px;
+  right: 45%;
+}
+/* line 7, ../scss/pages/_clients.scss */
+.clients .header-text h3 {
+  text-align: center;
+  width: 275px;
 }
 /* line 13, ../scss/pages/_clients.scss */
 .clients .header-image {
@@ -8493,8 +8496,8 @@ section:nth-last-child(2) {
 }
 /* line 12, ../scss/pages/_contact.scss */
 .contact .header-text {
-  top: 20%;
-  right: 36%;
+  top: 16%;
+  right: 38%;
 }
 /* line 16, ../scss/pages/_contact.scss */
 .contact .header-text h2 {
