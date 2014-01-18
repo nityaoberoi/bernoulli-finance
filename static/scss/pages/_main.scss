@@ -112,7 +112,8 @@
 
         .header-text {
             display: block !important;
-            top: 40%;
+            position: absolute;
+            bottom: 10%;
             text-align: left;
             left: 60px;
         }

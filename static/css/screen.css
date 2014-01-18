@@ -8157,12 +8157,13 @@ section:nth-last-child(2) {
   /* line 113, ../scss/pages/_main.scss */
   .landing-page .header-text {
     display: block !important;
-    top: 40%;
+    position: absolute;
+    bottom: 10%;
     text-align: left;
     left: 60px;
   }
 
-  /* line 121, ../scss/pages/_main.scss */
+  /* line 122, ../scss/pages/_main.scss */
   .content {
     top: 460px !important;
   }
