@@ -8284,13 +8284,10 @@ section:nth-last-child(2) {
 
 /* line 3, ../scss/pages/_clients.scss */
 .clients .header-text {
-  top: 43%;
-  right: 43%;
-}
-/* line 7, ../scss/pages/_clients.scss */
-.clients .header-text h3 {
-  text-align: center;
-  width: 275px;
+  top: 52%;
+  right: 45% h3;
+  right-text-align: center;
+  right-width: 275px;
 }
 /* line 13, ../scss/pages/_clients.scss */
 .clients .header-image {
