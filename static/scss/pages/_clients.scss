@@ -6,7 +6,7 @@
 
         h3 {
             text-align: center;
-            width: 275px;
+            width: 235px;
         }
     }
 
@@ -241,11 +241,17 @@
                 }
 
                 &.starter-bakery {
-                    background-image: url('../img/client-logos/starterbakery.png');
+                    background-image: url('../img/client-logos/starterbakery.jpg');
                 }
 
                 &.bee-raw {
                     background-image: url('../img/client-logos/beeraw.gif');
+                }
+                &.fare-resources {
+                    background-image: url('../img/client-logos/fareresources.jpg');
+                }
+                &.food-crafts {
+                    background-image: url('../img/client-logos/foodcrafts.jpg');
                 }
             }
 
