@@ -8305,15 +8305,16 @@ section:nth-last-child(2) {
 .clients .text-section .image-col {
   padding-top: 45px;
 }
-/* line 31, ../scss/pages/_clients.scss */
-.clients .client-section h3 {
+
+/* line 32, ../scss/pages/_clients.scss */
+.client-section h3 {
   word-spacing: 5px;
   margin-top: 0;
   color: #eeeeee;
   text-align: center;
 }
-/* line 39, ../scss/pages/_clients.scss */
-.clients .client-section .clients-list {
+/* line 40, ../scss/pages/_clients.scss */
+.client-section .clients-list {
   margin: 20px 0 0 0;
   padding: 0;
   list-style: none;
@@ -8321,17 +8322,17 @@ section:nth-last-child(2) {
   text-align: center;
   width: 100%;
 }
-/* line 47, ../scss/pages/_clients.scss */
-.clients .client-section .clients-list:after, .clients .client-section .clients-list .client-logo:before {
+/* line 48, ../scss/pages/_clients.scss */
+.client-section .clients-list:after, .client-section .clients-list .client-logo:before {
   content: '';
   display: table;
 }
-/* line 52, ../scss/pages/_clients.scss */
-.clients .client-section .clients-list:after {
+/* line 53, ../scss/pages/_clients.scss */
+.client-section .clients-list:after {
   clear: both;
 }
-/* line 56, ../scss/pages/_clients.scss */
-.clients .client-section .clients-list li {
+/* line 57, ../scss/pages/_clients.scss */
+.client-section .clients-list li {
   background-image: url("../img/pattern.png");
   width: 180px;
   height: 180px;
@@ -8340,8 +8341,8 @@ section:nth-last-child(2) {
   overflow: hidden;
   border-radius: 50%;
 }
-/* line 140, ../scss/pages/_clients.scss */
-.clients .client-section .client-logo {
+/* line 69, ../scss/pages/_clients.scss */
+.client-section .client-logo {
   width: 100%;
   height: 100%;
   border-radius: 50%;
@@ -8349,20 +8350,20 @@ section:nth-last-child(2) {
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
   cursor: pointer;
 }
-/* line 150, ../scss/pages/_clients.scss */
-.clients .client-section .client-logo:hover .client-info-wrap {
+/* line 79, ../scss/pages/_clients.scss */
+.client-section .client-logo:hover .client-info-wrap {
   box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.8), inset 0 0 3px rgba(20, 20, 20, 0.8);
 }
-/* line 156, ../scss/pages/_clients.scss */
-.clients .client-section .client-logo:hover .client-info {
+/* line 85, ../scss/pages/_clients.scss */
+.client-section .client-logo:hover .client-info {
   -webkit-transform: rotate3d(0, 1, 0, -180deg);
   -moz-transform: rotate3d(0, 1, 0, -180deg);
   -ms-transform: rotate3d(0, 1, 0, -180deg);
   -o-transform: rotate3d(0, 1, 0, -180deg);
   transform: rotate3d(0, 1, 0, -180deg);
 }
-/* line 162, ../scss/pages/_clients.scss */
-.clients .client-section .client-info-wrap {
+/* line 91, ../scss/pages/_clients.scss */
+.client-section .client-info-wrap {
   -webkit-transition: all, 0.4s, ease-in-out;
   transition: all, 0.4s, ease-in-out;
   position: absolute;
@@ -8378,16 +8379,16 @@ section:nth-last-child(2) {
   background-color: #333;
   box-shadow: 0 0 0 20px rgba(255, 255, 255, 0.2), inset 0 0 3px rgba(40, 40, 40, 0.8);
 }
-/* line 181, ../scss/pages/_clients.scss */
-.clients .client-section .client-info-wrap.dark {
+/* line 110, ../scss/pages/_clients.scss */
+.client-section .client-info-wrap.dark {
   background-color: #333;
 }
-/* line 185, ../scss/pages/_clients.scss */
-.clients .client-section .client-info-wrap.light {
+/* line 114, ../scss/pages/_clients.scss */
+.client-section .client-info-wrap.light {
   background-color: #999;
 }
-/* line 190, ../scss/pages/_clients.scss */
-.clients .client-section .client-info {
+/* line 119, ../scss/pages/_clients.scss */
+.client-section .client-info {
   -webkit-transform-style: preserve-3d;
   -moz-transform-style: preserve-3d;
   -ms-transform-style: preserve-3d;
@@ -8400,8 +8401,8 @@ section:nth-last-child(2) {
   height: 180px;
   border-radius: 50%;
 }
-/* line 198, ../scss/pages/_clients.scss */
-.clients .client-section .client-info > div {
+/* line 127, ../scss/pages/_clients.scss */
+.client-section .client-info > div {
   display: block;
   position: absolute;
   width: 80%;
@@ -8415,56 +8416,56 @@ section:nth-last-child(2) {
   -ms-backface-visibility: hidden;
   backface-visibility: hidden;
 }
-/* line 214, ../scss/pages/_clients.scss */
-.clients .client-section .client-info .client-info-front {
+/* line 143, ../scss/pages/_clients.scss */
+.client-section .client-info .client-info-front {
   -webkit-background-size: contain;
   -moz-background-size: contain;
   -o-background-size: contain;
   background-size: contain;
   background-repeat: no-repeat;
 }
-/* line 219, ../scss/pages/_clients.scss */
-.clients .client-section .client-info .client-info-front.coco-delice {
+/* line 148, ../scss/pages/_clients.scss */
+.client-section .client-info .client-info-front.coco-delice {
   background-image: url("../img/client-logos/coco-delice.png");
 }
-/* line 223, ../scss/pages/_clients.scss */
-.clients .client-section .client-info .client-info-front.whisk-sf {
+/* line 152, ../scss/pages/_clients.scss */
+.client-section .client-info .client-info-front.whisk-sf {
   background-image: url("../img/client-logos/whisksf.png");
 }
-/* line 227, ../scss/pages/_clients.scss */
-.clients .client-section .client-info .client-info-front.the-sili-co {
+/* line 156, ../scss/pages/_clients.scss */
+.client-section .client-info .client-info-front.the-sili-co {
   background-image: url("../img/client-logos/the-sili-company.png");
 }
-/* line 231, ../scss/pages/_clients.scss */
-.clients .client-section .client-info .client-info-front.sweet-lorens {
+/* line 160, ../scss/pages/_clients.scss */
+.client-section .client-info .client-info-front.sweet-lorens {
   background-image: url("../img/client-logos/sweetlorens.jpg");
 }
-/* line 235, ../scss/pages/_clients.scss */
-.clients .client-section .client-info .client-info-front.nuttyness {
+/* line 164, ../scss/pages/_clients.scss */
+.client-section .client-info .client-info-front.nuttyness {
   background-image: url("../img/client-logos/nuttyness.png");
 }
-/* line 239, ../scss/pages/_clients.scss */
-.clients .client-section .client-info .client-info-front.biz-twister {
+/* line 168, ../scss/pages/_clients.scss */
+.client-section .client-info .client-info-front.biz-twister {
   background-image: url("../img/client-logos/biztwister.png");
 }
-/* line 243, ../scss/pages/_clients.scss */
-.clients .client-section .client-info .client-info-front.starter-bakery {
+/* line 172, ../scss/pages/_clients.scss */
+.client-section .client-info .client-info-front.starter-bakery {
   background-image: url("../img/client-logos/starterbakery.jpg");
 }
-/* line 247, ../scss/pages/_clients.scss */
-.clients .client-section .client-info .client-info-front.bee-raw {
+/* line 176, ../scss/pages/_clients.scss */
+.client-section .client-info .client-info-front.bee-raw {
   background-image: url("../img/client-logos/beeraw.gif");
 }
-/* line 250, ../scss/pages/_clients.scss */
-.clients .client-section .client-info .client-info-front.fare-resources {
+/* line 180, ../scss/pages/_clients.scss */
+.client-section .client-info .client-info-front.fare-resources {
   background-image: url("../img/client-logos/fareresources.jpg");
 }
-/* line 253, ../scss/pages/_clients.scss */
-.clients .client-section .client-info .client-info-front.food-crafts {
+/* line 184, ../scss/pages/_clients.scss */
+.client-section .client-info .client-info-front.food-craft-institute {
   background-image: url("../img/client-logos/foodcrafts.jpg");
 }
-/* line 258, ../scss/pages/_clients.scss */
-.clients .client-section .client-info .client-info-back {
+/* line 189, ../scss/pages/_clients.scss */
+.client-section .client-info .client-info-back {
   -webkit-transform: rotate3d(0, 1, 0, 180deg);
   -moz-transform: rotate3d(0, 1, 0, 180deg);
   -ms-transform: rotate3d(0, 1, 0, 180deg);
@@ -8473,8 +8474,8 @@ section:nth-last-child(2) {
   background-color: #333;
   background-image: url("../img/pattern.png");
 }
-/* line 264, ../scss/pages/_clients.scss */
-.clients .client-section .client-info h3 {
+/* line 195, ../scss/pages/_clients.scss */
+.client-section .client-info h3 {
   color: #eeeeee;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -8483,14 +8484,18 @@ section:nth-last-child(2) {
   padding: 60px 0 0 0;
   font-family: 'Open Sans', Arial, sans-serif;
 }
-/* line 277, ../scss/pages/_clients.scss */
-.clients .client-section .client-info p {
+/* line 208, ../scss/pages/_clients.scss */
+.client-section .client-info p {
   color: #fff;
   padding: 10px 5px;
   font-style: italic;
   margin: 0 30px;
   font-size: 12px;
   border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+/* line 220, ../scss/pages/_clients.scss */
+.client-section .client-logo.food-craft-institute h3 {
+  padding-top: 40px;
 }
 
 /* line 3, ../scss/pages/_contact.scss */
