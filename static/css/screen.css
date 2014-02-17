@@ -8457,14 +8457,18 @@ section:nth-last-child(2) {
   background-image: url("../img/client-logos/beeraw.gif");
 }
 /* line 180, ../scss/pages/_clients.scss */
+.client-section .client-info .client-info-front.nuchas {
+  background-image: url("../img/client-logos/nuchas.jpg");
+}
+/* line 184, ../scss/pages/_clients.scss */
 .client-section .client-info .client-info-front.fare-resources {
   background-image: url("../img/client-logos/fareresources.jpg");
 }
-/* line 184, ../scss/pages/_clients.scss */
+/* line 188, ../scss/pages/_clients.scss */
 .client-section .client-info .client-info-front.food-craft-institute {
   background-image: url("../img/client-logos/foodcrafts.jpg");
 }
-/* line 189, ../scss/pages/_clients.scss */
+/* line 193, ../scss/pages/_clients.scss */
 .client-section .client-info .client-info-back {
   -webkit-transform: rotate3d(0, 1, 0, 180deg);
   -moz-transform: rotate3d(0, 1, 0, 180deg);
@@ -8474,7 +8478,7 @@ section:nth-last-child(2) {
   background-color: #333;
   background-image: url("../img/pattern.png");
 }
-/* line 195, ../scss/pages/_clients.scss */
+/* line 199, ../scss/pages/_clients.scss */
 .client-section .client-info h3 {
   color: #eeeeee;
   text-transform: uppercase;
@@ -8484,7 +8488,7 @@ section:nth-last-child(2) {
   padding: 60px 0 0 0;
   font-family: 'Open Sans', Arial, sans-serif;
 }
-/* line 208, ../scss/pages/_clients.scss */
+/* line 212, ../scss/pages/_clients.scss */
 .client-section .client-info p {
   color: #fff;
   padding: 10px 5px;
@@ -8493,7 +8497,7 @@ section:nth-last-child(2) {
   font-size: 12px;
   border-top: 1px solid rgba(255, 255, 255, 0.5);
 }
-/* line 220, ../scss/pages/_clients.scss */
+/* line 224, ../scss/pages/_clients.scss */
 .client-section .client-logo.food-craft-institute h3 {
   padding-top: 40px;
 }
