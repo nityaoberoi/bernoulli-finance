@@ -75,15 +75,6 @@
     -moz-background-size: cover;
 }
 
-// @media (min-width: $screen-lg-min) {
-
-//     .header-image {
-//         background-size: cover;
-//         -webkit-background-size: cover;
-//         -moz-background-size: cover;
-//     }
-// }
-
 .tint {
     height: 100%;
     z-index: 4;
@@ -127,58 +118,4 @@
     .icon-bar {
         background-color: white;
     }
-}
-
-@media (max-width: $screen-xs-max) {
-
-    .nav-header {
-        background-color: rgb(140, 10, 1);
-
-    }
-
-    .logo {
-        img {
-            width: 141px;
-        }
-    }
-
-    .main-nav {
-        ul {
-            float: none;
-            text-align: center;
-            padding-left: 0;
-        }
-
-        li {
-            height: 60px;
-            margin: 0;
-            display: block;
-
-            &:last-child {
-                height: 100px;
-            }
-        }
-
-        a {
-            font-size: 16px;
-        }
-    }
-
-    .header-text {
-        display: none !important;
-        h1 {
-            font-size: 20px;
-        }
-    }
-
-    .header-image {
-        display: none !important;
-        background-size: $screen-xs-max auto;
-        -webkit-background-size: $screen-xs-max auto;
-        -moz-background-size: $screen-xs-max auto;
-        // height: 500px;
-
-        top: -130px !important;
-    }
-
 }

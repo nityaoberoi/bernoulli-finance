@@ -63,17 +63,3 @@ footer {
 }
 
 
-@media (max-width: $screen-xs-min) {
-
-    footer {
-        .copyright, .contact {
-            float: none !important;
-        }
-
-        .social-icons {
-            padding: 0;
-            margin: 10px 0;
-        }
-
-    }
-}

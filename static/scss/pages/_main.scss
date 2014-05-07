@@ -6,7 +6,7 @@
     }
 
     .header-text {
-        bottom: 10%;
+        top: 35%;
         text-align: left;
         left: 60px;
     }
@@ -97,59 +97,5 @@
 
     .quote-author {
         text-align: right;
-    }
-}
-
-@media (max-width: $screen-xs-min) {
-
-    .landing-page {
-        .header-image {
-            height: 530px;
-            background-image: url('../img/header/businessman-grass.png');
-            top: -50px !important;
-            display: block !important;
-        }
-
-        .header-text {
-            display: block !important;
-            position: absolute;
-            bottom: 10%;
-            text-align: left;
-            left: 60px;
-        }
-
-        .content {
-            top: 460px !important;
-        }
-
-        section.services {
-            a {
-                display: block;
-
-                div {
-                    display: block;
-                    padding-top: 30px !important;
-                    border: none;
-                    border-bottom: 1px solid rgba(159, 160, 172, 0.5);
-                    box-shadow: 0 1px 0 rgb(76, 77, 78);
-                    display: block;
-                }
-
-                &:first-child {
-                    padding-top: 0;
-
-                    div {
-                        padding-top: 0px !important;
-                    }
-                }
-
-                &:last-child {
-                    div {
-                        border-bottom: none;
-                        box-shadow: none;
-                    }
-                }
-            }
-        }
     }
 }
