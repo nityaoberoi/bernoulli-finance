@@ -12,53 +12,56 @@
 </head>
 <body class="{% block body_classes %}{% endblock %}">
     <header class="nav-header">
-        <nav class="main-nav">
-            <span class="site-title">
-                <a class="logo" href="/">
-                    <img src="/static/img/logo-white-text.png" class="logo-image img-responsive" width="214px" height="70px" />
-                </a>
-            </span>
-            <div class="navbar-header">
-                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#top-navbar">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                  </button>
+        <div class="container">
+            <nav class="main-nav">
+                <span class="site-title">
+                    <a class="logo" href="/"></a>
+                </span>
+                <div class="navbar-header">
+                      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#top-navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                      </button>
+                    </div>
+                <div class="navbar-collapse collapse navbar-right" id="top-navbar">
+                    <ul class="nav-links clear">
+                        <li {% block about_class %}{% endblock %}><a href="/about/">About</a></li>
+                        <li {% block services_class %}{% endblock %}><a href="/services/">Services</a></li>
+                        <li {% block clients_class %}{% endblock %}><a href="/clients/">Clients</a></li>
+                        <li {% block contact_class %}{% endblock %}><a href="/contact/">Contact</a></li>
+                    </ul>
                 </div>
-            <div class="navbar-collapse collapse navbar-right" id="top-navbar">
-                <ul class="nav-links clear">
-                    <li {% block about_class %}{% endblock %}><a href="/about/">About</a></li>
-                    <li {% block services_class %}{% endblock %}><a href="/services/">Services</a></li>
-                    <li {% block clients_class %}{% endblock %}><a href="/clients/">Clients</a></li>
-                    <li {% block contact_class %}{% endblock %}><a href="/contact/">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
+            </nav>
+        </div>
     </header>
     {% block header_image %}
     <header class="header-image">
         <div class="tint"></div>
+        <div class="header-text container">
+            {% block header_text %}{% endblock %}
+        </div>
     </header>
     {% endblock %}
-    <div class="header-text">
-        {% block header_text %}{% endblock %}
-    </div>
+
 
     <div class="content">
         {% block body %}
         {% endblock %}
         <footer>
-            <div class="copyright pull-left">
-                <em>&copy; 2014 Bernoulli Finance</em>
-            </div>
-            <div class="contact pull-right">
-                <ul class="social-icons">
-                    <li><a class="email" href="mailto:hello@bernoullifinance.com?subject=Hello" target="_blank">Email</a></li>
-                    <li><a class="linkedin" href="http://www.linkedin.com/company/bernoulli-finance" target="_blank">LinkedIn</a></li>
-                   <!--  <li><a class="facebook" href="https://www.facebook.com/anjali.oberoi" target="_blank">Facebook</a></li> -->
-                    <li><a class="twitter" href="https://twitter.com/bernoullifin" target="_blank">Twitter</a></li>
-                </ul>
+            <div class="container">
+                <div class="copyright pull-left">
+                    <em>&copy; 2014 Bernoulli Finance</em>
+                </div>
+                <div class="contact pull-right">
+                    <ul class="social-icons">
+                        <li><a class="email" href="mailto:hello@bernoullifinance.com?subject=Hello" target="_blank">Email</a></li>
+                        <li><a class="linkedin" href="http://www.linkedin.com/company/bernoulli-finance" target="_blank">LinkedIn</a></li>
+                       <!--  <li><a class="facebook" href="https://www.facebook.com/anjali.oberoi" target="_blank">Facebook</a></li> -->
+                        <li><a class="twitter" href="https://twitter.com/bernoullifin" target="_blank">Twitter</a></li>
+                    </ul>
+                </div>
             </div>
         </footer>
     </div>

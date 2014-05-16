@@ -2,7 +2,8 @@
 
     .header-image {
         background-image: url('../img/header/bubble-long.png');
-        top: -100px;
+        height: 100%;
+        top: 50px;
     }
 
     .tint {
@@ -10,18 +11,22 @@
     }
 
     .header-text {
-        top: 16%;
-        right: 38%;
+        top: 30%;
+        left: 38%;
 
         h2 {
             color: $gray-darker;
-            text-align: center;
+            font-size: 100px;
         }
 
         p, .text a {
             color: $gray-darker;
         }
 
+    }
+
+    .content {
+        position: static;
     }
 
 }

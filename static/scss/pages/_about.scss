@@ -9,12 +9,7 @@
         background-color: rgba(30, 30, 30, 0.5);
     }
 
-    .propellor-plane {
-        margin-top: 200px;
-    }
-
     .profile-image img {
-        margin-top: 160px;
 
         &:after {
             background: -webkit-gradient(radial, 50% 50%, 40, 50% 50%, 80, from(rgba(0,0,0,0)), to(rgba(0,0,0,1)));

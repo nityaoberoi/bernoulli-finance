@@ -13,10 +13,8 @@
     transition: background .2s linear;
 
     &.sticky {
-        padding: 0 50px;
+        padding: 7px 50px;
         background: $dark-red;
-        background: rgb(140, 10, 1);
-
     }
 }
 
@@ -37,7 +35,7 @@
         margin: 0 18px;
 
         a {
-            color: $gray-lighter;
+            color: $white;
 
             &:hover {
                 color: $gray-light;
@@ -59,7 +57,9 @@
 
     .logo {
         display: block;
-        padding-bottom: 9px;
+        background-image: url(../img/logo-white-text.png);
+        width: 240px;
+        height: 80px;
     }
 }
 
@@ -106,6 +106,7 @@
 
 .navbar-toggle {
         border-color: #ffffff;
+        margin-top: 23px;
 
     &:hover, &:focus {
         background-color: rgb(233, 238, 241);

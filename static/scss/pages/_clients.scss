@@ -1,8 +1,8 @@
 .clients {
 
     .header-text {
-        top: 40%;
-        right: 45%;
+        top: 25%;
+        left: 39%;
 
         h3 {
             text-align: center;
@@ -12,7 +12,7 @@
 
     .header-image {
         background-image: url('../img/header/pbjelly.jpg');
-        top: -100px;
+        top: -50px;
     }
 
     .tint {
@@ -176,15 +176,15 @@
                 &.bee-raw {
                     background-image: url('../img/client-logos/beeraw.gif');
                 }
-                
+
                 &.nuchas {
                     background-image: url('../img/client-logos/nuchas.jpg');
                 }
-                
+
                 &.fare-resources {
                     background-image: url('../img/client-logos/fareresources.jpg');
                 }
-                
+
                 &.food-craft-institute {
                     background-image: url('../img/client-logos/foodcrafts.jpg');
                 }
@@ -218,7 +218,7 @@
                 border-top: 1px solid rgba(255,255,255,0.5);
             }
         }
-        
+
         .client-logo {
             &.food-craft-institute {
                 h3 {
