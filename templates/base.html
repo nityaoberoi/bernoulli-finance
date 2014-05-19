@@ -12,10 +12,11 @@
 </head>
 <body class="{% block body_classes %}{% endblock %}">
     <header class="nav-header">
-        <div class="container">
             <nav class="main-nav">
                 <span class="site-title">
-                    <a class="logo" href="/"></a>
+                    <a class="logo" href="/">
+                        <img src="/static/img/logo-white-text.png" class="logo-image img-responsive" width="214px" height="70px" />
+                    </a>
                 </span>
                 <div class="navbar-header">
                       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#top-navbar">
@@ -34,7 +35,7 @@
                     </ul>
                 </div>
             </nav>
-        </div>
+
     </header>
     {% block header_image %}
     <header class="header-image">

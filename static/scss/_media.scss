@@ -1,20 +1,4 @@
-@media (max-width: $screen-xs-min) {
-
-    footer {
-        .copyright, .contact {
-            float: none !important;
-        }
-
-        .social-icons {
-            padding: 0;
-            margin: 10px 0;
-        }
-
-    }
-}
-
-
-@media (max-width: $screen-xs-max) {
+@media (max-width: $screen-xs-min) and (max-width: $screen-xs-max) {
 
     h2.visible-phone {
         display: block;
@@ -106,10 +90,52 @@
 
 }
 
+@media (max-width: $screen-xs-min) {
+
+    .logo img {
+        width: 141px;
+        margin-top: 15px;
+    }
+
+    footer {
+        .copyright, .contact {
+            float: none !important;
+            text-align: center;
+        }
+
+        .social-icons {
+            padding: 0;
+            margin: 10px 0;
+        }
+
+    }
+
+    .services .header-text h3 {
+        font-size: 22px;
+        width: 200px;
+        height: 200px;
+        padding: 16px;
+    }
+
+    .contact {
+        .header-image {
+            height: 600px;
+            top: 0;
+        }
+
+        .content {
+            position: relative;
+            top: 650px;
+        }
+    }
+}
+
+
 @media(max-width: $screen-md-min) {
     .nav-links {
         font-size: 17px;
         letter-spacing: 1.5px;
+        padding-left: 0;
 
         li {
             margin: 0 13px;
