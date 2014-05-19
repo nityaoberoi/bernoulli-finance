@@ -8725,8 +8725,8 @@ section:nth-last-child(2) {
 @media (max-width: 991px) {
   /* line 135, ../scss/_media.scss */
   .contact .header-text {
-    margin-top: -165px;
-    margin-left: -150px;
+    margin-top: -135px;
+    margin-left: -100px;
   }
   /* line 140, ../scss/_media.scss */
   .contact .header-text h2 {
