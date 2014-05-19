@@ -122,6 +122,11 @@
     }
 }
 
+@media (max-width: $screen-xs-max) {
+
+
+}
+
 @media(min-width: $screen-sm-min) {
     .services {
         .icon-section {
@@ -132,6 +137,12 @@
 
 
 @media(max-width: $screen-sm-max) {
+
+    .header-image {
+        top: 0 !important;
+        height: 100%;
+    }
+
     .contact .header-text {
 
         margin-top: -135px;
