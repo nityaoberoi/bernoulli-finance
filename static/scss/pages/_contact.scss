@@ -7,12 +7,17 @@
     }
 
     .tint {
-        background-color: rgba(20, 20, 20, 0.7);
+        background-color: rgba(20, 20, 20, 0.5);
     }
 
     .header-text {
-        top: 30%;
-        left: 38%;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        margin-top: -259px;
+        margin-left: -200px;
+        padding: 0;
+        text-align: start;
 
         h2 {
             color: $gray-darker;

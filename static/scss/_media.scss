@@ -43,8 +43,6 @@
 
     .landing-page .header-text {
 
-        top: 20%;
-
         h1 {
             font-size: 30px;
         }
@@ -53,9 +51,6 @@
     .services {
 
         .header-text {
-
-            top: 10%;
-            left: 25%;
 
             h3 {
                 font-size: 26px;
@@ -77,9 +72,6 @@
 
     .clients {
         .header-text {
-
-            top: 14%;
-            left: 26%;
 
             h3 {
                 font-size: 26px;
@@ -130,8 +122,31 @@
     }
 }
 
+@media(min-width: $screen-sm-min) {
+    .services {
+        .icon-section {
+            margin-top: 60px;
+        }
+    }
+}
 
-@media(max-width: $screen-md-min) {
+
+@media(max-width: $screen-sm-max) {
+    .contact .header-text {
+
+        margin-top: -165px;
+        margin-left: -150px;
+
+        h2 {
+            font-size: 34px;
+        }
+
+        p {
+            margin: 8px 0;
+            font-size: 16px;
+        }
+        }
+
     .nav-links {
         font-size: 17px;
         letter-spacing: 1.5px;
@@ -139,14 +154,6 @@
 
         li {
             margin: 0 13px;
-        }
-    }
-}
-
-@media(min-width: $screen-sm-min) {
-    .services {
-        .icon-section {
-            margin-top: 60px;
         }
     }
 }
@@ -164,10 +171,15 @@
     }
 }
 
-@media(max-width: $screen-md-max) {
+@media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
 
-    .contact .header-text h2 {
-        font-size: 30px;
+    .contact .header-text {
+
+        margin-top: -220px;
+        margin-left: -150px;
+
+        h2 {
+            font-size: 80px;
+        }
     }
 }
-

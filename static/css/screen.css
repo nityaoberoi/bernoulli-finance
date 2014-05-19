@@ -7963,7 +7963,7 @@ section:nth-last-child(2) {
 }
 /* line 14, ../scss/pages/_main.scss */
 .landing-page .tint {
-  background-color: rgba(10, 10, 10, 0.8);
+  background-color: rgba(10, 10, 10, 0.6);
 }
 /* line 20, ../scss/pages/_main.scss */
 .landing-page section .img-responsive {
@@ -8319,23 +8319,28 @@ section:nth-last-child(2) {
 }
 /* line 9, ../scss/pages/_contact.scss */
 .contact .tint {
-  background-color: rgba(20, 20, 20, 0.7);
+  background-color: rgba(20, 20, 20, 0.5);
 }
 /* line 13, ../scss/pages/_contact.scss */
 .contact .header-text {
-  top: 30%;
-  left: 38%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -259px;
+  margin-left: -200px;
+  padding: 0;
+  text-align: start;
 }
-/* line 17, ../scss/pages/_contact.scss */
+/* line 22, ../scss/pages/_contact.scss */
 .contact .header-text h2 {
   color: #222222;
   font-size: 100px;
 }
-/* line 22, ../scss/pages/_contact.scss */
+/* line 27, ../scss/pages/_contact.scss */
 .contact .header-text p, .contact .header-text .text a {
   color: #222222;
 }
-/* line 28, ../scss/pages/_contact.scss */
+/* line 33, ../scss/pages/_contact.scss */
 .contact .content {
   position: static;
 }
@@ -8648,65 +8653,51 @@ section:nth-last-child(2) {
     font-size: 16px;
   }
 
-  /* line 44, ../scss/_media.scss */
-  .landing-page .header-text {
-    top: 20%;
-  }
-  /* line 48, ../scss/_media.scss */
+  /* line 46, ../scss/_media.scss */
   .landing-page .header-text h1 {
     font-size: 30px;
   }
 
   /* line 55, ../scss/_media.scss */
-  .services .header-text {
-    top: 10%;
-    left: 25%;
-  }
-  /* line 60, ../scss/_media.scss */
   .services .header-text h3 {
     font-size: 26px;
     width: 250px;
     height: 250px;
     padding: 25px;
   }
-  /* line 68, ../scss/_media.scss */
+  /* line 63, ../scss/_media.scss */
   .services .icon {
     display: none !important;
   }
-  /* line 72, ../scss/_media.scss */
+  /* line 67, ../scss/_media.scss */
   .services section {
     padding-top: 25px;
   }
 
-  /* line 79, ../scss/_media.scss */
-  .clients .header-text {
-    top: 14%;
-    left: 26%;
-  }
-  /* line 84, ../scss/_media.scss */
+  /* line 76, ../scss/_media.scss */
   .clients .header-text h3 {
     font-size: 26px;
   }
 }
 @media (max-width: 480px) {
-  /* line 95, ../scss/_media.scss */
+  /* line 87, ../scss/_media.scss */
   .logo img {
     width: 141px;
     margin-top: 15px;
   }
 
-  /* line 101, ../scss/_media.scss */
+  /* line 93, ../scss/_media.scss */
   footer .copyright, footer .contact {
     float: none !important;
     text-align: center;
   }
-  /* line 106, ../scss/_media.scss */
+  /* line 98, ../scss/_media.scss */
   footer .social-icons {
     padding: 0;
     margin: 10px 0;
   }
 
-  /* line 113, ../scss/_media.scss */
+  /* line 105, ../scss/_media.scss */
   .services .header-text h3 {
     font-size: 22px;
     width: 200px;
@@ -8714,48 +8705,68 @@ section:nth-last-child(2) {
     padding: 16px;
   }
 
-  /* line 121, ../scss/_media.scss */
+  /* line 113, ../scss/_media.scss */
   .contact .header-image {
     height: 600px;
     top: 0;
   }
-  /* line 126, ../scss/_media.scss */
+  /* line 118, ../scss/_media.scss */
   .contact .content {
     position: relative;
     top: 650px;
   }
 }
-@media (max-width: 992px) {
+@media (min-width: 768px) {
+  /* line 127, ../scss/_media.scss */
+  .services .icon-section {
+    margin-top: 60px;
+  }
+}
+@media (max-width: 991px) {
   /* line 135, ../scss/_media.scss */
+  .contact .header-text {
+    margin-top: -165px;
+    margin-left: -150px;
+  }
+  /* line 140, ../scss/_media.scss */
+  .contact .header-text h2 {
+    font-size: 34px;
+  }
+  /* line 144, ../scss/_media.scss */
+  .contact .header-text p {
+    margin: 8px 0;
+    font-size: 16px;
+  }
+
+  /* line 150, ../scss/_media.scss */
   .nav-links {
     font-size: 17px;
     letter-spacing: 1.5px;
     padding-left: 0;
   }
-  /* line 140, ../scss/_media.scss */
+  /* line 155, ../scss/_media.scss */
   .nav-links li {
     margin: 0 13px;
   }
 }
-@media (min-width: 768px) {
-  /* line 148, ../scss/_media.scss */
-  .services .icon-section {
-    margin-top: 60px;
-  }
-}
 @media (min-width: 992px) {
-  /* line 157, ../scss/_media.scss */
+  /* line 164, ../scss/_media.scss */
   .about .propellor-plane {
     margin-top: 200px;
   }
-  /* line 161, ../scss/_media.scss */
+  /* line 168, ../scss/_media.scss */
   .about .profile-image img {
     margin-top: 160px;
   }
 }
-@media (max-width: 1199px) {
-  /* line 169, ../scss/_media.scss */
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* line 176, ../scss/_media.scss */
+  .contact .header-text {
+    margin-top: -220px;
+    margin-left: -150px;
+  }
+  /* line 181, ../scss/_media.scss */
   .contact .header-text h2 {
-    font-size: 30px;
+    font-size: 80px;
   }
 }
