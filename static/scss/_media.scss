@@ -84,11 +84,6 @@
 
 @media (max-width: $screen-xs-min) {
 
-    .logo img {
-        width: 141px;
-        margin-top: 15px;
-    }
-
     footer {
         .copyright, .contact {
             float: none !important;
@@ -124,6 +119,25 @@
 
 @media (max-width: $screen-xs-max) {
 
+    .contact .header-text {
+
+        margin-top: -200px;
+        margin-left: -100px;
+
+        h2 {
+            font-size: 34px;
+        }
+
+        p {
+            margin: 8px 0;
+            font-size: 16px;
+        }
+    }
+
+    .logo img {
+        width: 141px;
+        margin-top: 15px;
+    }
 
 }
 
@@ -145,18 +159,18 @@
 
     .contact .header-text {
 
-        margin-top: -135px;
+        margin-top: -200px;
         margin-left: -100px;
 
         h2 {
-            font-size: 34px;
+            font-size: 44px;
         }
 
         p {
             margin: 8px 0;
-            font-size: 16px;
+            font-size: 18px;
         }
-        }
+    }
 
     .nav-links {
         font-size: 17px;
@@ -166,6 +180,36 @@
         li {
             margin: 0 13px;
         }
+    }
+}
+
+@media(max-width: $screen-sm-max) and (orientation: landscape) {
+    .logo img {
+        width: 141px;
+    }
+
+    .contact .header-text {
+
+        margin-top: -100px;
+        margin-left: -40px;
+
+        h2 {
+            font-size: 15px;
+        }
+
+        p {
+            margin: 4px 0;
+            font-size: 9px;
+
+            img {
+                height: 20px;
+                width: 20px;
+            }
+        }
+    }
+
+    .contact .content {
+        position: relative;
     }
 }
 
@@ -182,15 +226,15 @@
     }
 }
 
-@media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+@media (min-width: $screen-lg-min) {
 
     .contact .header-text {
 
-        margin-top: -220px;
-        margin-left: -150px;
+        margin-top: -259px;
+        margin-left: -200px;
 
         h2 {
-            font-size: 80px;
+            font-size: 100px;
         }
     }
 }

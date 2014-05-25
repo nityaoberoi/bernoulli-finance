@@ -1709,7 +1709,7 @@ pre code {
     margin-left: 100%;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1400px) {
   /* line 83, ../../../../../../Library/Ruby/Gems/1.8/gems/bootstrap-sass-3.0.2.1/vendor/assets/stylesheets/bootstrap/_grid.scss */
   .container {
     width: 1170px;
@@ -7139,7 +7139,7 @@ td.visible-xs {
     display: table-cell !important;
   }
 }
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 992px) and (max-width: 1399px) {
   /* line 569, ../../../../../../Library/Ruby/Gems/1.8/gems/bootstrap-sass-3.0.2.1/vendor/assets/stylesheets/bootstrap/_mixins.scss */
   .visible-xs.visible-md {
     display: block !important;
@@ -7156,7 +7156,7 @@ td.visible-xs {
     display: table-cell !important;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1400px) {
   /* line 569, ../../../../../../Library/Ruby/Gems/1.8/gems/bootstrap-sass-3.0.2.1/vendor/assets/stylesheets/bootstrap/_mixins.scss */
   .visible-xs.visible-lg {
     display: block !important;
@@ -7215,7 +7215,7 @@ td.visible-sm {
     display: table-cell !important;
   }
 }
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 992px) and (max-width: 1399px) {
   /* line 569, ../../../../../../Library/Ruby/Gems/1.8/gems/bootstrap-sass-3.0.2.1/vendor/assets/stylesheets/bootstrap/_mixins.scss */
   .visible-sm.visible-md {
     display: block !important;
@@ -7232,7 +7232,7 @@ td.visible-sm {
     display: table-cell !important;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1400px) {
   /* line 569, ../../../../../../Library/Ruby/Gems/1.8/gems/bootstrap-sass-3.0.2.1/vendor/assets/stylesheets/bootstrap/_mixins.scss */
   .visible-sm.visible-lg {
     display: block !important;
@@ -7291,7 +7291,7 @@ td.visible-md {
     display: table-cell !important;
   }
 }
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 992px) and (max-width: 1399px) {
   /* line 569, ../../../../../../Library/Ruby/Gems/1.8/gems/bootstrap-sass-3.0.2.1/vendor/assets/stylesheets/bootstrap/_mixins.scss */
   .visible-md {
     display: block !important;
@@ -7308,7 +7308,7 @@ td.visible-md {
     display: table-cell !important;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1400px) {
   /* line 569, ../../../../../../Library/Ruby/Gems/1.8/gems/bootstrap-sass-3.0.2.1/vendor/assets/stylesheets/bootstrap/_mixins.scss */
   .visible-md.visible-lg {
     display: block !important;
@@ -7367,7 +7367,7 @@ td.visible-lg {
     display: table-cell !important;
   }
 }
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 992px) and (max-width: 1399px) {
   /* line 569, ../../../../../../Library/Ruby/Gems/1.8/gems/bootstrap-sass-3.0.2.1/vendor/assets/stylesheets/bootstrap/_mixins.scss */
   .visible-lg.visible-md {
     display: block !important;
@@ -7384,7 +7384,7 @@ td.visible-lg {
     display: table-cell !important;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1400px) {
   /* line 569, ../../../../../../Library/Ruby/Gems/1.8/gems/bootstrap-sass-3.0.2.1/vendor/assets/stylesheets/bootstrap/_mixins.scss */
   .visible-lg {
     display: block !important;
@@ -7435,7 +7435,7 @@ td.hidden-xs {
     display: none !important;
   }
 }
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 992px) and (max-width: 1399px) {
   /* line 580, ../../../../../../Library/Ruby/Gems/1.8/gems/bootstrap-sass-3.0.2.1/vendor/assets/stylesheets/bootstrap/_mixins.scss */
   .hidden-xs.hidden-md,
   tr.hidden-xs.hidden-md,
@@ -7444,7 +7444,7 @@ td.hidden-xs {
     display: none !important;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1400px) {
   /* line 580, ../../../../../../Library/Ruby/Gems/1.8/gems/bootstrap-sass-3.0.2.1/vendor/assets/stylesheets/bootstrap/_mixins.scss */
   .hidden-xs.hidden-lg,
   tr.hidden-xs.hidden-lg,
@@ -7487,7 +7487,7 @@ td.hidden-sm {
     display: none !important;
   }
 }
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 992px) and (max-width: 1399px) {
   /* line 580, ../../../../../../Library/Ruby/Gems/1.8/gems/bootstrap-sass-3.0.2.1/vendor/assets/stylesheets/bootstrap/_mixins.scss */
   .hidden-sm.hidden-md,
   tr.hidden-sm.hidden-md,
@@ -7496,7 +7496,7 @@ td.hidden-sm {
     display: none !important;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1400px) {
   /* line 580, ../../../../../../Library/Ruby/Gems/1.8/gems/bootstrap-sass-3.0.2.1/vendor/assets/stylesheets/bootstrap/_mixins.scss */
   .hidden-sm.hidden-lg,
   tr.hidden-sm.hidden-lg,
@@ -7539,7 +7539,7 @@ td.hidden-md {
     display: none !important;
   }
 }
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 992px) and (max-width: 1399px) {
   /* line 580, ../../../../../../Library/Ruby/Gems/1.8/gems/bootstrap-sass-3.0.2.1/vendor/assets/stylesheets/bootstrap/_mixins.scss */
   .hidden-md,
   tr.hidden-md,
@@ -7548,7 +7548,7 @@ td.hidden-md {
     display: none !important;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1400px) {
   /* line 580, ../../../../../../Library/Ruby/Gems/1.8/gems/bootstrap-sass-3.0.2.1/vendor/assets/stylesheets/bootstrap/_mixins.scss */
   .hidden-md.hidden-lg,
   tr.hidden-md.hidden-lg,
@@ -7591,7 +7591,7 @@ td.hidden-lg {
     display: none !important;
   }
 }
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 992px) and (max-width: 1399px) {
   /* line 580, ../../../../../../Library/Ruby/Gems/1.8/gems/bootstrap-sass-3.0.2.1/vendor/assets/stylesheets/bootstrap/_mixins.scss */
   .hidden-lg.hidden-md,
   tr.hidden-lg.hidden-md,
@@ -7600,7 +7600,7 @@ td.hidden-lg {
     display: none !important;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1400px) {
   /* line 580, ../../../../../../Library/Ruby/Gems/1.8/gems/bootstrap-sass-3.0.2.1/vendor/assets/stylesheets/bootstrap/_mixins.scss */
   .hidden-lg,
   tr.hidden-lg,
@@ -7773,11 +7773,16 @@ td.visible-print {
 }
 
 /* line 128, ../scss/components/_header.scss */
+.navbar-collapse.in {
+  background-color: #8c0a01;
+}
+
+/* line 132, ../scss/components/_header.scss */
 .sb-menu {
   margin: 0;
   list-style-type: none;
 }
-/* line 133, ../scss/components/_header.scss */
+/* line 137, ../scss/components/_header.scss */
 .sb-menu li {
   width: 100%;
   padding: 0;
@@ -7785,14 +7790,14 @@ td.visible-print {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
-/* line 141, ../scss/components/_header.scss */
+/* line 145, ../scss/components/_header.scss */
 .sb-menu li a {
   width: 100%;
   display: inline-block;
   padding: 1em;
   color: #f2f2f2;
 }
-/* line 147, ../scss/components/_header.scss */
+/* line 151, ../scss/components/_header.scss */
 .sb-menu li a:hover {
   text-decoration: none;
   background-color: rgba(255, 255, 255, 0.05);
@@ -8326,15 +8331,15 @@ section:nth-last-child(2) {
   position: fixed;
   top: 50%;
   left: 50%;
-  margin-top: -259px;
-  margin-left: -200px;
+  margin-top: -220px;
+  margin-left: -150px;
   padding: 0;
   text-align: start;
 }
 /* line 22, ../scss/pages/_contact.scss */
 .contact .header-text h2 {
   color: #222222;
-  font-size: 100px;
+  font-size: 80px;
 }
 /* line 27, ../scss/pages/_contact.scss */
 .contact .header-text p, .contact .header-text .text a {
@@ -8680,24 +8685,18 @@ section:nth-last-child(2) {
   }
 }
 @media (max-width: 480px) {
-  /* line 87, ../scss/_media.scss */
-  .logo img {
-    width: 141px;
-    margin-top: 15px;
-  }
-
-  /* line 93, ../scss/_media.scss */
+  /* line 88, ../scss/_media.scss */
   footer .copyright, footer .contact {
     float: none !important;
     text-align: center;
   }
-  /* line 98, ../scss/_media.scss */
+  /* line 93, ../scss/_media.scss */
   footer .social-icons {
     padding: 0;
     margin: 10px 0;
   }
 
-  /* line 105, ../scss/_media.scss */
+  /* line 100, ../scss/_media.scss */
   .services .header-text h3 {
     font-size: 22px;
     width: 200px;
@@ -8705,74 +8704,127 @@ section:nth-last-child(2) {
     padding: 16px;
   }
 
-  /* line 113, ../scss/_media.scss */
+  /* line 108, ../scss/_media.scss */
   .contact .header-image {
     height: 600px;
     top: 0;
   }
-  /* line 118, ../scss/_media.scss */
+  /* line 113, ../scss/_media.scss */
   .contact .content {
     position: relative;
     top: 650px;
   }
 }
-@media (min-width: 768px) {
-  /* line 132, ../scss/_media.scss */
-  .services .icon-section {
-    margin-top: 60px;
-  }
-}
-@media (max-width: 991px) {
-  /* line 141, ../scss/_media.scss */
-  .header-image {
-    top: 0 !important;
-    height: 100%;
-  }
-
-  /* line 146, ../scss/_media.scss */
+@media (max-width: 767px) {
+  /* line 122, ../scss/_media.scss */
   .contact .header-text {
-    margin-top: -135px;
+    margin-top: -200px;
     margin-left: -100px;
   }
-  /* line 151, ../scss/_media.scss */
+  /* line 127, ../scss/_media.scss */
   .contact .header-text h2 {
     font-size: 34px;
   }
-  /* line 155, ../scss/_media.scss */
+  /* line 131, ../scss/_media.scss */
   .contact .header-text p {
     margin: 8px 0;
     font-size: 16px;
   }
 
-  /* line 161, ../scss/_media.scss */
+  /* line 137, ../scss/_media.scss */
+  .logo img {
+    width: 141px;
+    margin-top: 15px;
+  }
+}
+@media (min-width: 768px) {
+  /* line 146, ../scss/_media.scss */
+  .services .icon-section {
+    margin-top: 60px;
+  }
+}
+@media (max-width: 991px) {
+  /* line 155, ../scss/_media.scss */
+  .header-image {
+    top: 0 !important;
+    height: 100%;
+  }
+
+  /* line 160, ../scss/_media.scss */
+  .contact .header-text {
+    margin-top: -200px;
+    margin-left: -100px;
+  }
+  /* line 165, ../scss/_media.scss */
+  .contact .header-text h2 {
+    font-size: 44px;
+  }
+  /* line 169, ../scss/_media.scss */
+  .contact .header-text p {
+    margin: 8px 0;
+    font-size: 18px;
+  }
+
+  /* line 175, ../scss/_media.scss */
   .nav-links {
     font-size: 17px;
     letter-spacing: 1.5px;
     padding-left: 0;
   }
-  /* line 166, ../scss/_media.scss */
+  /* line 180, ../scss/_media.scss */
   .nav-links li {
     margin: 0 13px;
   }
 }
+@media (max-width: 991px) and (orientation: landscape) {
+  /* line 187, ../scss/_media.scss */
+  .logo img {
+    width: 141px;
+  }
+
+  /* line 191, ../scss/_media.scss */
+  .contact .header-text {
+    margin-top: -100px;
+    margin-left: -40px;
+  }
+  /* line 196, ../scss/_media.scss */
+  .contact .header-text h2 {
+    font-size: 15px;
+  }
+  /* line 200, ../scss/_media.scss */
+  .contact .header-text p {
+    margin: 4px 0;
+    font-size: 9px;
+  }
+  /* line 204, ../scss/_media.scss */
+  .contact .header-text p img {
+    height: 20px;
+    width: 20px;
+  }
+
+  /* line 211, ../scss/_media.scss */
+  .contact .content {
+    position: relative;
+  }
+}
 @media (min-width: 992px) {
-  /* line 175, ../scss/_media.scss */
+  /* line 219, ../scss/_media.scss */
   .about .propellor-plane {
     margin-top: 200px;
   }
-  /* line 179, ../scss/_media.scss */
+  /* line 223, ../scss/_media.scss */
   .about .profile-image img {
     margin-top: 160px;
   }
 }
-@media (min-width: 992px) and (max-width: 1199px) {
-  /* line 187, ../scss/_media.scss */
+@media (min-width: 1400px) {
+  /* line 231, ../scss/_media.scss */
   .contact .header-text {
-    margin-top: -220px;
-    margin-left: -150px;
+    margin-top: -259px;
+    margin-left: -200px;
   }
-  /* line 192, ../scss/_media.scss */
+  /* line 236, ../scss/_media.scss */
   .contact .header-text h2 {
-    font-size: 80px;
+    font-size: 100px;
   }
 }
