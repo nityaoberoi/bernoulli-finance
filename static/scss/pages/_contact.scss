@@ -14,18 +14,24 @@
         position: fixed;
         top: 50%;
         left: 50%;
-        margin-top: -220px;
+        margin-top: -195px;
         margin-left: -150px;
         padding: 0;
         text-align: start;
 
         h2 {
             color: $gray-darker;
-            font-size: 80px;
+            font-size: 70px;
         }
 
         p, .text a {
             color: $gray-darker;
+            margin: 8px 0;
+
+            img {
+                height: 40px;
+                width: 40px;
+            }
         }
 
     }
