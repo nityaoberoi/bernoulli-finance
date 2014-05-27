@@ -1,39 +1,12 @@
 .contact {
 
     .header-image {
-        background-image: url('../img/header/bubble-long.png');
+        background-image: url('../img/header/bubble-long-1.png');
         height: 100%;
-        top: 50px;
     }
 
     .tint {
         background-color: rgba(20, 20, 20, 0.5);
-    }
-
-    .header-text {
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        margin-top: -195px;
-        margin-left: -125px;
-        padding: 0;
-        text-align: start;
-
-        h2 {
-            color: $gray-darker;
-            font-size: 70px;
-        }
-
-        p, .text a {
-            color: $gray-darker;
-            margin: 8px 0;
-
-            img {
-                height: 40px;
-                width: 40px;
-            }
-        }
-
     }
 
     .content {
