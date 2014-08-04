@@ -1,22 +1,26 @@
+@media(max-width: $screen-sm-max) {
+
+    .header-image {
+        top: 0 !important;
+        height: 100%;
+    }
+
+    .nav-links {
+        font-size: 17px;
+        letter-spacing: 1.5px;
+        padding-left: 0;
+
+        li {
+            margin: 0 13px;
+        }
+    }
+}
+
 @media (max-width: $screen-xs-min) and (max-width: $screen-xs-max) {
 
     h2.visible-phone {
         display: block;
         text-align: center;
-    }
-
-    h2 {
-        font-size: 36px;
-        line-height: 1.5em;
-    }
-
-    .header-image {
-        height: 600px;
-        top: 0;
-    }
-
-    .content {
-        top: 500px;
     }
 
     .main-nav {
@@ -104,39 +108,43 @@
         padding: 16px;
     }
 
-    .contact {
-        .header-image {
-            height: 600px;
-            top: 0;
-        }
-
-        .content {
-            position: relative;
-            top: 650px;
-        }
-    }
 }
 
 @media (max-width: $screen-xs-max) {
 
-    .contact .header-text {
+    body {
+        font-size: 16px;
+    }
 
-        margin-top: -200px;
-        margin-left: -100px;
+    h2 {
+        font-size: 33px;
+        line-height: 1.5em;
+    }
 
-        h2 {
-            font-size: 34px;
-        }
+    h3 {
+      font-size: 27px;
+    }
 
-        p {
-            margin: 8px 0;
-            font-size: 16px;
-        }
+    h4 {
+      font-size: 20px;
+    }
+
+    section {
+      padding: 0 0 50px 0;
     }
 
     .logo img {
         width: 141px;
         margin-top: 15px;
+    }
+
+    .header-image {
+        height: 60%;
+        top: 0;
+    }
+
+    .content {
+      top: 483px;
     }
 
 }
@@ -149,32 +157,19 @@
     }
 }
 
-
-@media(max-width: $screen-sm-max) {
-
-    .header-image {
-        top: 0 !important;
-        height: 100%;
-    }
-
-    .nav-links {
-        font-size: 17px;
-        letter-spacing: 1.5px;
-        padding-left: 0;
-
-        li {
-            margin: 0 13px;
+@media(max-width: $screen-md-max) {
+    .about .profile-img {
+        img {
+            width: 150px;
+            height: 150px;
         }
     }
 }
 
+
 @media(max-width: $screen-sm-max) and (orientation: landscape) {
     .logo img {
         width: 141px;
-    }
-
-    .contact .content {
-        position: relative;
     }
 }
 
@@ -182,11 +177,7 @@
 
     .about {
         .propellor-plane {
-            margin-top: 200px;
-        }
-
-        .profile-image img {
-            margin-top: 160px;
+            margin-top: 170px;
         }
     }
 }

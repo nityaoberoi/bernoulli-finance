@@ -15,6 +15,14 @@
     &.sticky {
         padding: 7px 50px;
         background: $dark-red;
+
+        .main-nav {
+            line-height: 2em;
+
+            ul {
+                padding-top: 0;
+            }
+        }
     }
 }
 

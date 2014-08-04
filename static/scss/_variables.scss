@@ -64,7 +64,7 @@ $font-family-serif:       'Bitter',Georgia,Cambria,"Times New Roman",Times,serif
 $font-family-base:        $font-family-sans-serif;
 $font-quote:              $font-family-sans-serif;
 
-$font-size-base:          20px;
+$font-size-base:          18px;
 //$font-size-large:         ceil($font-size-base * 1.25); // ~18px
 $font-size-small:         ceil($font-size-base * 0.85); // ~12px
 
@@ -243,7 +243,7 @@ $font-size-h6:            ceil($font-size-base * 0.85); // ~12px
 // Large screen / wide desktop
 // Note: Deprecated $screen-lg and $screen-lg-desktop as of v3.0.1
 $screen-lg:                  1400px;
-$screen-lg-min:              $screen-lg;
+$screen-lg-min:              1400px;
 //$screen-lg-desktop:          $screen-lg-min;
 
 // So media queries don't overlap when required, provide a maximum
