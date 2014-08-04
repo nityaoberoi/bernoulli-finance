@@ -50,9 +50,16 @@ var ModalEffects = (function() {
 				});
 			}
 
-		} );
+			$(document).keyup(function(ev){
+			   if(ev.keyCode == 27)
+			    removeModalHandler();
+			});
+
+		});
 
 	}
+
+
 
 	init();
 
