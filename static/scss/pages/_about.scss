@@ -16,9 +16,12 @@
     img {
       width: 212px;
       height: 200px;
-      border: solid 5px rgba(26,11,11,0.6);
       margin: 0 auto 15px;
       cursor: pointer;
+      border: solid 5px rgba(26, 11, 11, 0.52);
+      -moz-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+      -webkit-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+      box-shadow: 1px 2px 3px rgba(0,0,0,.5);
     }
 
     .profile-text {

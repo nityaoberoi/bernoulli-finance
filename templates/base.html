@@ -74,6 +74,7 @@
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 <script src="/static/js/waypoints.min.js"></script>
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
+{% block waypoints %}
 <script>
     jQuery(function($){
         var nav = $('.nav-header'),
@@ -87,6 +88,7 @@
 
     });
 </script>
+{% endblock %}
 <!-- <script type="text/javascript" src="/scripts/retina.js"></script> -->
 {% block extra_js %}{% endblock %}
 </body>

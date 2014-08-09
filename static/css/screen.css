@@ -8075,48 +8075,52 @@ button.close {
 .nav-header.sticky .main-nav ul {
   padding-top: 0;
 }
+/* line 27, ../scss/components/_header.scss */
+.nav-header.sticky .logo img {
+  width: 141px;
+}
 
-/* line 29, ../scss/components/_header.scss */
+/* line 33, ../scss/components/_header.scss */
 .main-nav {
   text-transform: uppercase;
   letter-spacing: 2px;
   line-height: 4em;
 }
-/* line 34, ../scss/components/_header.scss */
+/* line 38, ../scss/components/_header.scss */
 .main-nav ul {
   overflow: hidden;
   float: right;
   margin-bottom: 0;
   padding-top: 10px;
 }
-/* line 41, ../scss/components/_header.scss */
+/* line 45, ../scss/components/_header.scss */
 .main-nav li {
   display: inline-block;
   margin: 0 18px;
 }
-/* line 45, ../scss/components/_header.scss */
+/* line 49, ../scss/components/_header.scss */
 .main-nav li a {
   color: white;
 }
-/* line 48, ../scss/components/_header.scss */
+/* line 52, ../scss/components/_header.scss */
 .main-nav li a:hover {
   color: #b0a6a6;
   padding-bottom: 7px;
   border-bottom: 2px solid #b0a6a6;
 }
-/* line 55, ../scss/components/_header.scss */
+/* line 59, ../scss/components/_header.scss */
 .main-nav li.active a {
   padding-bottom: 5px;
   border-bottom: 2px solid #eeeeee;
 }
 
-/* line 62, ../scss/components/_header.scss */
+/* line 66, ../scss/components/_header.scss */
 .site-title {
   float: left;
   display: block;
 }
 
-/* line 67, ../scss/components/_header.scss */
+/* line 71, ../scss/components/_header.scss */
 .header-image {
   position: fixed;
   right: 0;
@@ -8131,7 +8135,7 @@ button.close {
   width: 100%;
 }
 
-/* line 83, ../scss/components/_header.scss */
+/* line 87, ../scss/components/_header.scss */
 .tint {
   height: 100%;
   z-index: 4;
@@ -8139,7 +8143,7 @@ button.close {
   display: table-column;
 }
 
-/* line 91, ../scss/components/_header.scss */
+/* line 95, ../scss/components/_header.scss */
 .header-text {
   background: transparent;
   z-index: 32;
@@ -8147,7 +8151,7 @@ button.close {
   vertical-align: middle;
   text-align: center;
 }
-/* line 99, ../scss/components/_header.scss */
+/* line 103, ../scss/components/_header.scss */
 .header-text h1 {
   color: #eeeeee;
   font-family: 'Novecento', sans-serif;
@@ -8160,42 +8164,42 @@ button.close {
   margin: 13px 0;
   text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.65);
 }
-/* line 112, ../scss/components/_header.scss */
+/* line 116, ../scss/components/_header.scss */
 .header-text h3 {
   color: #eeeeee;
   display: inline-block;
 }
 
-/* line 118, ../scss/components/_header.scss */
+/* line 122, ../scss/components/_header.scss */
 .navbar-toggle {
   border-color: #ffffff;
-  margin-top: 23px;
+  margin-top: 18px;
   margin-right: 0;
 }
-/* line 123, ../scss/components/_header.scss */
+/* line 127, ../scss/components/_header.scss */
 .navbar-toggle:hover, .navbar-toggle:focus {
   background-color: #e9eef1;
 }
-/* line 126, ../scss/components/_header.scss */
+/* line 130, ../scss/components/_header.scss */
 .navbar-toggle:hover .icon-bar, .navbar-toggle:focus .icon-bar {
   background-color: #8c0a01;
 }
-/* line 131, ../scss/components/_header.scss */
+/* line 135, ../scss/components/_header.scss */
 .navbar-toggle .icon-bar {
   background-color: white;
 }
 
-/* line 136, ../scss/components/_header.scss */
+/* line 140, ../scss/components/_header.scss */
 .navbar-collapse.in {
   background-color: #8c0a01;
 }
 
-/* line 140, ../scss/components/_header.scss */
+/* line 144, ../scss/components/_header.scss */
 .sb-menu {
   margin: 0;
   list-style-type: none;
 }
-/* line 145, ../scss/components/_header.scss */
+/* line 149, ../scss/components/_header.scss */
 .sb-menu li {
   width: 100%;
   padding: 0;
@@ -8203,14 +8207,14 @@ button.close {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
-/* line 153, ../scss/components/_header.scss */
+/* line 157, ../scss/components/_header.scss */
 .sb-menu li a {
   width: 100%;
   display: inline-block;
   padding: 1em;
   color: #f2f2f2;
 }
-/* line 159, ../scss/components/_header.scss */
+/* line 163, ../scss/components/_header.scss */
 .sb-menu li a:hover {
   text-decoration: none;
   background-color: rgba(255, 255, 255, 0.05);
@@ -8461,15 +8465,18 @@ section:nth-last-child(2) {
 .about .profile-img img {
   width: 212px;
   height: 200px;
-  border: solid 5px rgba(26, 11, 11, 0.6);
   margin: 0 auto 15px;
   cursor: pointer;
+  border: solid 5px rgba(26, 11, 11, 0.52);
+  -moz-box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
 }
-/* line 24, ../scss/pages/_about.scss */
+/* line 27, ../scss/pages/_about.scss */
 .about .profile-img .profile-text {
   display: block;
 }
-/* line 28, ../scss/pages/_about.scss */
+/* line 31, ../scss/pages/_about.scss */
 .about .profile-img p {
   margin: 0;
   margin-bottom: 10px;
@@ -8772,6 +8779,10 @@ section:nth-last-child(2) {
 /* line 12, ../scss/pages/_contact.scss */
 .contact .content {
   position: static;
+}
+/* line 16, ../scss/pages/_contact.scss */
+.contact .nav-header {
+  background: #8c0a01;
 }
 
 /* line 1, ../scss/pages/under_construction.scss */
@@ -9159,7 +9170,7 @@ section:nth-last-child(2) {
   /* line 136, ../scss/_media.scss */
   .logo img {
     width: 141px;
-    margin-top: 15px;
+    margin-top: 10px;
   }
 
   /* line 141, ../scss/_media.scss */
@@ -9186,14 +9197,8 @@ section:nth-last-child(2) {
     height: 150px;
   }
 }
-@media (max-width: 991px) and (orientation: landscape) {
-  /* line 171, ../scss/_media.scss */
-  .logo img {
-    width: 141px;
-  }
-}
 @media (min-width: 992px) {
-  /* line 179, ../scss/_media.scss */
+  /* line 172, ../scss/_media.scss */
   .about .propellor-plane {
     margin-top: 170px;
   }

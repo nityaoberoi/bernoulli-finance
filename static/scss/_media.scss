@@ -135,7 +135,7 @@
 
     .logo img {
         width: 141px;
-        margin-top: 15px;
+        margin-top: 10px;
     }
 
     .header-image {
@@ -163,13 +163,6 @@
             width: 150px;
             height: 150px;
         }
-    }
-}
-
-
-@media(max-width: $screen-sm-max) and (orientation: landscape) {
-    .logo img {
-        width: 141px;
     }
 }
 
