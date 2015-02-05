@@ -75,12 +75,6 @@
 
             &:hover {
 
-                .client-info-wrap {
-                    box-shadow:
-                        0 0 0 0 rgba(255,255,255,0.8),
-                        inset 0 0 3px rgba(20,20, 20, 0.8);
-                }
-
                 .client-info {
                     @include transform(rotate3d(0,1,0,-180deg));
                 }
@@ -102,9 +96,6 @@
 
             background-image: url(../img/pattern.png);
             background-color: #333;
-            box-shadow:
-                0 0 0 20px rgba(255,255,255,0.2),
-                inset 0 0 3px rgba(40,40,40, 0.8);
 
             &.dark {
                 background-color: #333;
@@ -216,7 +207,6 @@
                 text-transform: uppercase;
                 letter-spacing: 2px;
                 font-size: 17px;
-                margin: 0 10px 0 15px;
                 position: relative;
                 top: 35%;
                 font-family: 'Open Sans', Arial, sans-serif;
