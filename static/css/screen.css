@@ -8883,8 +8883,12 @@ section:nth-last-child(2) {
   font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
   color: #8c0a01;
 }
+/* line 106, ../scss/pages/_base.scss */
+.quote .fa {
+  color: #b0a6a6;
+}
 
-/* line 107, ../scss/pages/_base.scss */
+/* line 111, ../scss/pages/_base.scss */
 .quote-author {
   font-size: 16px;
   color: #333333;

@@ -102,6 +102,10 @@ section {
 .quote {
     font-family: $font-quote;
     color: $dark-red;
+
+    .fa {
+        color: $gray-light;
+    }
 }
 
 .quote-author {
