@@ -1,65 +1,77 @@
 footer {
-    background: #373d43 url('../img/bg-footer.jpg');
-    color: #fff;
+  background: #373d43 url('../img/bg-footer.jpg');
+  color: #fff;
+  font-size: 0.8em;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  padding: 30px 40px;
+
+  .copyright {
+
     line-height: 1em;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding: 10px 40px;
+    padding-top: 10px;
+  }
 
-    .copyright {
-        padding-top: 10px;
-        font-size: 15px;
-    }
+  .social-icons {
+    margin: 0;
+    display: inline-block;
 
-    .social-icons {
-        margin: 0;
+    a {
+      @include transition(0);
+      text-indent: -9999px;
+      display: block;
 
-        li {
-            display: inline-block;
-            margin-right: 10px;
+      &.facebook {
+        @extend .social-facebook-48;
+
+        &:hover {
+            @extend .social-facebook-hover !optional;
         }
+      }
 
-        a {
-            @include transition(0);
-            text-indent: -9999px;
-            display: block;
+      &.twitter {
+        @extend .social-twitter-48;
 
-            &.facebook {
-                @extend .social-facebook-48;
-
-                &:hover {
-                    @extend .social-facebook-hover !optional;
-                }
-            }
-
-            &.twitter {
-
-                @extend .social-twitter-48;
-
-                &:hover {
-                    @extend .social-twitter-hover !optional;
-                }
-            }
-
-            &.linkedin {
-                @extend .social-linkedin-48;
-
-                &:hover {
-                    @extend .social-linkedin-hover !optional;
-                }
-            }
-
-            &.email {
-                @extend .social-mail-48;
-
-                &:hover {
-                    @extend .social-mail-hover !optional;
-                }
-            }
+        &:hover {
+            @extend .social-twitter-hover !optional;
         }
+      }
+
+      &.linkedin {
+        @extend .social-linkedin-48;
+
+        &:hover {
+            @extend .social-linkedin-hover !optional;
+        }
+      }
+
+      &.email {
+        @extend .social-mail-48;
+
+        &:hover {
+            @extend .social-mail-hover !optional;
+        }
+      }
     }
+  }
+
+  .title {
+    display: block;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 1.6em;
+    line-height: 2em;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+
+  a {
+    color: $gray-light;
+    font-size: 1.2em;
+    padding-top: 10px;
+  }
 }
 
 

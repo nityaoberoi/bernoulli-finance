@@ -7,10 +7,11 @@
     <meta name="description" content="Bernoulli Finance consultancy for eco minded ventures strategy operations analytics" />
     <meta name="keywords" content="financial consulting, finance, operations, analytics, strategy, bookkeeping, accounting, budgets, forecasts, company valuation" />
     <link rel="stylesheet" href="/static/css/screen.css">
-    <link rel="icon"  type="image/png" href="/static/img/favicon.png">
+    <link rel="icon" type="image/png" href="/static/img/favicon.png">
     <!-- fonts -->
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Bitter:400,400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
     {% block extra_css %}{% endblock %}
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -44,7 +45,6 @@
                         <li {% block about_class %}{% endblock %}><a href="/about/">About</a></li>
                         <li {% block services_class %}{% endblock %}><a href="/services/">Services</a></li>
                         <li {% block clients_class %}{% endblock %}><a href="/clients/">Clients</a></li>
-                        <li {% block contact_class %}{% endblock %}><a href="/contact/">Contact</a></li>
                     </ul>
                 </div>
             </nav>
@@ -65,16 +65,27 @@
         {% endblock %}
         <footer>
             <div class="container">
-                <div class="copyright pull-left">
-                    <em>&copy; 2015 Bernoulli Finance</em>
-                </div>
-                <div class="contact pull-right">
-                    <ul class="social-icons">
-                        <li><a class="email" href="mailto:hello@bernoullifinance.com?subject=Hello" target="_blank">Email</a></li>
-                        <li><a class="linkedin" href="http://www.linkedin.com/company/bernoulli-finance" target="_blank">LinkedIn</a></li>
-                        <li><a class="facebook" href="https://www.facebook.com/bernoullifinance" target="_blank">Facebook</a></li>
-                        <li><a class="twitter" href="https://twitter.com/bernoullifin" target="_blank">Twitter</a></li>
-                    </ul>
+                <div class="row">
+                    <div class="col-md-3 col-xs-6">
+                        <span class="title"> call us </span>
+                        <span><a href="tel:+12672554865">+ (267) 255 4865</a> </span>
+                    </div>
+                    <div class="col-md-4 col-md-push-3 col-xs-6">
+                        <span class="title"> follow us </span>
+                        <ul class="social-icons list-inline">
+                            <li><a class="linkedin" href="http://www.linkedin.com/company/bernoulli-finance" target="_blank">LinkedIn</a></li>
+                            <li><a class="facebook" href="https://www.facebook.com/bernoullifinance" target="_blank">Facebook</a></li>
+                            <li><a class="twitter" href="https://twitter.com/bernoullifin" target="_blank">Twitter</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-md-pull-4 col-xs-6">
+                        <span class="title"> email us </span>
+                        <a class="email" href="mailto:hello@bernoullifinance.com?subject=Hello" target="_blank">hello@bernoullifinance.com</a>
+                    </div>
+
+                    <div class="col-md-2 copyright hidden-xs hidden-sm">
+                        <em>&copy; 2015 Bernoulli Finance</em>
+                    </div>
                 </div>
             </div>
         </footer>

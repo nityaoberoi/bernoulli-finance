@@ -8729,34 +8729,46 @@ button.close {
 footer {
   background: #373d43 url("../img/bg-footer.jpg");
   color: #fff;
-  line-height: 1em;
+  font-size: 0.8em;
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
-  padding: 10px 40px;
+  text-align: center;
+  padding: 30px 40px;
 }
-/* line 11, ../scss/components/_footer.scss */
+/* line 12, ../scss/components/_footer.scss */
 footer .copyright {
+  line-height: 1em;
   padding-top: 10px;
-  font-size: 15px;
 }
-/* line 16, ../scss/components/_footer.scss */
+/* line 18, ../scss/components/_footer.scss */
 footer .social-icons {
   margin: 0;
-}
-/* line 19, ../scss/components/_footer.scss */
-footer .social-icons li {
   display: inline-block;
-  margin-right: 10px;
 }
-/* line 24, ../scss/components/_footer.scss */
+/* line 22, ../scss/components/_footer.scss */
 footer .social-icons a {
   -webkit-transition: 0;
   -o-transition: 0;
   transition: 0;
   text-indent: -9999px;
   display: block;
+}
+/* line 61, ../scss/components/_footer.scss */
+footer .title {
+  display: block;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 1.6em;
+  line-height: 2em;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+/* line 70, ../scss/components/_footer.scss */
+footer a {
+  color: #b0a6a6;
+  font-size: 1.2em;
+  padding-top: 10px;
 }
 
 /* line 1, ../scss/pages/_base.scss */
@@ -8823,7 +8835,7 @@ p {
   position: relative;
   top: 800px;
   height: 100%;
-  padding: 0 0 20px 0;
+  padding: 0 0 100px 0;
   z-index: 50;
   background: transparent;
 }
@@ -9561,74 +9573,79 @@ section:nth-last-child(2) {
   .nav-links li {
     margin: 0 13px;
   }
+
+  /* line 18, ../scss/_media.scss */
+  .content {
+    padding-bottom: 200px;
+  }
 }
 @media (max-width: 480px) and (max-width: 767px) {
-  /* line 21, ../scss/_media.scss */
+  /* line 25, ../scss/_media.scss */
   h2.visible-phone {
     display: block;
     text-align: center;
   }
 
-  /* line 27, ../scss/_media.scss */
+  /* line 31, ../scss/_media.scss */
   .main-nav ul {
     float: none;
     text-align: center;
     padding-left: 0;
   }
-  /* line 33, ../scss/_media.scss */
+  /* line 37, ../scss/_media.scss */
   .main-nav li {
     height: 60px;
     margin: 0;
     display: block;
   }
-  /* line 38, ../scss/_media.scss */
+  /* line 42, ../scss/_media.scss */
   .main-nav li:last-child {
     height: 100px;
   }
-  /* line 43, ../scss/_media.scss */
+  /* line 47, ../scss/_media.scss */
   .main-nav a {
     font-size: 16px;
   }
 
-  /* line 50, ../scss/_media.scss */
+  /* line 54, ../scss/_media.scss */
   .landing-page .header-text h1 {
     font-size: 30px;
   }
 
-  /* line 59, ../scss/_media.scss */
+  /* line 63, ../scss/_media.scss */
   .services .header-text h3 {
     font-size: 26px;
     width: 250px;
     height: 250px;
     padding: 25px;
   }
-  /* line 67, ../scss/_media.scss */
+  /* line 71, ../scss/_media.scss */
   .services .icon {
     display: none !important;
   }
-  /* line 71, ../scss/_media.scss */
+  /* line 75, ../scss/_media.scss */
   .services section {
     padding-top: 25px;
   }
 
-  /* line 80, ../scss/_media.scss */
+  /* line 84, ../scss/_media.scss */
   .clients .header-text h3 {
     font-size: 26px;
   }
 }
 @media (max-width: 480px) {
-  /* line 92, ../scss/_media.scss */
+  /* line 96, ../scss/_media.scss */
   footer .copyright, footer .contact {
     float: none !important;
     text-align: center;
   }
-  /* line 97, ../scss/_media.scss */
+  /* line 101, ../scss/_media.scss */
   footer .social-icons {
     padding: 0;
     margin: 10px 0;
   }
 
-  /* line 104, ../scss/_media.scss */
+  /* line 108, ../scss/_media.scss */
   .services .header-text h3 {
     font-size: 22px;
     width: 200px;
@@ -9637,64 +9654,64 @@ section:nth-last-child(2) {
   }
 }
 @media (max-width: 767px) {
-  /* line 115, ../scss/_media.scss */
+  /* line 119, ../scss/_media.scss */
   body {
     font-size: 16px;
   }
 
-  /* line 119, ../scss/_media.scss */
+  /* line 123, ../scss/_media.scss */
   h2 {
     font-size: 33px;
     line-height: 1.5em;
   }
 
-  /* line 124, ../scss/_media.scss */
+  /* line 128, ../scss/_media.scss */
   h3 {
     font-size: 27px;
   }
 
-  /* line 128, ../scss/_media.scss */
+  /* line 132, ../scss/_media.scss */
   h4 {
     font-size: 20px;
   }
 
-  /* line 132, ../scss/_media.scss */
+  /* line 136, ../scss/_media.scss */
   section {
     padding: 0 0 50px 0;
   }
 
-  /* line 136, ../scss/_media.scss */
+  /* line 140, ../scss/_media.scss */
   .logo img {
     width: 141px;
     margin-top: 10px;
   }
 
-  /* line 141, ../scss/_media.scss */
+  /* line 145, ../scss/_media.scss */
   .header-image {
     height: 60%;
     top: 0;
   }
 
-  /* line 146, ../scss/_media.scss */
+  /* line 150, ../scss/_media.scss */
   .content {
     top: 483px;
   }
 }
 @media (min-width: 768px) {
-  /* line 154, ../scss/_media.scss */
+  /* line 158, ../scss/_media.scss */
   .services .icon-section {
     margin-top: 60px;
   }
 }
 @media (max-width: 1399px) {
-  /* line 162, ../scss/_media.scss */
+  /* line 166, ../scss/_media.scss */
   .about .profile-img img {
     width: 150px;
     height: 150px;
   }
 }
 @media (min-width: 992px) {
-  /* line 172, ../scss/_media.scss */
+  /* line 176, ../scss/_media.scss */
   .about .propellor-plane {
     margin-top: 170px;
   }
