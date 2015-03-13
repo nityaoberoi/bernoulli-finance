@@ -8884,10 +8884,12 @@ section:nth-last-child(2) {
   color: #8c0a01;
 }
 
-/* line 108, ../scss/pages/_base.scss */
+/* line 107, ../scss/pages/_base.scss */
 .quote-author {
   font-size: 16px;
   color: #333333;
+  display: block;
+  float: right;
 }
 
 /* line 3, ../scss/pages/_main.scss */
