@@ -29,11 +29,9 @@
     .client-section {
 
         h3 {
-            word-spacing: 5px;
             margin-top: 0;
             color: $gray-lighter;
             text-align: center;
-            // text-shadow: 0px 3px 2px rgba(0, 0, 0, 0.65);
         }
 
         .clients-list {
@@ -194,6 +192,22 @@
                 &.food-craft-institute {
                     background-image: url('../img/client-logos/foodcrafts.jpg');
                 }
+
+                &.new-normal {
+                    background-image: url('../img/client-logos/new-normal-logo.jpg');
+                }
+
+                &.nicole-burke {
+                    background-image: url('../img/client-logos/nbs-logo.jpg');
+                }
+
+                &.juhu-beach-club {
+                    background-image: url('../img/client-logos/jbc_logo_small_cmyk.jpg');
+                }
+
+                &.magnolia-brewing {
+                    background-image: url('../img/client-logos/magnolia-brewing.png');
+                }
             }
 
             .client-info-back {
@@ -205,7 +219,6 @@
             h3 {
                 color: $gray-lighter;
                 text-transform: uppercase;
-                letter-spacing: 2px;
                 font-size: 17px;
                 position: relative;
                 top: 35%;

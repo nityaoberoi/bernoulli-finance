@@ -64,7 +64,7 @@
     <div class="content">
         {% block body %}
         {% endblock %}
-        <footer>
+        <footer id="contact-footer">
             <div class="container">
                 <div class="row">
                     <div class="col-md-3 col-xs-6">
@@ -98,7 +98,8 @@
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
 {% block waypoints %}
 <script>
-    jQuery(function($){
+    $(document).ready(function(){
+
         var nav = $('.nav-header'),
             headerImage = $('.header-image');
 
@@ -107,6 +108,19 @@
         }, { offset: function() {
             return nav.height() - 30;
         }});
+
+        $('a[href*=#]:not([href=#])').click(function() {
+            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+              var target = $(this.hash);
+              target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+              if (target.length) {
+                $('html,body').animate({
+                  scrollTop: target.offset().top
+                }, 1000);
+                return false;
+              }
+            }
+        });
 
     });
 </script>
