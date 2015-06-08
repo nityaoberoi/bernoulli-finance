@@ -9080,7 +9080,7 @@ section:nth-last-child(2) {
   color: #eeeeee;
   text-align: center;
 }
-/* line 38, ../scss/pages/_clients.scss */
+/* line 37, ../scss/pages/_clients.scss */
 .client-section .clients-list {
   margin: 20px 0 0 0;
   padding: 0;
@@ -9089,16 +9089,16 @@ section:nth-last-child(2) {
   text-align: center;
   width: 100%;
 }
-/* line 46, ../scss/pages/_clients.scss */
+/* line 45, ../scss/pages/_clients.scss */
 .client-section .clients-list:after, .client-section .clients-list .client-logo:before {
   content: '';
   display: table;
 }
-/* line 51, ../scss/pages/_clients.scss */
+/* line 50, ../scss/pages/_clients.scss */
 .client-section .clients-list:after {
   clear: both;
 }
-/* line 55, ../scss/pages/_clients.scss */
+/* line 54, ../scss/pages/_clients.scss */
 .client-section .clients-list li {
   background-image: url("../img/pattern.png");
   width: 180px;
@@ -9108,7 +9108,7 @@ section:nth-last-child(2) {
   overflow: hidden;
   border-radius: 50%;
 }
-/* line 67, ../scss/pages/_clients.scss */
+/* line 66, ../scss/pages/_clients.scss */
 .client-section .client-logo {
   width: 100%;
   height: 100%;
@@ -9117,14 +9117,14 @@ section:nth-last-child(2) {
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
   cursor: pointer;
 }
-/* line 77, ../scss/pages/_clients.scss */
+/* line 76, ../scss/pages/_clients.scss */
 .client-section .client-logo:hover .client-info {
   -moz-transform: rotate3d(0, 1, 0, -180deg);
   -ms-transform: rotate3d(0, 1, 0, -180deg);
   -webkit-transform: rotate3d(0, 1, 0, -180deg);
   transform: rotate3d(0, 1, 0, -180deg);
 }
-/* line 83, ../scss/pages/_clients.scss */
+/* line 82, ../scss/pages/_clients.scss */
 .client-section .client-info-wrap {
   -webkit-transition: all, 0.4s, ease-in-out;
   -o-transition: all, 0.4s, ease-in-out;
@@ -9141,15 +9141,15 @@ section:nth-last-child(2) {
   background-image: url(../img/pattern.png);
   background-color: #333;
 }
-/* line 99, ../scss/pages/_clients.scss */
+/* line 98, ../scss/pages/_clients.scss */
 .client-section .client-info-wrap.dark {
   background-color: #333;
 }
-/* line 103, ../scss/pages/_clients.scss */
+/* line 102, ../scss/pages/_clients.scss */
 .client-section .client-info-wrap.light {
   background-color: #999;
 }
-/* line 108, ../scss/pages/_clients.scss */
+/* line 107, ../scss/pages/_clients.scss */
 .client-section .client-info {
   -moz-transform-style: preserve-3d;
   -webkit-transform-style: preserve-3d;
@@ -9162,7 +9162,7 @@ section:nth-last-child(2) {
   height: 180px;
   border-radius: 50%;
 }
-/* line 116, ../scss/pages/_clients.scss */
+/* line 115, ../scss/pages/_clients.scss */
 .client-section .client-info > div {
   display: block;
   position: absolute;
@@ -9177,7 +9177,7 @@ section:nth-last-child(2) {
   -ms-backface-visibility: hidden;
   backface-visibility: hidden;
 }
-/* line 132, ../scss/pages/_clients.scss */
+/* line 131, ../scss/pages/_clients.scss */
 .client-section .client-info .client-info-front {
   -moz-background-size: contain;
   -o-background-size: contain;
@@ -9185,83 +9185,83 @@ section:nth-last-child(2) {
   background-size: contain;
   background-repeat: no-repeat;
 }
-/* line 137, ../scss/pages/_clients.scss */
+/* line 136, ../scss/pages/_clients.scss */
 .client-section .client-info .client-info-front.coco-delice {
   background-image: url("../img/client-logos/coco-delice.png");
 }
-/* line 141, ../scss/pages/_clients.scss */
+/* line 140, ../scss/pages/_clients.scss */
 .client-section .client-info .client-info-front.whisk-sf {
   background-image: url("../img/client-logos/whisksf.png");
 }
-/* line 145, ../scss/pages/_clients.scss */
+/* line 144, ../scss/pages/_clients.scss */
 .client-section .client-info .client-info-front.the-sili-co {
   background-image: url("../img/client-logos/the-sili-company.png");
 }
-/* line 149, ../scss/pages/_clients.scss */
+/* line 148, ../scss/pages/_clients.scss */
 .client-section .client-info .client-info-front.sweet-lorens {
   background-image: url("../img/client-logos/sweetlorens.jpg");
 }
-/* line 153, ../scss/pages/_clients.scss */
+/* line 152, ../scss/pages/_clients.scss */
 .client-section .client-info .client-info-front.nuttyness {
   background-image: url("../img/client-logos/nuttyness.png");
 }
-/* line 157, ../scss/pages/_clients.scss */
+/* line 156, ../scss/pages/_clients.scss */
 .client-section .client-info .client-info-front.biz-twister {
   background-image: url("../img/client-logos/biztwister.png");
 }
-/* line 161, ../scss/pages/_clients.scss */
+/* line 160, ../scss/pages/_clients.scss */
 .client-section .client-info .client-info-front.starter-bakery {
   background-image: url("../img/client-logos/starterbakery.jpg");
 }
-/* line 165, ../scss/pages/_clients.scss */
+/* line 164, ../scss/pages/_clients.scss */
 .client-section .client-info .client-info-front.bee-raw {
   background-image: url("../img/client-logos/beeraw.gif");
 }
-/* line 169, ../scss/pages/_clients.scss */
+/* line 168, ../scss/pages/_clients.scss */
 .client-section .client-info .client-info-front.nuchas {
   background-image: url("../img/client-logos/nuchas.jpg");
 }
-/* line 173, ../scss/pages/_clients.scss */
+/* line 172, ../scss/pages/_clients.scss */
 .client-section .client-info .client-info-front.kikas {
   background-image: url("../img/client-logos/kikas-chef.png");
 }
-/* line 177, ../scss/pages/_clients.scss */
+/* line 176, ../scss/pages/_clients.scss */
 .client-section .client-info .client-info-front.basic-training {
   background-image: url("../img/client-logos/basic-training.png");
 }
-/* line 181, ../scss/pages/_clients.scss */
+/* line 180, ../scss/pages/_clients.scss */
 .client-section .client-info .client-info-front.charlitos-cocina {
   background-image: url("../img/client-logos/charlitos-cocina.jpg");
 }
-/* line 185, ../scss/pages/_clients.scss */
+/* line 184, ../scss/pages/_clients.scss */
 .client-section .client-info .client-info-front.blue-root-farm {
   background-image: url("../img/client-logos/blue-root-farm-1.png");
 }
-/* line 189, ../scss/pages/_clients.scss */
+/* line 188, ../scss/pages/_clients.scss */
 .client-section .client-info .client-info-front.fare-resources {
   background-image: url("../img/client-logos/fareresources.jpg");
 }
-/* line 193, ../scss/pages/_clients.scss */
+/* line 192, ../scss/pages/_clients.scss */
 .client-section .client-info .client-info-front.food-craft-institute {
   background-image: url("../img/client-logos/foodcrafts.jpg");
 }
-/* line 197, ../scss/pages/_clients.scss */
+/* line 196, ../scss/pages/_clients.scss */
 .client-section .client-info .client-info-front.new-normal {
   background-image: url("../img/client-logos/new-normal-logo.jpg");
 }
-/* line 201, ../scss/pages/_clients.scss */
+/* line 200, ../scss/pages/_clients.scss */
 .client-section .client-info .client-info-front.nicole-burke {
   background-image: url("../img/client-logos/nbs-logo.jpg");
 }
-/* line 205, ../scss/pages/_clients.scss */
+/* line 204, ../scss/pages/_clients.scss */
 .client-section .client-info .client-info-front.juhu-beach-club {
   background-image: url("../img/client-logos/jbc_logo_small_cmyk.jpg");
 }
-/* line 209, ../scss/pages/_clients.scss */
+/* line 208, ../scss/pages/_clients.scss */
 .client-section .client-info .client-info-front.magnolia-brewing {
   background-image: url("../img/client-logos/magnolia-brewing.png");
 }
-/* line 214, ../scss/pages/_clients.scss */
+/* line 213, ../scss/pages/_clients.scss */
 .client-section .client-info .client-info-back {
   -moz-transform: rotate3d(0, 1, 0, 180deg);
   -ms-transform: rotate3d(0, 1, 0, 180deg);
@@ -9270,7 +9270,7 @@ section:nth-last-child(2) {
   background-color: #333;
   background-image: url("../img/pattern.png");
 }
-/* line 220, ../scss/pages/_clients.scss */
+/* line 219, ../scss/pages/_clients.scss */
 .client-section .client-info h3 {
   color: #eeeeee;
   text-transform: uppercase;
@@ -9279,7 +9279,7 @@ section:nth-last-child(2) {
   top: 35%;
   font-family: 'Open Sans', Arial, sans-serif;
 }
-/* line 229, ../scss/pages/_clients.scss */
+/* line 228, ../scss/pages/_clients.scss */
 .client-section .client-info p {
   color: #fff;
   padding: 10px 5px;
@@ -9288,7 +9288,7 @@ section:nth-last-child(2) {
   font-size: 12px;
   border-top: 1px solid rgba(255, 255, 255, 0.5);
 }
-/* line 241, ../scss/pages/_clients.scss */
+/* line 240, ../scss/pages/_clients.scss */
 .client-section .client-logo.food-craft-institute h3 {
   padding-top: 40px;
 }
