@@ -17,6 +17,13 @@
   src: local('Prociono'), url('../fonts/prociono.ttf') format('truetype');
 }
 
+@font-face {
+  font-family: 'Goudy';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Goudy'), url('../fonts/goudy.ttf') format('truetype');
+}
+
 // Global values
 // --------------------------------------------------
 $dark-red:              #8c0a01;

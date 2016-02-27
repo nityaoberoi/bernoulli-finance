@@ -1,245 +1,224 @@
+$client-logo-width: 150px;
+$client-logo-height: 150px;
+
 .clients {
-
-    .header-text {
-
-        h3 {
-            text-align: center;
-            width: 235px;
-            margin-right: 6%;
-        }
+  .header-text {
+    h3 {
+      text-align: center;
+      width: 235px;
+      margin-right: 6%;
     }
+  }
 
-    .header-image {
-        background-image: url('../img/header/pbjelly.jpg');
-        top: -50px;
+  .header-image {
+    background-image: url('../img/header/pbjelly.jpg');
+    top: -50px;
+  }
+
+  .tint {
+    background-color: rgba(20, 20, 20, 0.7);
+  }
+
+  .text-section {
+    .image-col {
+        padding-top: 45px;
     }
-
-    .tint {
-        background-color: rgba(20, 20, 20, 0.7);
-    }
-
-    .text-section {
-
-        .image-col {
-            padding-top: 45px;
-        }
-    }
+  }
 }
 
-    .client-section {
+.client-section {
+  h3 {
+    margin-top: 0;
+    color: $gray-lighter;
+    text-align: center;
+  }
 
-        h3 {
-            margin-top: 0;
-            color: $gray-lighter;
-            text-align: center;
-        }
+  .clients-list {
+    margin: 20px 0 0 0;
+    padding: 0;
+    list-style: none;
+    display: block;
+    text-align: center;
+    width: 100%;
 
-        .clients-list {
-            margin: 20px 0 0 0;
-            padding: 0;
-            list-style: none;
-            display: block;
-            text-align: center;
-            width: 100%;
-
-            &:after, .client-logo:before {
-                content: '';
-                display: table;
-            }
-
-            &:after {
-                clear: both;
-            }
-
-            li {
-                background-image: url('../img/pattern.png');
-                width: 180px;
-                height: 180px;
-                display: inline-block;
-                margin: 20px 40px;
-                overflow: hidden;
-                border-radius: 50%;
-
-            }
-        }
-
-        .client-logo {
-            width: 100%;
-            height: 100%;
-            border-radius: 50%;
-            position: relative;
-            box-shadow: 0 1px 2px rgba(0,0,0,0.1);
-            cursor: pointer;
-
-            &:hover {
-
-                .client-info {
-                    @include transform(rotate3d(0,1,0,-180deg));
-                }
-            }
-        }
-
-        .client-info-wrap {
-            @include transition(all, 0.4s, ease-in-out);
-            position: absolute;
-            width: 180px;
-            height: 180px;
-            border-radius: 50%;
-
-            -webkit-perspective: 800px;
-            -moz-perspective: 800px;
-            -o-perspective: 800px;
-            -ms-perspective: 800px;
-            perspective: 800px;
-
-            background-image: url(../img/pattern.png);
-            background-color: #333;
-
-            &.dark {
-                background-color: #333;
-            }
-
-            &.light {
-                background-color: #999;
-            }
-        }
-
-        .client-info {
-            @include transform-style(preserve-3d);
-            @include transition(all, 0.4s, ease-in-out);
-            position: absolute;
-            width: 180px;
-            height: 180px;
-            border-radius: 50%;
-
-            > div {
-                display: block;
-                position: absolute;
-                width: 80%;
-                height: 100%;
-                border-radius: 50%;
-                background-position: center center;
-                left: 10%;
-
-                -webkit-backface-visibility: hidden;
-                -moz-backface-visibility: hidden;
-                -o-backface-visibility: hidden;
-                -ms-backface-visibility: hidden;
-                backface-visibility: hidden;
-            }
-
-            .client-info-front {
-                @include background-size(contain);
-                background-repeat: no-repeat;
-                // background-position: 30% 40%;
-
-                &.coco-delice {
-                    background-image: url('../img/client-logos/coco-delice.png');
-                }
-
-                &.whisk-sf {
-                    background-image: url('../img/client-logos/whisksf.png');
-                }
-
-                &.the-sili-co {
-                    background-image: url('../img/client-logos/the-sili-company.png');
-                }
-
-                &.sweet-lorens {
-                    background-image: url('../img/client-logos/sweetlorens.jpg');
-                }
-
-                &.nuttyness {
-                    background-image: url('../img/client-logos/nuttyness.png');
-                }
-
-                &.biz-twister {
-                    background-image: url('../img/client-logos/biztwister.png');
-                }
-
-                &.starter-bakery {
-                    background-image: url('../img/client-logos/starterbakery.jpg');
-                }
-
-                &.bee-raw {
-                    background-image: url('../img/client-logos/beeraw.gif');
-                }
-
-                &.nuchas {
-                    background-image: url('../img/client-logos/nuchas.jpg');
-                }
-
-                &.kikas {
-                    background-image: url('../img/client-logos/kikas-chef.png');
-                }
-
-                &.basic-training {
-                    background-image: url('../img/client-logos/basic-training.png');
-                }
-
-                &.charlitos-cocina {
-                    background-image: url('../img/client-logos/charlitos-cocina.jpg');
-                }
-
-                &.blue-root-farm {
-                    background-image: url('../img/client-logos/blue-root-farm-1.png');
-                }
-
-                &.fare-resources {
-                    background-image: url('../img/client-logos/fareresources.jpg');
-                }
-
-                &.food-craft-institute {
-                    background-image: url('../img/client-logos/foodcrafts.jpg');
-                }
-
-                &.new-normal {
-                    background-image: url('../img/client-logos/new-normal-logo.jpg');
-                }
-
-                &.nicole-burke {
-                    background-image: url('../img/client-logos/nbs-logo.jpg');
-                }
-
-                &.juhu-beach-club {
-                    background-image: url('../img/client-logos/jbc_logo_small_cmyk.jpg');
-                }
-
-                &.magnolia-brewing {
-                    background-image: url('../img/client-logos/magnolia-brewing.png');
-                }
-            }
-
-            .client-info-back {
-                @include transform(rotate3d(0,1,0,180deg));
-                background-color: #333;
-                background-image: url('../img/pattern.png');
-            }
-
-            h3 {
-                color: $gray-lighter;
-                text-transform: uppercase;
-                font-size: 17px;
-                position: relative;
-                top: 35%;
-                font-family: 'Open Sans', Arial, sans-serif;
-            }
-
-            p {
-                color: #fff;
-                padding: 10px 5px;
-                font-style: italic;
-                margin: 0 30px;
-                font-size: 12px;
-                border-top: 1px solid rgba(255,255,255,0.5);
-            }
-        }
-
-        .client-logo {
-            &.food-craft-institute {
-                h3 {
-                    padding-top: 40px;
-                }
-            }
-        }
+    &:after, .client-logo:before {
+      content: '';
+      display: table;
     }
+
+    &:after {
+      clear: both;
+    }
+
+    li {
+      background-image: url('../img/pattern.png');
+      width: $client-logo-width;
+      height: $client-logo-height;
+      display: inline-block;
+      margin: 20px 40px;
+      overflow: hidden;
+      border-radius: 50%;
+    }
+  }
+
+  .client-logo {
+    &:hover .client-info {
+      @include transform(rotate3d(0,1,0,-180deg));
+    }
+  }
+
+  .client-info-wrap {
+    @include transition(all, 0.4s, ease-in-out);
+    position: absolute;
+    width: $client-logo-width;
+    height: $client-logo-height;
+    border-radius: 50%;
+
+    -webkit-perspective: 800px;
+    -moz-perspective: 800px;
+    -o-perspective: 800px;
+    -ms-perspective: 800px;
+    perspective: 800px;
+
+    background-image: url(../img/pattern.png);
+    background-color: #333;
+
+    &.dark {
+      background-color: #333;
+    }
+
+    &.light {
+      background-color: #999;
+    }
+  }
+
+  .client-info {
+    @include transform-style(preserve-3d);
+    @include transition(all, 0.4s, ease-in-out);
+    position: absolute;
+    width: $client-logo-width;
+    height: $client-logo-height;
+    border-radius: 50%;
+
+    > div {
+      display: block;
+      position: absolute;
+      width: 80%;
+      height: 100%;
+      border-radius: 50%;
+      background-position: center center;
+      left: 10%;
+
+      -webkit-backface-visibility: hidden;
+      -moz-backface-visibility: hidden;
+      -o-backface-visibility: hidden;
+      -ms-backface-visibility: hidden;
+      backface-visibility: hidden;
+    }
+
+    .client-info-front {
+      @include background-size(contain);
+      background-repeat: no-repeat;
+
+      &.coco-delice {
+        background-image: url('../img/client-logos/coco-delice.png');
+      }
+
+      &.whisk-sf {
+        background-image: url('../img/client-logos/whisksf.png');
+      }
+
+      &.the-sili-co {
+        background-image: url('../img/client-logos/the-sili-company.png');
+      }
+
+      &.sweet-lorens {
+        background-image: url('../img/client-logos/sweetlorens.jpg');
+      }
+
+      &.nuttyness {
+        background-image: url('../img/client-logos/nuttyness.png');
+      }
+
+      &.biz-twister {
+        background-image: url('../img/client-logos/biztwister.png');
+      }
+
+      &.starter-bakery {
+        background-image: url('../img/client-logos/starterbakery.jpg');
+      }
+
+      &.bee-raw {
+        background-image: url('../img/client-logos/beeraw.gif');
+      }
+
+      &.nuchas {
+        background-image: url('../img/client-logos/nuchas.jpg');
+      }
+
+      &.kikas {
+        background-image: url('../img/client-logos/kikas-chef.png');
+      }
+
+      &.basic-training {
+        background-image: url('../img/client-logos/basic-training.png');
+      }
+
+      &.charlitos-cocina {
+        background-image: url('../img/client-logos/charlitos-cocina.jpg');
+      }
+
+      &.blue-root-farm {
+        background-image: url('../img/client-logos/blue-root-farm-1.png');
+      }
+
+      &.fare-resources {
+        background-image: url('../img/client-logos/fareresources.jpg');
+      }
+
+      &.food-craft-institute {
+        background-image: url('../img/client-logos/foodcrafts.jpg');
+      }
+
+      &.new-normal {
+        background-image: url('../img/client-logos/new-normal-logo.jpg');
+      }
+
+      &.nicole-burke {
+        background-image: url('../img/client-logos/nbs-logo.jpg');
+      }
+
+      &.juhu-beach-club {
+        background-image: url('../img/client-logos/jbc_logo_small_cmyk.jpg');
+      }
+
+      &.magnolia-brewing {
+        background-image: url('../img/client-logos/magnolia-brewing.png');
+      }
+    }
+
+    .client-info-back {
+      @include transform(rotate3d(0,1,0,180deg));
+      background-color: #333;
+      background-image: url('../img/pattern.png');
+    }
+
+    h3 {
+      color: $gray-lighter;
+      text-transform: uppercase;
+      font-size: 17px;
+      position: relative;
+      top: 35%;
+      font-family: 'Goudy', Arial, sans-serif;
+    }
+
+    p {
+      color: #fff;
+      padding: 10px 5px;
+      font-style: italic;
+      margin: 0 30px;
+      font-size: 12px;
+      border-top: 1px solid rgba(255,255,255,0.5);
+    }
+  }
+}
