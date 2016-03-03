@@ -9118,13 +9118,14 @@ section:nth-last-child(2) {
 .quote {
   font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
   color: #8c0a01;
+  padding: 20px;
 }
-/* line 106, ../scss/pages/_base.scss */
+/* line 107, ../scss/pages/_base.scss */
 .quote .fa {
   color: #b0a6a6;
 }
 
-/* line 111, ../scss/pages/_base.scss */
+/* line 112, ../scss/pages/_base.scss */
 .quote-author {
   font-size: 16px;
   color: #333333;
@@ -9353,30 +9354,12 @@ section:nth-last-child(2) {
 }
 /* line 70, ../scss/pages/_clients.scss */
 .client-section .client-info-wrap {
-  -webkit-transition: all, 0.4s, ease-in-out;
-  -o-transition: all, 0.4s, ease-in-out;
-  transition: all, 0.4s, ease-in-out;
-  position: absolute;
   width: 150px;
   height: 150px;
-  border-radius: 50%;
-  -webkit-perspective: 800px;
-  -moz-perspective: 800px;
-  -o-perspective: 800px;
-  -ms-perspective: 800px;
-  perspective: 800px;
   background-image: url(../img/pattern.png);
   background-color: #333;
 }
-/* line 86, ../scss/pages/_clients.scss */
-.client-section .client-info-wrap.dark {
-  background-color: #333;
-}
-/* line 90, ../scss/pages/_clients.scss */
-.client-section .client-info-wrap.light {
-  background-color: #999;
-}
-/* line 95, ../scss/pages/_clients.scss */
+/* line 77, ../scss/pages/_clients.scss */
 .client-section .client-info {
   -moz-transform-style: preserve-3d;
   -webkit-transform-style: preserve-3d;
@@ -9389,7 +9372,7 @@ section:nth-last-child(2) {
   height: 150px;
   border-radius: 50%;
 }
-/* line 103, ../scss/pages/_clients.scss */
+/* line 85, ../scss/pages/_clients.scss */
 .client-section .client-info > div {
   display: block;
   position: absolute;
@@ -9404,7 +9387,7 @@ section:nth-last-child(2) {
   -ms-backface-visibility: hidden;
   backface-visibility: hidden;
 }
-/* line 119, ../scss/pages/_clients.scss */
+/* line 101, ../scss/pages/_clients.scss */
 .client-section .client-info .client-info-front {
   -moz-background-size: contain;
   -o-background-size: contain;
@@ -9412,83 +9395,111 @@ section:nth-last-child(2) {
   background-size: contain;
   background-repeat: no-repeat;
 }
-/* line 123, ../scss/pages/_clients.scss */
+/* line 105, ../scss/pages/_clients.scss */
 .client-section .client-info .client-info-front.coco-delice {
   background-image: url("../img/client-logos/coco-delice.png");
 }
-/* line 127, ../scss/pages/_clients.scss */
+/* line 109, ../scss/pages/_clients.scss */
 .client-section .client-info .client-info-front.whisk-sf {
   background-image: url("../img/client-logos/whisksf.png");
 }
-/* line 131, ../scss/pages/_clients.scss */
+/* line 113, ../scss/pages/_clients.scss */
 .client-section .client-info .client-info-front.the-sili-co {
   background-image: url("../img/client-logos/the-sili-company.png");
 }
-/* line 135, ../scss/pages/_clients.scss */
+/* line 117, ../scss/pages/_clients.scss */
 .client-section .client-info .client-info-front.sweet-lorens {
   background-image: url("../img/client-logos/sweetlorens.jpg");
 }
-/* line 139, ../scss/pages/_clients.scss */
+/* line 121, ../scss/pages/_clients.scss */
 .client-section .client-info .client-info-front.nuttyness {
   background-image: url("../img/client-logos/nuttyness.png");
 }
-/* line 143, ../scss/pages/_clients.scss */
+/* line 125, ../scss/pages/_clients.scss */
 .client-section .client-info .client-info-front.biz-twister {
   background-image: url("../img/client-logos/biztwister.png");
 }
-/* line 147, ../scss/pages/_clients.scss */
+/* line 129, ../scss/pages/_clients.scss */
 .client-section .client-info .client-info-front.starter-bakery {
   background-image: url("../img/client-logos/starterbakery.jpg");
 }
-/* line 151, ../scss/pages/_clients.scss */
+/* line 133, ../scss/pages/_clients.scss */
 .client-section .client-info .client-info-front.bee-raw {
   background-image: url("../img/client-logos/beeraw.gif");
 }
-/* line 155, ../scss/pages/_clients.scss */
+/* line 137, ../scss/pages/_clients.scss */
 .client-section .client-info .client-info-front.nuchas {
   background-image: url("../img/client-logos/nuchas.jpg");
 }
-/* line 159, ../scss/pages/_clients.scss */
+/* line 141, ../scss/pages/_clients.scss */
 .client-section .client-info .client-info-front.kikas {
   background-image: url("../img/client-logos/kikas-chef.png");
 }
-/* line 163, ../scss/pages/_clients.scss */
+/* line 145, ../scss/pages/_clients.scss */
 .client-section .client-info .client-info-front.basic-training {
   background-image: url("../img/client-logos/basic-training.png");
 }
-/* line 167, ../scss/pages/_clients.scss */
+/* line 149, ../scss/pages/_clients.scss */
 .client-section .client-info .client-info-front.charlitos-cocina {
-  background-image: url("../img/client-logos/charlitos-cocina.jpg");
+  background-image: url("../img/client-logos/charlitos-cocina.png");
 }
-/* line 171, ../scss/pages/_clients.scss */
+/* line 153, ../scss/pages/_clients.scss */
 .client-section .client-info .client-info-front.blue-root-farm {
   background-image: url("../img/client-logos/blue-root-farm-1.png");
 }
-/* line 175, ../scss/pages/_clients.scss */
+/* line 157, ../scss/pages/_clients.scss */
 .client-section .client-info .client-info-front.fare-resources {
   background-image: url("../img/client-logos/fareresources.jpg");
 }
-/* line 179, ../scss/pages/_clients.scss */
+/* line 161, ../scss/pages/_clients.scss */
 .client-section .client-info .client-info-front.food-craft-institute {
   background-image: url("../img/client-logos/foodcrafts.jpg");
 }
-/* line 183, ../scss/pages/_clients.scss */
-.client-section .client-info .client-info-front.new-normal {
-  background-image: url("../img/client-logos/new-normal-logo.jpg");
+/* line 165, ../scss/pages/_clients.scss */
+.client-section .client-info .client-info-front.temescal-brewing {
+  background-image: url("../img/client-logos/new-normal-logo.png");
 }
-/* line 187, ../scss/pages/_clients.scss */
+/* line 169, ../scss/pages/_clients.scss */
 .client-section .client-info .client-info-front.nicole-burke {
   background-image: url("../img/client-logos/nbs-logo.jpg");
 }
-/* line 191, ../scss/pages/_clients.scss */
+/* line 173, ../scss/pages/_clients.scss */
 .client-section .client-info .client-info-front.juhu-beach-club {
   background-image: url("../img/client-logos/jbc_logo_small_cmyk.jpg");
 }
-/* line 195, ../scss/pages/_clients.scss */
+/* line 177, ../scss/pages/_clients.scss */
 .client-section .client-info .client-info-front.magnolia-brewing {
   background-image: url("../img/client-logos/magnolia-brewing.png");
 }
-/* line 200, ../scss/pages/_clients.scss */
+/* line 181, ../scss/pages/_clients.scss */
+.client-section .client-info .client-info-front.cinnamon-snail {
+  background-image: url("../img/client-logos/cinnamon-snail.png");
+}
+/* line 185, ../scss/pages/_clients.scss */
+.client-section .client-info .client-info-front.brewla-bars {
+  background-image: url("../img/client-logos/brewlabars.png");
+}
+/* line 189, ../scss/pages/_clients.scss */
+.client-section .client-info .client-info-front.five-phases {
+  background-image: url("../img/client-logos/5-phases.png");
+}
+/* line 193, ../scss/pages/_clients.scss */
+.client-section .client-info .client-info-front.cookbook-la {
+  background-image: url("../img/client-logos/cookbook-la.jpg");
+}
+/* line 197, ../scss/pages/_clients.scss */
+.client-section .client-info .client-info-front.dandelion-chocolates {
+  background-image: url("../img/client-logos/cookbook-la.jpg");
+}
+/* line 201, ../scss/pages/_clients.scss */
+.client-section .client-info .client-info-front.devocion {
+  background-image: url("../img/client-logos/devocion-logo.png");
+}
+/* line 205, ../scss/pages/_clients.scss */
+.client-section .client-info .client-info-front.drazil-foods {
+  background-image: url("../img/client-logos/drazil-logo.png");
+}
+/* line 210, ../scss/pages/_clients.scss */
 .client-section .client-info .client-info-back {
   -moz-transform: rotate3d(0, 1, 0, 180deg);
   -ms-transform: rotate3d(0, 1, 0, 180deg);
@@ -9496,24 +9507,16 @@ section:nth-last-child(2) {
   transform: rotate3d(0, 1, 0, 180deg);
   background-color: #333;
   background-image: url("../img/pattern.png");
+  display: table-cell;
+  vertical-align: middle;
 }
-/* line 206, ../scss/pages/_clients.scss */
+/* line 218, ../scss/pages/_clients.scss */
 .client-section .client-info h3 {
   color: #eeeeee;
   text-transform: uppercase;
   font-size: 17px;
   position: relative;
-  top: 35%;
-  font-family: 'Goudy', Arial, sans-serif;
-}
-/* line 215, ../scss/pages/_clients.scss */
-.client-section .client-info p {
-  color: #fff;
-  padding: 10px 5px;
-  font-style: italic;
-  margin: 0 30px;
-  font-size: 12px;
-  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  top: 30%;
 }
 
 /* line 3, ../scss/pages/_contact.scss */

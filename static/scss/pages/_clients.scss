@@ -68,28 +68,10 @@ $client-logo-height: 150px;
   }
 
   .client-info-wrap {
-    @include transition(all, 0.4s, ease-in-out);
-    position: absolute;
     width: $client-logo-width;
     height: $client-logo-height;
-    border-radius: 50%;
-
-    -webkit-perspective: 800px;
-    -moz-perspective: 800px;
-    -o-perspective: 800px;
-    -ms-perspective: 800px;
-    perspective: 800px;
-
     background-image: url(../img/pattern.png);
     background-color: #333;
-
-    &.dark {
-      background-color: #333;
-    }
-
-    &.light {
-      background-color: #999;
-    }
   }
 
   .client-info {
@@ -165,7 +147,7 @@ $client-logo-height: 150px;
       }
 
       &.charlitos-cocina {
-        background-image: url('../img/client-logos/charlitos-cocina.jpg');
+        background-image: url('../img/client-logos/charlitos-cocina.png');
       }
 
       &.blue-root-farm {
@@ -180,8 +162,8 @@ $client-logo-height: 150px;
         background-image: url('../img/client-logos/foodcrafts.jpg');
       }
 
-      &.new-normal {
-        background-image: url('../img/client-logos/new-normal-logo.jpg');
+      &.temescal-brewing {
+        background-image: url('../img/client-logos/new-normal-logo.png');
       }
 
       &.nicole-burke {
@@ -195,12 +177,42 @@ $client-logo-height: 150px;
       &.magnolia-brewing {
         background-image: url('../img/client-logos/magnolia-brewing.png');
       }
+
+      &.cinnamon-snail {
+        background-image: url('../img/client-logos/cinnamon-snail.png');
+      }
+
+      &.brewla-bars {
+        background-image: url('../img/client-logos/brewlabars.png');
+      }
+
+      &.five-phases {
+        background-image: url('../img/client-logos/5-phases.png');
+      }
+
+      &.cookbook-la {
+        background-image: url('../img/client-logos/cookbook-la.jpg');
+      }
+
+      &.dandelion-chocolates {
+        background-image: url('../img/client-logos/cookbook-la.jpg');
+      }
+
+      &.devocion {
+        background-image: url('../img/client-logos/devocion-logo.png');
+      }
+
+      &.drazil-foods {
+        background-image: url('../img/client-logos/drazil-logo.png');
+      }
     }
 
     .client-info-back {
       @include transform(rotate3d(0,1,0,180deg));
       background-color: #333;
       background-image: url('../img/pattern.png');
+      display: table-cell;
+      vertical-align: middle;
     }
 
     h3 {
@@ -208,17 +220,7 @@ $client-logo-height: 150px;
       text-transform: uppercase;
       font-size: 17px;
       position: relative;
-      top: 35%;
-      font-family: 'Goudy', Arial, sans-serif;
-    }
-
-    p {
-      color: #fff;
-      padding: 10px 5px;
-      font-style: italic;
-      margin: 0 30px;
-      font-size: 12px;
-      border-top: 1px solid rgba(255,255,255,0.5);
+      top: 30%;
     }
   }
 }

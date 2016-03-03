@@ -139,7 +139,3 @@ perspective effects (not including the modals and the overlay).
 	transform: translateZ(0px) rotateX(0deg);
 	opacity: 1;
 }
-
-@media screen and (max-width: 32em) {
-	body { font-size: 75%; }
-}
