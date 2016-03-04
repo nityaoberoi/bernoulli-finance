@@ -9341,12 +9341,12 @@ section:nth-last-child(2) {
   width: 150px;
   height: 150px;
   display: inline-block;
-  margin: 20px 40px;
+  margin: 20px 30px;
   overflow: hidden;
   border-radius: 50%;
 }
 /* line 65, ../scss/pages/_clients.scss */
-.client-section .client-logo:hover .client-info {
+.client-section .client-info-wrap:hover .client-info {
   -moz-transform: rotate3d(0, 1, 0, -180deg);
   -ms-transform: rotate3d(0, 1, 0, -180deg);
   -webkit-transform: rotate3d(0, 1, 0, -180deg);
@@ -9359,7 +9359,11 @@ section:nth-last-child(2) {
   background-image: url(../img/pattern.png);
   background-color: #333;
 }
-/* line 77, ../scss/pages/_clients.scss */
+/* line 76, ../scss/pages/_clients.scss */
+.client-section .client-info-wrap.light {
+  background-color: #666;
+}
+/* line 81, ../scss/pages/_clients.scss */
 .client-section .client-info {
   -moz-transform-style: preserve-3d;
   -webkit-transform-style: preserve-3d;
@@ -9372,7 +9376,7 @@ section:nth-last-child(2) {
   height: 150px;
   border-radius: 50%;
 }
-/* line 85, ../scss/pages/_clients.scss */
+/* line 89, ../scss/pages/_clients.scss */
 .client-section .client-info > div {
   display: block;
   position: absolute;
@@ -9387,7 +9391,7 @@ section:nth-last-child(2) {
   -ms-backface-visibility: hidden;
   backface-visibility: hidden;
 }
-/* line 101, ../scss/pages/_clients.scss */
+/* line 105, ../scss/pages/_clients.scss */
 .client-section .client-info .client-info-front {
   -moz-background-size: contain;
   -o-background-size: contain;
@@ -9395,111 +9399,147 @@ section:nth-last-child(2) {
   background-size: contain;
   background-repeat: no-repeat;
 }
-/* line 105, ../scss/pages/_clients.scss */
+/* line 109, ../scss/pages/_clients.scss */
 .client-section .client-info .client-info-front.coco-delice {
   background-image: url("../img/client-logos/coco-delice.png");
 }
-/* line 109, ../scss/pages/_clients.scss */
+/* line 113, ../scss/pages/_clients.scss */
 .client-section .client-info .client-info-front.whisk-sf {
   background-image: url("../img/client-logos/whisksf.png");
 }
-/* line 113, ../scss/pages/_clients.scss */
+/* line 117, ../scss/pages/_clients.scss */
 .client-section .client-info .client-info-front.the-sili-co {
   background-image: url("../img/client-logos/the-sili-company.png");
 }
-/* line 117, ../scss/pages/_clients.scss */
+/* line 121, ../scss/pages/_clients.scss */
 .client-section .client-info .client-info-front.sweet-lorens {
   background-image: url("../img/client-logos/sweetlorens.jpg");
 }
-/* line 121, ../scss/pages/_clients.scss */
+/* line 125, ../scss/pages/_clients.scss */
 .client-section .client-info .client-info-front.nuttyness {
   background-image: url("../img/client-logos/nuttyness.png");
 }
-/* line 125, ../scss/pages/_clients.scss */
+/* line 129, ../scss/pages/_clients.scss */
 .client-section .client-info .client-info-front.biz-twister {
   background-image: url("../img/client-logos/biztwister.png");
 }
-/* line 129, ../scss/pages/_clients.scss */
+/* line 133, ../scss/pages/_clients.scss */
 .client-section .client-info .client-info-front.starter-bakery {
   background-image: url("../img/client-logos/starterbakery.jpg");
 }
-/* line 133, ../scss/pages/_clients.scss */
+/* line 137, ../scss/pages/_clients.scss */
 .client-section .client-info .client-info-front.bee-raw {
   background-image: url("../img/client-logos/beeraw.gif");
 }
-/* line 137, ../scss/pages/_clients.scss */
+/* line 141, ../scss/pages/_clients.scss */
 .client-section .client-info .client-info-front.nuchas {
   background-image: url("../img/client-logos/nuchas.jpg");
 }
-/* line 141, ../scss/pages/_clients.scss */
+/* line 145, ../scss/pages/_clients.scss */
 .client-section .client-info .client-info-front.kikas {
   background-image: url("../img/client-logos/kikas-chef.png");
 }
-/* line 145, ../scss/pages/_clients.scss */
+/* line 149, ../scss/pages/_clients.scss */
 .client-section .client-info .client-info-front.basic-training {
   background-image: url("../img/client-logos/basic-training.png");
 }
-/* line 149, ../scss/pages/_clients.scss */
+/* line 153, ../scss/pages/_clients.scss */
 .client-section .client-info .client-info-front.charlitos-cocina {
   background-image: url("../img/client-logos/charlitos-cocina.png");
 }
-/* line 153, ../scss/pages/_clients.scss */
+/* line 157, ../scss/pages/_clients.scss */
 .client-section .client-info .client-info-front.blue-root-farm {
   background-image: url("../img/client-logos/blue-root-farm-1.png");
 }
-/* line 157, ../scss/pages/_clients.scss */
+/* line 161, ../scss/pages/_clients.scss */
 .client-section .client-info .client-info-front.fare-resources {
   background-image: url("../img/client-logos/fareresources.jpg");
 }
-/* line 161, ../scss/pages/_clients.scss */
+/* line 165, ../scss/pages/_clients.scss */
 .client-section .client-info .client-info-front.food-craft-institute {
   background-image: url("../img/client-logos/foodcrafts.jpg");
 }
-/* line 165, ../scss/pages/_clients.scss */
+/* line 169, ../scss/pages/_clients.scss */
 .client-section .client-info .client-info-front.temescal-brewing {
   background-image: url("../img/client-logos/new-normal-logo.png");
 }
-/* line 169, ../scss/pages/_clients.scss */
+/* line 173, ../scss/pages/_clients.scss */
 .client-section .client-info .client-info-front.nicole-burke {
   background-image: url("../img/client-logos/nbs-logo.jpg");
 }
-/* line 173, ../scss/pages/_clients.scss */
+/* line 177, ../scss/pages/_clients.scss */
 .client-section .client-info .client-info-front.juhu-beach-club {
   background-image: url("../img/client-logos/jbc_logo_small_cmyk.jpg");
 }
-/* line 177, ../scss/pages/_clients.scss */
+/* line 181, ../scss/pages/_clients.scss */
 .client-section .client-info .client-info-front.magnolia-brewing {
   background-image: url("../img/client-logos/magnolia-brewing.png");
 }
-/* line 181, ../scss/pages/_clients.scss */
+/* line 185, ../scss/pages/_clients.scss */
 .client-section .client-info .client-info-front.cinnamon-snail {
   background-image: url("../img/client-logos/cinnamon-snail.png");
 }
-/* line 185, ../scss/pages/_clients.scss */
+/* line 189, ../scss/pages/_clients.scss */
 .client-section .client-info .client-info-front.brewla-bars {
   background-image: url("../img/client-logos/brewlabars.png");
 }
-/* line 189, ../scss/pages/_clients.scss */
+/* line 193, ../scss/pages/_clients.scss */
 .client-section .client-info .client-info-front.five-phases {
   background-image: url("../img/client-logos/5-phases.png");
 }
-/* line 193, ../scss/pages/_clients.scss */
+/* line 197, ../scss/pages/_clients.scss */
 .client-section .client-info .client-info-front.cookbook-la {
   background-image: url("../img/client-logos/cookbook-la.jpg");
 }
-/* line 197, ../scss/pages/_clients.scss */
-.client-section .client-info .client-info-front.dandelion-chocolates {
-  background-image: url("../img/client-logos/cookbook-la.jpg");
-}
 /* line 201, ../scss/pages/_clients.scss */
+.client-section .client-info .client-info-front.dandelion-chocolates {
+  background-image: url("../img/client-logos/dandelion-logo.jpg");
+}
+/* line 205, ../scss/pages/_clients.scss */
 .client-section .client-info .client-info-front.devocion {
   background-image: url("../img/client-logos/devocion-logo.png");
 }
-/* line 205, ../scss/pages/_clients.scss */
+/* line 209, ../scss/pages/_clients.scss */
 .client-section .client-info .client-info-front.drazil-foods {
   background-image: url("../img/client-logos/drazil-logo.png");
 }
-/* line 210, ../scss/pages/_clients.scss */
+/* line 213, ../scss/pages/_clients.scss */
+.client-section .client-info .client-info-front.everly {
+  background-image: url("../img/client-logos/everly-logo.png");
+}
+/* line 217, ../scss/pages/_clients.scss */
+.client-section .client-info .client-info-front.mh-bread-butter {
+  background-image: url("../img/client-logos/mhbb.jpg");
+}
+/* line 221, ../scss/pages/_clients.scss */
+.client-section .client-info .client-info-front.metes-bounds {
+  background-image: url("../img/client-logos/metes-bounds.png");
+}
+/* line 225, ../scss/pages/_clients.scss */
+.client-section .client-info .client-info-front.ny-seed {
+  background-image: url("../img/client-logos/nyseed.svg");
+}
+/* line 229, ../scss/pages/_clients.scss */
+.client-section .client-info .client-info-front.rsf-social-finance {
+  background-image: url("../img/client-logos/rsf-logo.png");
+}
+/* line 233, ../scss/pages/_clients.scss */
+.client-section .client-info .client-info-front.scrappy {
+  background-image: url("../img/client-logos/scrappy-logo.png");
+}
+/* line 237, ../scss/pages/_clients.scss */
+.client-section .client-info .client-info-front.sifted {
+  background-image: url("../img/client-logos/sifted-logo.png");
+}
+/* line 241, ../scss/pages/_clients.scss */
+.client-section .client-info .client-info-front.slanted-light {
+  background-image: url("../img/client-logos/slanted-light-logo.png");
+}
+/* line 245, ../scss/pages/_clients.scss */
+.client-section .client-info .client-info-front.original-squeeze {
+  background-image: url("../img/client-logos/drazil-logo.png");
+}
+/* line 250, ../scss/pages/_clients.scss */
 .client-section .client-info .client-info-back {
   -moz-transform: rotate3d(0, 1, 0, 180deg);
   -ms-transform: rotate3d(0, 1, 0, 180deg);
@@ -9510,7 +9550,7 @@ section:nth-last-child(2) {
   display: table-cell;
   vertical-align: middle;
 }
-/* line 218, ../scss/pages/_clients.scss */
+/* line 258, ../scss/pages/_clients.scss */
 .client-section .client-info h3 {
   color: #eeeeee;
   text-transform: uppercase;

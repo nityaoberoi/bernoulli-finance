@@ -55,13 +55,13 @@ $client-logo-height: 150px;
       width: $client-logo-width;
       height: $client-logo-height;
       display: inline-block;
-      margin: 20px 40px;
+      margin: 20px 30px;
       overflow: hidden;
       border-radius: 50%;
     }
   }
 
-  .client-logo {
+  .client-info-wrap {
     &:hover .client-info {
       @include transform(rotate3d(0,1,0,-180deg));
     }
@@ -72,6 +72,10 @@ $client-logo-height: 150px;
     height: $client-logo-height;
     background-image: url(../img/pattern.png);
     background-color: #333;
+
+    &.light {
+      background-color: #666;
+    }
   }
 
   .client-info {
@@ -195,7 +199,7 @@ $client-logo-height: 150px;
       }
 
       &.dandelion-chocolates {
-        background-image: url('../img/client-logos/cookbook-la.jpg');
+        background-image: url('../img/client-logos/dandelion-logo.jpg');
       }
 
       &.devocion {
@@ -203,6 +207,42 @@ $client-logo-height: 150px;
       }
 
       &.drazil-foods {
+        background-image: url('../img/client-logos/drazil-logo.png');
+      }
+
+      &.everly {
+        background-image: url('../img/client-logos/everly-logo.png');
+      }
+
+      &.mh-bread-butter {
+        background-image: url('../img/client-logos/mhbb.jpg');
+      }
+
+      &.metes-bounds {
+        background-image: url('../img/client-logos/metes-bounds.png');
+      }
+
+      &.ny-seed {
+        background-image: url('../img/client-logos/nyseed.svg');
+      }
+
+      &.rsf-social-finance {
+        background-image: url('../img/client-logos/rsf-logo.png');
+      }
+
+      &.scrappy {
+        background-image: url('../img/client-logos/scrappy-logo.png');
+      }
+
+      &.sifted {
+        background-image: url('../img/client-logos/sifted-logo.png');
+      }
+
+      &.slanted-light {
+        background-image: url('../img/client-logos/slanted-light-logo.png');
+      }
+
+      &.original-squeeze {
         background-image: url('../img/client-logos/drazil-logo.png');
       }
     }
