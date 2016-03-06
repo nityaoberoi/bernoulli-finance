@@ -89,17 +89,21 @@ $client-logo-height: 150px;
     > div {
       display: block;
       position: absolute;
-      width: 80%;
+      width: 100%;
       height: 100%;
       border-radius: 50%;
       background-position: center center;
-      left: 10%;
 
       -webkit-backface-visibility: hidden;
       -moz-backface-visibility: hidden;
       -o-backface-visibility: hidden;
       -ms-backface-visibility: hidden;
       backface-visibility: hidden;
+
+      &.partial {
+        width: 80%;
+        left: 10%;
+      }
     }
 
     .client-info-front {
@@ -243,7 +247,7 @@ $client-logo-height: 150px;
       }
 
       &.original-squeeze {
-        background-image: url('../img/client-logos/drazil-logo.png');
+        // background-image: url('../img/client-logos/drazil-logo.png');
       }
     }
 
@@ -253,6 +257,8 @@ $client-logo-height: 150px;
       background-image: url('../img/pattern.png');
       display: table-cell;
       vertical-align: middle;
+      width: 100%;
+
     }
 
     h3 {
@@ -261,6 +267,8 @@ $client-logo-height: 150px;
       font-size: 17px;
       position: relative;
       top: 30%;
+      width: 80%;
+      margin: 0 auto;
     }
   }
 }
