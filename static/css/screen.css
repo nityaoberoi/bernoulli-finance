@@ -9277,18 +9277,23 @@ section:nth-last-child(2) {
   display: block;
   margin: auto;
 }
-/* line 52, ../scss/pages/_services.scss */
-.services .cols {
-  -moz-column-count: 2;
-  -moz-column-gap: 20px;
-  -webkit-column-count: 2;
-  -webkit-column-gap: 20px;
-  column-count: 2;
-  column-gap: 20px;
-}
 /* line 60, ../scss/pages/_services.scss */
 .services .cols ul {
-  -webkit-padding-start: 20px;
+  display: table;
+  list-style-type: disc;
+  width: 100%;
+  -webkit-padding-start: 0;
+}
+/* line 66, ../scss/pages/_services.scss */
+.services .cols ul li {
+  display: inline-table;
+  width: 50%;
+  padding-left: 10px;
+}
+/* line 71, ../scss/pages/_services.scss */
+.services .cols ul li:before {
+  content: "\2022";
+  margin-right: 0.5em;
 }
 
 /* line 6, ../scss/pages/_clients.scss */
@@ -10062,7 +10067,7 @@ section:nth-last-child(2) {
 
   /* line 144, ../scss/_media.scss */
   .header-image {
-    height: 60%;
+    height: 65%;
     top: 0;
   }
 

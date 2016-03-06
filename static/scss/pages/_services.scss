@@ -1,5 +1,4 @@
 .services {
-
     .anchor {
         position: relative;
         top: -100px;
@@ -34,34 +33,46 @@
     }
 
     .icon {
-        display: block;
-        margin: auto;
+      display: block;
+      margin: auto;
 
-        &.icon-operations {
-            @extend .services-operations-256;
-        }
+      &.icon-operations {
+          @extend .services-operations-256;
+      }
 
-        &.icon-analytics {
-            @extend .services-analytics-256;
-        }
+      &.icon-analytics {
+          @extend .services-analytics-256;
+      }
 
-        &.icon-strategy {
-            @extend .services-strategy-256;
-        }
+      &.icon-strategy {
+          @extend .services-strategy-256;
+      }
     }
 
     .cols {
-        -moz-column-count: 2;
-        -moz-column-gap: 20px;
-        -webkit-column-count: 2;
-        -webkit-column-gap: 20px;
-        column-count: 2;
-        column-gap: 20px;
+      // -moz-column-count: 2;
+      // -moz-column-gap: 20px;
+      // -webkit-column-count: 2;
+      // -webkit-column-gap: 20px;
+      // column-count: 2;
+      // column-gap: 20px;
 
-        ul {
-            -webkit-padding-start: 20px;
+      ul {
+        display: table;
+        list-style-type: disc;
+        width: 100%;
+        -webkit-padding-start: 0;
+
+        li {
+          display: inline-table;
+          width: 50%;
+          padding-left: 10px;
+
+          &:before {
+            content: "\2022";
+            margin-right: 0.5em;
+          }
         }
+      }
     }
-
-
 }
