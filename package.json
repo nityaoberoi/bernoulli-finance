@@ -1,0 +1,26 @@
+{
+  "name": "bernoulli-finance",
+  "version": "1.0.0",
+  "description": "bernoulli finance website",
+  "main": "index.js",
+  "dependencies": {
+    "bootstrap-sass": "^3.3.6"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-compass": "^1.1.1",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-uglify": "^1.0.0",
+    "grunt-contrib-watch": "^0.6.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nityaoberoi/bernoulli-finance.git"
+  },
+  "author": "Nitya Oberoi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nityaoberoi/bernoulli-finance/issues"
+  },
+  "homepage": "https://github.com/nityaoberoi/bernoulli-finance#readme"
+}

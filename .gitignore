@@ -1,4 +1,11 @@
 .DS_Store
 .sass-cache/
+
+# Compiled files
 *.pyc
+
+# Raw files
 psd/
+
+# Dependency directories
+node_modules
