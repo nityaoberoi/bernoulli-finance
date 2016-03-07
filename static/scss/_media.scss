@@ -1,23 +1,31 @@
 @media(max-width: $screen-sm-max) {
+  .header-image {
+    top: 0 !important;
+    height: 100%;
+  }
 
-    .header-image {
-        top: 0 !important;
-        height: 100%;
+  .nav-links {
+    font-size: 17px;
+    letter-spacing: 1.5px;
+    padding-left: 0;
+
+    li {
+      margin: 0 13px;
     }
+  }
 
-    .nav-links {
-        font-size: 17px;
-        letter-spacing: 1.5px;
-        padding-left: 0;
+  .content {
+    padding-bottom: 200px;
+  }
 
-        li {
-            margin: 0 13px;
-        }
-    }
+  .md-modal {
+    width: 100%;
+    top: 65%;
+  }
 
-    .content {
-        padding-bottom: 200px;
-    }
+  .services .cols ul li {
+    width: 100%;
+  }
 }
 
 @media (max-width: $screen-xs-min) and (max-width: $screen-xs-max) {
@@ -142,7 +150,7 @@
     }
 
     .header-image {
-        height: 65%;
+        height: 80%;
         top: 0;
     }
 
